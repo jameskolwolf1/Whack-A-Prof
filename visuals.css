@@ -1,0 +1,88 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body
+{
+ font-family: "Press Start 2P",cursive;
+ min-height: 100vh;
+}
+.holes
+{
+   position: absolute;
+   display: grid;
+   grid-template-columns: repeat(3,160px);
+   gap:10px;
+   top:50%;
+   left:50%;
+   width: 500px;
+   height:470px;
+   transform: translate(-50%,-50%);
+   border: 1px solid black;
+
+}
+
+.hole
+{   position: relative;
+    height: 150px;
+    width: 160px;
+    border: 1px solid black; 
+
+}
+/*(James) This will be change later in the futrue*/
+/*---------------------------------------------------------------*/
+.professor
+{
+   position: absolute;
+
+   object-fit: cover; 
+}
+.professor_hit
+{
+    position: absolute;
+
+   object-fit: cover;
+}
+.students
+{
+    position: absolute;
+
+    object-fit: cover;
+}
+.students_hit
+{
+    position: absolute;
+
+   object-fit: cover;
+
+}
+.dean
+{
+    position: absolute;
+
+   object-fit: cover;
+}
+.dean_hit
+{
+
+    position: absolute;
+
+   object-fit: cover;
+}
+.admin
+{
+
+    position: absolute;
+
+   object-fit: cover;
+}.admin_hit
+{
+
+    position: absolute;
+
+   object-fit: cover;
+}
+/*---------------------------------------------------------------*/
