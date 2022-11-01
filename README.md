@@ -2,6 +2,8 @@
 
 ## Graphics 
 ### Contributors Guide
+TODO: Add description of sprite sheet exporting process, and 
+commiting into the right directory. 
 ### Task List 
 **Note**: Checked tasks indicate "in progress" or "completed" <br>
 What needs to be included in a sprite sheet...
