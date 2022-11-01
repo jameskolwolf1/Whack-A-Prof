@@ -1,9 +1,6 @@
 # Whack a Professor 
 
 ## Graphics 
-### Contributors Guide
-TODO: Add description of sprite sheet exporting process, and 
-commiting into the right directory. 
 ### Task List 
 **Note**: Checked tasks indicate "in progress" or "completed" <br>
 What needs to be included in a sprite sheet...
@@ -27,6 +24,20 @@ What needs to be included in a sprite sheet...
    * [x] Sound Effects
    * [x] Background
    * [ ] Scoreboard
+### Contributors Guide
+   TODO: Add description of sprite sheet exporting process, and 
+   committing into the right directory. 
+   * Download LibreSprite or Aseprite (more info under Useful Links section).
+   * Watch the pixel art tutorial (more info under Tutorials section).
+   * Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
+   * Any graphic must be exported as a Scalable Vector Graphic (svg).
+   **Sprite Sheets**
+   * Must be divided into 4 groups, 1 per _stage_.
+   * Each group/stage must have 4 distinct layers...
+        * Head
+        * Arms
+        * Torso
+        * Legs
 
 ### Useful Links
 1. [Aseprite](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) - sprite editing software built with c++, requires...
