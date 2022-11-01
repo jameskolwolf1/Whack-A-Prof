@@ -1,6 +1,7 @@
 # Whack a Professor 
 
 ## Graphics 
+### Contributors Guide
 ### Task List 
 **Note**: Checked tasks indicate "in progress" or "completed" <br>
 What needs to be included in a sprite sheet...
