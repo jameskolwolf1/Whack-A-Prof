@@ -34,7 +34,8 @@ aseprite format.
    * Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
    * Any graphic must be exported as a Scalable Vector Graphic (svg).
    * Use lots of references, check refs folder to see if there is references for your task.
-   (Feel free to add your own references to the refs folder)<br>
+   (Feel free to add your own references to the refs folder)<br><br>
+
    **Sprite Sheets**
    * Must be divided into 4 groups, 1 per _stage_.
    * Each _group/stage_ must have 4 distinct layers...
@@ -42,7 +43,8 @@ aseprite format.
         * Arms
         * Torso
         * Legs
-   * 25x48 pixels (WxH) per _group_ <br>
+   * 32x48 pixels (WxH) per _group_ <br><br>
+
    **Background**
    * Must not syphon attention from the action of the game.
         * No checkered pattern 
@@ -51,11 +53,11 @@ aseprite format.
 
 ### Useful Links
 1. [Aseprite](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) - sprite editing software built with c++, requires...
-   * [CMake](https://cmake.org/download/) compiler (v3.16 or greater)
+   * [CMake](https://cmake.org/download/) build automation tool (v3.16 or greater)
    * [Skia](https://github.com/aseprite/skia/releases) 
    * [Ninja](https://ninja-build.org/) build system 
    * Depending on your OS, you might need to install couple more dependencies. <br>More info at <https://github.com/aseprite/aseprite/blob/main/INSTALL.md>
-2. [LibreSprite](https://libresprite.github.io/#!/) - free alternative to the original, forked version of Aesprite, doesn't require compiliation. 
+2. [LibreSprite](https://libresprite.github.io/#!/) - free alternative to the original, forked version of Aesprite, doesn't require compilation. 
 
 ### Tutorials 
 - [Pixel art tutorial](https://www.youtube.com/watch?v=lfR7Qj04-UA) 
