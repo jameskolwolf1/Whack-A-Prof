@@ -8,6 +8,8 @@ What needs to be included in a sprite sheet...
 - Hit Stage
 - Won Game Stage
 - Lost Game Stage
+These 4 stages must be divided into 4 groups within the 
+aseprite format. 
 
 <ins>Sprite Sheet (pixel art style)</ins>
   * [x] Professor
@@ -19,25 +21,33 @@ What needs to be included in a sprite sheet...
    * [ ] Cursor
    * [ ] Buttons
    * [ ] Menu(s)
+   * [ ] Scoreboard
 
 <ins>Other</ins>
    * [x] Sound Effects
    * [x] Background
-   * [ ] Scoreboard
+   * [ ] Desk (Hole)
+
 ### Contributors Guide
-   TODO: Add description of sprite sheet exporting process, and 
-   committing into the right directory. 
    * Download LibreSprite or Aseprite (more info under Useful Links section).
    * Watch the pixel art tutorial (more info under Tutorials section).
    * Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
    * Any graphic must be exported as a Scalable Vector Graphic (svg).
+   * Use lots of references, check refs folder to see if there is references for your task.
+   (Feel free to add your own references to the refs folder)<br>
    **Sprite Sheets**
    * Must be divided into 4 groups, 1 per _stage_.
-   * Each group/stage must have 4 distinct layers...
+   * Each _group/stage_ must have 4 distinct layers...
         * Head
         * Arms
         * Torso
         * Legs
+   * 25x48 pixels (WxH) per _group_ <br>
+   **Background**
+   * Must not syphon attention from the action of the game.
+        * No checkered pattern 
+        * No flashy colors
+   * 150x200 pixels (WxH)
 
 ### Useful Links
 1. [Aseprite](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) - sprite editing software built with c++, requires...
