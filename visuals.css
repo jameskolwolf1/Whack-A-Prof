@@ -5,31 +5,41 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body
+html,body
 {
- font-family: "Press Start 2P",cursive;
- min-height: 100vh;
+ font-family: "Press Start 2P";
+ height:100%;
+ background-color: cadetblue;
 }
-.holes
-{
-   position: absolute;
-   display: grid;
-   grid-template-columns: repeat(3,160px);
-   gap:10px;
-   top:50%;
-   left:50%;
-   width: 500px;
-   height:470px;
-   transform: translate(-50%,-50%);
-   border: 1px solid black;
+body{
+    font-family: "Press Start 2P",cursive;
+    background: brown;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+}
+.score{
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+.board{
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:80px
 
 }
+
 
 .hole
-{   position: relative;
-    height: 150px;
-    width: 160px;
-    border: 1px solid black; 
+{   
+background-color: beige;
+border-radius:30px;
+box-shadow: inset 0px -40px  rgb(231, 163, 103);
 
 }
 /*mmmmjames) This will be change later in the futrue*/
