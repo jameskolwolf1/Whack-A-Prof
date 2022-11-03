@@ -56,12 +56,12 @@ What needs to be included in a sprite sheet...
    
 ## Backbone
 ### Task List
-* [ ]Create a Start button
-* [ ]Make a Game Over Screen
-* [ ]Animate the "moles" & hammer
-* [ ]Create the Hammer
-* [ ]Make the Timer count down
-* [ ]Add points to hits
+* []Create a Start button
+* []Make a Game Over Screen
+* []Animate the "moles" & hammer
+* []Create the Hammer
+* []Make the Timer count down
+* []Add points to hits
  ### Resources
  https://www.youtube.com/watch?v=b20YueeXwZg&t=915s
  https://www.youtube.com/watch?v=UnrtgpQlAz4&t=2470s
