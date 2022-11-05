@@ -45,6 +45,11 @@ position: relative;
 overflow: hidden;
 
 }
+<<<<<<< .mine
+/*james) This will be change later in the futrue*/
+||||||| .r15
+/*mmmmjames) This will be change later in the futrue*/
+=======
 .hole .students{
 
     width:410px;
@@ -78,6 +83,7 @@ overflow: hidden;
         transform: translate(-20%, -20%)rotate(45deg);
     }
 /*mmmmjames) This will be change later in the futrue*/
+>>>>>>> .r19
 /*---------------------------------------------------------------*/
 .professor
 {
