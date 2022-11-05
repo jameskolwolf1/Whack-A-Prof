@@ -77,15 +77,24 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 * [ ] Create a Start button
 * [ ] Make a Game Over Screen
 * [ ] Animate the "moles" & hammer
-* [ ] Create the Hammer
+* [x] Create the Hammer
 * [ ] Make the Timer count down
 * [ ] Add points to hits
+* [ ] Enable Score Counter
+* [ ] Add Professor Mole
+* [ ] Add Dean Mole
+* [ ] Add Admin Mole
+* [ ] Replace cursor
+* [ ] Enable hit reaction
+* [ ] Make sure cursor works
+
 
 ### Resources
 
 * [Whack-A-Mole Game - HTML, CSS, and JavaScript](https://www.youtube.com/watch?v=b20YueeXwZg&t=915)
 * [How to create Whac a Mole Javascript Game](https://www.youtube.com/watch?v=UnrtgpQlAz4&t=2470)
 * [Make a Whack A Mole Game with Vanilla JS](https://www.youtube.com/watch?v=toNFfAaWghU&t=690s)
+* [Add a start and game over screen to JavaScript Pong](https://www.youtube.com/watch?v=8_zUEh7Vqhs&t=76s)
 <br>
 **Note**: Each of these links are to create the same game but provide different ways of going about things
 
