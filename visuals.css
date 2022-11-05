@@ -19,18 +19,20 @@ body{
     flex-direction: column;
     justify-content:start;
     align-items:center;
+    overflow: hidden;
+    
 }
 .score{
     font-size: 4em;
     margin-bottom: .5em;
 }
 .board{
-    height: 600px;
-    width: 600px;
+    height: 700px;
+    width: 700px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    gap:80px
+    gap:80px;
 
 }
 
@@ -39,9 +41,42 @@ body{
 {   
 background-color: beige;
 border-radius:30px;
-box-shadow: inset 0px -40px  rgb(231, 163, 103);
+position: relative;
+overflow: hidden;
 
 }
+.hole .students{
+
+    width:410px;
+    position: absolute;
+    left: 130%;
+    transform: translateX(-50%);
+    top:-70px;
+    animation: rise .5s ease-out;
+}
+    @keyframes rise {
+      0%{
+        transform: translateX(-50%) translateY(100%);
+    }
+    100%{
+        transform: translateX(-50%) translateY(0);
+    }
+}
+    .cursor{
+        height: 110px;
+        width: 100px;
+        position: absolute;
+        top:100px;
+        left: 100px;
+        background-color: aquamarine;
+        transform: translate(-20%, -20%);
+        transition: transform .1s;
+        pointer-events: none;
+    }
+    
+    .cursor .active{
+        transform: translate(-20%, -20%)rotate(45deg);
+    }
 /*mmmmjames) This will be change later in the futrue*/
 /*---------------------------------------------------------------*/
 .professor
@@ -56,19 +91,7 @@ box-shadow: inset 0px -40px  rgb(231, 163, 103);
 
    object-fit: cover;
 }
-.students
-{
-    position: absolute;
 
-    object-fit: cover;
-}
-.students_hit
-{
-    position: absolute;
-
-   object-fit: cover;
-
-}
 .dean
 {
     position: absolute;
@@ -96,3 +119,4 @@ box-shadow: inset 0px -40px  rgb(231, 163, 103);
    object-fit: cover;
 }
 /*---------------------------------------------------------------*/
+
