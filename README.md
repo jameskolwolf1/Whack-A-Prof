@@ -10,9 +10,9 @@ What needs to be included in a sprite sheet...
 - Hit Stage
 - Won Game Stage
 - Lost Game Stage 
-<br>
-These 4 stages must be divided into 4 groups within the aseprite format.
 
+These 4 stages must be divided into 4 groups within the aseprite format.
+<br>
 <ins>Sprite Sheet (pixel art style)</ins>
   * [x] Professor
   * [x] Student 
@@ -35,17 +35,18 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 1. Download LibreSprite or Aseprite (more info under Useful Links section).
 2. Watch the pixel art tutorial (more info under Tutorials section).
 3. Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
-4. Any graphic must be exported as a Scalable Vector Graphic (svg).
-5. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
+4. Make sure to use the [ Apollo ](apollo.hex) color palette.
+5. Any graphic must be exported as a Scalable Vector Graphic (svg).
+6. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
 
 **Sprite Sheets**
-* Must be divided into 4 groups, 1 per stage.
-* Each group/stagegroup/stage must have 4 distinct layers...
+* Must be divided into 4 groups, 1 per _stage_.
+* Each _group/stage_ must have 4 distinct layers...
    * Head
    * Arms
    * Torso
    * Legs
-* 25x48 pixels (WxH) per group <br>
+* 32x48 pixels (WxH) per group <br>
 
 **Background**
 * Must not syphon attention from the action of the game.
@@ -95,7 +96,7 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 * [How to create Whac a Mole Javascript Game](https://www.youtube.com/watch?v=UnrtgpQlAz4&t=2470)
 * [Make a Whack A Mole Game with Vanilla JS](https://www.youtube.com/watch?v=toNFfAaWghU&t=690s)
 * [Add a start and game over screen to JavaScript Pong](https://www.youtube.com/watch?v=8_zUEh7Vqhs&t=76s)
-<br>
+
 **Note**: Each of these links are to create the same game but provide different ways of going about things
 
 
