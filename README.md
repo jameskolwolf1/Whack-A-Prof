@@ -75,11 +75,11 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 
 ### Task List
 
-* [ ] Create a Start button
+* [x] Create a Start button
 * [ ] Make a Game Over Screen
 * [ ] Animate the "moles" & hammer
 * [x] Create the Hammer
-* [ ] Make the Timer count down
+* [x] Make the Timer count down
 * [ ] Add points to hits
 * [ ] Enable Score Counter
 * [ ] Add Professor Mole
