@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+i!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,22 +9,38 @@
         <title> Whack-a-Prof</title>
     </head>
     <body>
+	    <!-- Start and Game Over Button (game over button need to be work on little bit more) -->
+	    <canvas id = "canvas" style="display:none"></canvas>
+	    <div id = "start" style="display:block">
+		    <a href="#" onclick="StartGame()"> Start Game</a>
+	    </div>
+	    <div id = "game-over" style="display:none">
+		    <h1>Game Over</h1>
+		    <a href="#" onclick="StartGame()"> Start Game</a>
+	    </div>
+	    <!------------------------------------------------------------------------------------------->
 <!-- (James) this are just place holder for images and formating and will be change latter -------------->
         <!--Also I  just put a timer that refreshs the tabs every 3's you can give it if u want-->
 
         <meta http-equiv="refresh" content="5">
 
         <!-----------------------------------------------------------------------------------
-        <img src="/graphics/professor.svg" class="professor">
-        <img src="/graphics/professor_hit.svg" class="professor_hit">
-        <img src="/placeholder images/admin.webp" class="admin">
-        <img src="/placeholder images/admin_hiy.webp" class="admin_hit">
-        <img src="/placeholder images/dean.webp" class="dean">
-        <img src="/placeholder images/dean_hit.jpg" class="dean_hit">
+        <img src="/graphics/professor/professor.svg" class="professor">
+        <img src="/graphics/professor/professor_hit.svg" class="professor_hit">
+        <img src="/graphics/admin/admin.svg" class="admin">
+        <img src="/graphics/admin/admin_hit.svg" class="admin_hit">
+        <img src="/graphics/dean/dean.svg" class="dean">
+        <img src="/graphics/dean/dean_hit.svg" class="dean_hit">
+	<img src="/graphics/student/student.svg" class="student">
+	<img src="/graphics/student/student_hit.svg" class="student_hit">
+	<img src="/graphics/student/student_lose.svg" class="student_lose">
+	<img src="/graphics/student/student_win.svg" class="student_win">
         <ss------------------------------------------------------>
 
-       
-        <div>TIME LEFT: <P class="time">60</P>
+	<!-- <meta http-equiv="refresh" content="2"> -->
+	<!--TIMER------------------------------------------------------------------------------------->
+        <div>TIME LEFT: <p id = "time"></p>
+	<!-------------------------------------------------------------------------------------------->
         </div>
        <h1 class = "score">SCORE:<span>0</span> </h1>
         <div class = "board">
