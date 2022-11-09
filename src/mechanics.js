@@ -1,7 +1,19 @@
 const holes = [...document.querySelectorAll('.hole')]
 const scoreElement = document.querySelector('.score .span')
 const cursor = document.querySelector('.cursor')
+
 const startTime = 1;
+const startM = 2;
+let timeL = startM * 60;
+const time = document.getElementById('time');
+setInterval(updateTime, 1000);
+function updateTime(){
+	const min= math.floor(time/60);
+	let sec = time % 60;
+	sec = sec < 10 ? '0' + sec : sec;
+	time.innerHTML = '${min}:${sec}';
+	time--;
+}
 
 let score = 0
 let timer = null
