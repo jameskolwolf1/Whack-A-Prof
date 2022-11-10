@@ -1,52 +1,52 @@
-const holes = [...document.querySelectorAll('.hole')]
-const scoreElement = document.querySelector('.score .span')
 const cursor = document.querySelector('.cursor')
-const startTime = 1;
-
+const holes = [...document.querySelectorAll('.hole')]
+const scoreEl = document.querySelector('.score span')
 let score = 0
-let timer = null
+const button= document.getElementById('start');
+const startingM = .1;
+let time = startingM * 60
+const cd = document.getElementById('countdown');
+const button2= document.getElementById('restart');
+button2.disabled = true;
 
-const count = document.getElementById("time")
 
-//The event will start when the start button is clicked------------------------------------
-start.addEventListener('click', function()){
-
-	setInterval(countDown, 1000)
-	function countDown(){
-
-		const minutes = Math.Floor(timer/60)
-		let seconds = timer % 60;
-
-		seconds = seconds < 10 ? '0' + seconds : seconds
-		count.innerHTML = minutes + " : " + seconds
-		if(timer > 0){
-
-			timer--
-		}
-	}
-
+document.getElementById('start').onclick = function(){
+button.disabled = true;
+button2.disabled = false;
+button2.style.visibility = "visible";
+button.style.visibility = "hidden";
+score=0
+setInterval(update, 1000)
+function update(){
+    const min = Math.floor(time/60);
+    let seconds = time % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    cd.innerHTML = min +":"+ seconds ;
+    if (time>0){
+        time--;
+    }
 }
-//----------------------------------------------------------------------------------------
-
-
 function run(){
+    if(time==0){
+        return
+    }
     const i = Math.floor(Math.random() * holes.length)
     const hole = holes[i]
     let timer = null
 
     const img = document.createElement('img')
-    img.classList.add('students')
-    img.src = 'graphics/student/student.svg'
+    img.classList.add('student')
+    img.src = 'mole.png'
 
     img.addEventListener('click', () => {
-        score -= 10
-        sound.play()
-        scoreElement.textContent = score
-        img.src = 'graphics/student/student_hit.svg'
+        score += 10
+        img.disabled=true;
+        scoreEl.textContent = score
+        img.src = 'mole-whacked.png'
         clearTimeout(timer)
         setTimeout(() => {
             hole.removeChild(img)
-            run()
+            return run();
         }, 500)
     })
 
@@ -54,34 +54,13 @@ function run(){
 
     timer = setTimeout(() => {
         hole.removeChild(img)
-        run()
-    }, 2000)
+        return run();
+    }, 1500)
 }
-// The start bnutton wioll start the ghame when clicked ----------------------------------------
-function StartGame(){
+run()}
 
 
-	let startDiv = document.getElementById("Start");
-	let gameCanvas = document.getElementById("canvas");
-	let gameover = document.getElementByID("game-over");
 
-	startDiv.style.display = "none";
-	gameCanvas.style.display = "none";
-	gameover.style.display = "none";
-
-	run();
-}
-function gameOver(){
-
-	let startDiv = document.getElementById("start");
-	let gameCanvas = document.getElementById("canvas");
-	let gameover = document.getElementById("game-over");
-
-	startDiv.style.display = "none";
-	gameCanvas.style.display = "none";
-	gameover.style.display = "block";
-}
-//--------------------------------------------------------------------------------------------
 window.addEventListener('mousemove', e => {
     cursor.style.top = e.pageY + 'px'
     cursor.style.left = e.pageX + 'px'
