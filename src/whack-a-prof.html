@@ -1,61 +1,29 @@
-i!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name ="viewport" content="width=device-width,initial scale=1.0">
-        <link rel="stylesheet" href="./visuals.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <title> Whack-a-Prof</title>
-    </head>
-    <body>
-	    <!-- Start and Game Over Button (game over button need to be work on little bit more) -->
-	    <canvas id = "canvas" style="display:none"></canvas>
-	    <div id = "start" style="display:block">
-		    <a href="#" onclick="StartGame()"> Start Game</a>
-	    </div>
-	    <div id = "game-over" style="display:none">
-		    <h1>Game Over</h1>
-		    <a href="#" onclick="StartGame()"> Start Game</a>
-	    </div>
-	    <!------------------------------------------------------------------------------------------->
-<!-- (James) this are just place holder for images and formating and will be change latter -------------->
-        <!--Also I  just put a timer that refreshs the tabs every 3's you can give it if u want-->
-
-        <meta http-equiv="refresh" content="5">
-
-        <!-----------------------------------------------------------------------------------
-        <img src="/graphics/professor/professor.svg" class="professor">
-        <img src="/graphics/professor/professor_hit.svg" class="professor_hit">
-        <img src="/graphics/admin/admin.svg" class="admin">
-        <img src="/graphics/admin/admin_hit.svg" class="admin_hit">
-        <img src="/graphics/dean/dean.svg" class="dean">
-        <img src="/graphics/dean/dean_hit.svg" class="dean_hit">
-	<img src="/graphics/student/student.svg" class="student">
-	<img src="/graphics/student/student_hit.svg" class="student_hit">
-	<img src="/graphics/student/student_lose.svg" class="student_lose">
-	<img src="/graphics/student/student_win.svg" class="student_win">
-        <ss------------------------------------------------------>
-
-	<!-- <meta http-equiv="refresh" content="2"> -->
-	<!--TIMER------------------------------------------------------------------------------------->
-        <div>TIME LEFT: <p id = "time"></p>
-	<!-------------------------------------------------------------------------------------------->
-        </div>
-       <h1 class = "score">SCORE:<span>0</span> </h1>
-        <div class = "board">
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            <div class ="hole"></div>
-            
-        </div>
-        <div class ="cursor"></div>   
-        <script src="mechanics.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="visuals.css">
+</head>
+<body>
+    <h1 class="score">SCORE: <span>00</span></h1>
+    <button id = start>START</button>
+    <button id = restart disabled>RESTART</button><br>
+    <p id = "countdown">1:00</p><br>
+    <div class="board">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+    </div>
+    <div class="cursor"></div>
+<script src="machanic.js"></script>  
+</body>
 </html>
