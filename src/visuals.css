@@ -1,64 +1,12 @@
-*
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
 }
-
-html,body
-{
- font-family: "Press Start 2P";
- height:100%;
- background-color: cadetblue;
+button:hover{
+    color: gold;
+    box-shadow: 0px 0px 10px gold;
+ 
 }
-body{
-    font-family: "Press Start 2P",cursive;
-    background: brown;
-    color: beige;
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    align-items:center;
-    overflow: hidden;
-    
+#restart{
+    visibility: hidden;
 }
-/* Just got the start button to work (game over is in work) -----------------------------------*/
-#start, #game-over {
-
-	font-family: "Press Start 2P";
-	color: rgb(30, 30, 24);
-	padding: 20;
-	position:sticky;
-	top: 50px;
-	left: -20%;
-	margin-top: 50px;
-	margin-left: -250px;
-	height: 200px;
-	width: 250px;
-	text-align: center;
-}
-#start a, #game-over a{
-
-	border: 10px solid #ffffff;
-	color: #ffffff;
-	background-color: crimson;
-	text-decoration: dashed;
-	padding: 10px;
-	border-radius: 30px;
-	cursor: pointer;
-	display: ruby-base;
-	width: 500px;
-	text-align: center;
-	font-size: 2em;
-	transition-duration: 0.4s;
-	display: inline-table;
-}
-#start a:hover, #game-over a:hover{
-
-	background-color: rgb(255,106,0);
-	color: rgb(91,76,57);
-}
-/*--------------------------------------------------------------------------------------------------------*/
 .score{
     font-size: 4em;
     margin-bottom: .5em;
@@ -82,13 +30,12 @@ position: relative;
 overflow: hidden;
 
 }
-.hole .students{
-
-    width:410px;
+.hole .student{
+    width: 70%;
     position: absolute;
-    left: 130%;
+    left: 50%;
     transform: translateX(-50%);
-    top:-70px;
+    bottom: 0;
     animation: rise .5s ease-out;
 }
     @keyframes rise {
@@ -105,14 +52,15 @@ overflow: hidden;
         position: absolute;
         top:100px;
         left: 100px;
-        background-color: aquamarine;
+        background-image: url('hammer.png');
+        background-size: 100% 100%;
         transform: translate(-20%, -20%);
         transition: transform .1s;
         pointer-events: none;
     }
     
-    .cursor .active{
-        transform: translate(-20%, -20%)rotate(45deg);
+    .cursor.active{
+        transform: translate(-20%, -20%) rotate(-45deg);
     }
 /*mmmmjames) This will be change later in the futrue*/
 /*---------------------------------------------------------------*/
@@ -156,4 +104,3 @@ overflow: hidden;
    object-fit: cover;
 }
 /*---------------------------------------------------------------*/
-
