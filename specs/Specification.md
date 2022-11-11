@@ -52,6 +52,15 @@ The skeleton of the project will be created using the scripting language of Java
 ---
 ### **2.1: Product Perspective** <a name="Product-Perspective"></a>
 
+This product is a new “Whack- A-Mole” inspired game where the functions are the same but the settings are altered. Instead of moles, the user will interact with school faculty and students to accumulate or depress points. The following are features included with the web game:
+
+- Cross Platform Support: The game is supported by most of the popular web browsers that can be downloaded in most operating systems
+
+- Number of users who can be on the website: While an exact number can not be given a sizeable amount of users can go on the website at the same time to play the game
+
+- Storing Scores of User: The website will be utilizing the user's local storage in order to keep track of their individual scores
+
+
 ### **2.2: Product Functions** <a name="Product-Functions"></a>
 
 The product must provide, at a minimum, the following functions to the users within this SRS document.
