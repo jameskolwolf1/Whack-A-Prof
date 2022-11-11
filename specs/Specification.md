@@ -61,6 +61,12 @@ The product must provide, at a minimum, the following functions to the users wit
 
 Users of the product should have basic knowledge of web technology and operating the internet. The user interface will be friendly enough to guide the user and help with starting the Whack-A-Prof game.
 ### **2.4: Operating Environment** <a name="Operating-Environment"></a>
+The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments. The minimum set of browsers that must be supported is:
+Google Chrome 44+
+Apple Safari 7+
+Microsoft Internet Explorer 10+
+Mozilla Firefox 40+
+
 
 ### **2.5: Design and Implementation Constraints** <a name="Design-and-Implementation-Constraints"></a>
 
