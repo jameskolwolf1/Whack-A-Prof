@@ -1,29 +1,40 @@
+<!--
+This is a Project called "Wack-A-Professor". The is bascially wack-a-mole but college addition. The whole point of the game is to 'wack' (clcik) on the
+professor, dean, student, admin to get point. If the you 'wack'profesor you give 15 point, dean gets 20, student will decrease point depending on how
+much points you have in total and admin, will add more time. The more points you have the faster Whack-A-Professor will go
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="visuals.css">
-</head>
-<body>
-    <h1 class="score">SCORE: <span>00</span></h1>
-    <button id = start>START</button>
-    <button id = restart disabled>RESTART</button><br>
-    <p id = "countdown">1:00</p><br>
-    <div class="board">
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-    </div>
-    <div class="cursor"></div>
-<script src="machanic.js"></script>  
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Wack-A-Professor</title>
+		<link rel="stylesheet" href="visuals.css">
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<!--Time,Score, and start button-->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+		<h1 class="score">SCORE: <span>00</span></h1>
+		<button id = start>START</button>
+		<p id = "countdown">2:00</p><br>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+		<div class="board">
+			<div class="hole"></div>
+			<div class="hole"></div>
+			<div class="hole"></div>
+			<div class="hole"></div>
+			<div class="hole"></div>
+			<div class="hole"></div>
+			<div class="hole"></div>
+			<div class="hole"></div>
+			<div class="hole"></div>
+		</div>
+		<div class="cursor"></div>
+		<script src="machanic.js"></script>
+	</body>
 </html>
+

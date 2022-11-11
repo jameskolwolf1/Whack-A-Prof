@@ -1,106 +1,146 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+html,body{
+
+	font-family: "Press Start 2P";
+	height:100%;
+	background-color: cadetblue;
+}
+
+body{
+
+	font-family: "Press Start 2P",cursive;
+	background: brown;
+	color: beige;
+	display: flex;
+	flex-direction: column;
+	justify-content:start;
+	align-items:center;
+	overflow: hidden;
+}
+
+button{
+
+	width: 200px;
+	height: 80px;
+	border-radius: 120px;
+	border-color: white;
+	font-family: "Press Start 2P",cursive;
+	font-size: larger;
+}
+
 button:hover{
-    color: gold;
-    box-shadow: 0px 0px 10px gold;
- 
+
+ 	color: gold;
+	box-shadow: 0px 0px 10px gold;
 }
-#restart{
-    visibility: hidden;
+
+#countdown{
+
+	font-size: larger;
 }
+
 .score{
-    font-size: 4em;
-    margin-bottom: .5em;
+
+	font-size: 4em;
+	margin-bottom: .5em;
 }
+
 .board{
-    height: 700px;
-    width: 700px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    gap:80px;
 
+	height: 700px;
+	width: 700px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	gap:80px;
 }
 
+.hole{
 
-.hole
-{   
-background-color: beige;
-border-radius:30px;
-position: relative;
-overflow: hidden;
-
+	background-color: beige;
+	border-radius:30px;
+	position: relative;
+	overflow: hidden;
 }
+
 .hole .student{
-    width: 70%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    animation: rise .5s ease-out;
-}
-    @keyframes rise {
-      0%{
-        transform: translateX(-50%) translateY(100%);
-    }
-    100%{
-        transform: translateX(-50%) translateY(0);
-    }
-}
-    .cursor{
-        height: 110px;
-        width: 100px;
-        position: absolute;
-        top:100px;
-        left: 100px;
-        background-image: url('hammer.png');
-        background-size: 100% 100%;
-        transform: translate(-20%, -20%);
-        transition: transform .1s;
-        pointer-events: none;
-    }
-    
-    .cursor.active{
-        transform: translate(-20%, -20%) rotate(-45deg);
-    }
-/*mmmmjames) This will be change later in the futrue*/
-/*---------------------------------------------------------------*/
-.professor
-{
-   position: absolute;
 
-   object-fit: cover; 
+	width: 70%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	animation: rise .5s ease-out;
 }
-.professor_hit
-{
-    position: absolute;
+	@keyframes rise{
+	
+		0%{
+			transform: translateX(-50%) translateY(100%);
+		}
+		100%{
+			transform: translateX(-50%) translateY(0);
+		}
+	}
 
-   object-fit: cover;
+.cursor{
+
+	height: 110px;
+	width: 100px;
+	position: absolute;
+	top:100px;
+	left: 100px;
+	background-image: url('hammer.png');
+	background-size: 100% 100%;
+	transform: translate(-20%, -20%);
+	transition: transform .1s;
+	pointer-events: none;
 }
 
-.dean
-{
-    position: absolute;
+.cursor .active{
 
-   object-fit: cover;
+	transform: translate(-20%, -20%) rotate(-45deg);
 }
-.dean_hit
-{
-
-    position: absolute;
-
-   object-fit: cover;
+/*
+ * Use this to make change to the size of the images
+ */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.professor{
+	position: absolute;
+	object-fit: cover;
 }
-.admin
-{
 
-    position: absolute;
+.professor_hit{
 
-   object-fit: cover;
-}.admin_hit
-{
-
-    position: absolute;
-
-   object-fit: cover;
+	position: absolute;
+	object-fit: cover;
 }
-/*---------------------------------------------------------------*/
+
+.dean{	          
+       	position: absolute;
+	object-fit: cover;
+}
+
+.dean_hit{
+
+	position: absolute;  
+	object-fit: cover;
+		     
+}
+
+.admin{			         
+	position: absolute;				    
+	object-fit: cover;
+			    
+}
+
+.admin_hit{			        
+	position: absolute;
+	object-fit: cover;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
