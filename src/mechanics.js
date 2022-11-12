@@ -8,7 +8,7 @@ let time = startingM * 60;
 const cd = document.getElementById('countdown');
 const gamerest = document.getElementById('start');
 const pro = document.createElement("img");
-pro.src = 'graphics/professor/professor.svg';
+pro.src = '../graphics/professor/professor.svg';
 pro.id = "professor";
 pro.classList.add('student');
 
@@ -41,13 +41,13 @@ document.getElementById('start').onclick = function(){
 		const hole = holes[i]
 		let timer = null
 		const img = document.createElement('professor')
-		pro.src = 'graphics/professor/professor.svg'
+		pro.src = '../graphics/professor/professor.svg'
 
 		pro.addEventListener('click', () => {
 
 			score += 10
 			scoreEl.textContent = score
-			pro.src = 'graphics/professor/professor_hit.svg'
+			pro.src = '../graphics/professor/professor_hit.svg'
 			clearTimeout(timer)
 			setTimeout(() => {
 
