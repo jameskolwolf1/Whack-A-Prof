@@ -14,10 +14,10 @@ What needs to be included in a sprite sheet...
 These 4 stages must be divided into 4 groups within the aseprite format.
 <br>
 <ins>Sprite Sheet (pixel art style)</ins>
-  * [x] Professor
-  * [x] Student
-  * [x] Dean
-  * [x] Admin
+  *  Professor
+  *  Student
+  *  Dean
+  *  Admin
 
 <ins>UI</ins>
    * [ ] Cursor
@@ -26,8 +26,8 @@ These 4 stages must be divided into 4 groups within the aseprite format.
    * [ ] Menu(s)
 
 <ins>Other</ins>
-   * [x] Sound Effects
-   * [x] Background
+   *  Sound Effects
+   *  Background
    * [ ] Desk (Hole)
 
 ### Contributors Guide
@@ -76,11 +76,11 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 
 ### Task List
 
-* [x] Create a Start button
+*  Create a Start button
 * [ ] Make a Game Over Screen
 * [ ] Animate the "moles" & hammer
-* [x] Create the Hammer
-* [x] Make the Timer count down
+*  Create the Hammer
+*  Make the Timer count down
 * [ ] Add points to hits
 * [ ] Enable Score Counter
 * [ ] Add Professor Mole
@@ -102,3 +102,20 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 
 
 ## Quality Assurance
+Preliminary testing: (nothing too serious) 11/11/22 
+-  Start button works
+-  Hammer works
+-  Timer works
+-  Score counter works
+-  Mole works
+-  Cursor works
+-  Hit reaction works
+-  Game over screen works
+-  Game does not restart [BUG]: pressing game over does not restart the game. (Most likely just unfinished
+   nothing too serious)
+-  Timer a bit too close to start button, looks a bit jarring. [BUG]
+- The app does not crash but when resizing the window, the game does not resize with it. [BUG]. Elements where 
+   the professor appears will disappear when the window becomes too small. 
+- Overall nothing game breaking during preliminary testing. Quirks and bugs are expected at this stage.
+
+
