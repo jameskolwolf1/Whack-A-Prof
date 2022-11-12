@@ -1,4 +1,7 @@
 # Whack a Professor
+Web browser based school themed whack-a-mole game where the "moles" are 
+the people you would typically find in a school! Build with HTML, CSS, JavaScript.
+Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
 
 ## Graphics
 
@@ -11,24 +14,27 @@ What needs to be included in a sprite sheet...
 - Won Game Stage
 - Lost Game Stage
 
-These 4 stages must be divided into 4 groups within the aseprite format.
-<br>
+These 4 stages must be divided into 4 groups within the aseprite format. <br>
+
 <ins>Sprite Sheet (pixel art style)</ins>
-  *  Professor
-  *  Student
-  *  Dean
-  *  Admin
+  * [x] Professor
+  * [x] Student
+  * [x] Dean
+  * [x] Admin
 
 <ins>UI</ins>
-   * [ ] Cursor
-   * [ ] Buttons
-   * [ ] Scoreboard
-   * [ ] Menu(s)
+  * [ ] Cursor
+  * [ ] Buttons
+  * [ ] Scoreboard
+  * [ ] Menu(s)
 
 <ins>Other</ins>
-   *  Sound Effects
-   *  Background
-   * [ ] Desk (Hole)
+  * [x] Sound Effects
+  * [x] Background
+  * [ ] Desk (Hole)
+
+### Creative Direction
+<img width=250 height=125 src="" alt="">
 
 ### Contributors Guide
 
@@ -36,7 +42,7 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 2. Watch the pixel art tutorial (more info under Tutorials section).
 3. Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
 4. Make sure to use the [ Apollo ](apollo.hex) color palette.
-5. Any graphic must be exported as a Scalable Vector Graphic (svg).
+5. Any graphic must be exported as a Scalable Vector Graphic (SVG).
 6. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
 
 **Sprite Sheets**
@@ -76,11 +82,11 @@ These 4 stages must be divided into 4 groups within the aseprite format.
 
 ### Task List
 
-*  Create a Start button
+* [ ] Create a Start button
 * [ ] Make a Game Over Screen
 * [ ] Animate the "moles" & hammer
-*  Create the Hammer
-*  Make the Timer count down
+* [ ] Create the Hammer
+* [ ] Make the Timer count down
 * [ ] Add points to hits
 * [ ] Enable Score Counter
 * [ ] Add Professor Mole
