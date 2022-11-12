@@ -34,7 +34,7 @@ These 4 stages must be divided into 4 groups within the aseprite format. <br>
   * [ ] Desk (Hole)
 
 ### Creative Direction
-<img width=250 height=125 src="" alt="">
+<img height=350 width=150 src="https://user-images.githubusercontent.com/92228287/201498507-a5f7f2dd-b138-4d5a-a27b-eabfbe225d31.png" alt="">
 
 ### Contributors Guide
 
