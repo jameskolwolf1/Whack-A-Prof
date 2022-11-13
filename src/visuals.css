@@ -112,11 +112,22 @@ button:hover{
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .professor{
 	position: absolute;
-	height: 50px;
-	width: 200px;
+	width: 400px;
+	right:20%;
+	top:30px;
+	transform: translateX(0%);
+	animation: rise .5s ease-out;
 	object-fit: cover;
 }
-
+@keyframes rise{
+	
+	0%{
+		transform: translateX(0%) translateY(100%);
+	}
+	100%{
+		transform: translateX(0%) translateY(0);
+	}
+}
 .professor_hit{
 
 	position: absolute;

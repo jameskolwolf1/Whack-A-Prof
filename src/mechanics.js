@@ -80,7 +80,7 @@ document.getElementById('start').onclick = function(){
 		pro.src = protemp.src;
 		pro.addEventListener('click', () => {
 			
-			score = score + 15;\
+			score = score + 15;
 			scoreEl.textContent = score
 			pro.src = '../graphics/professor/professor_hit.svg'
 			clearTimeout(timer)
