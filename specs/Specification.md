@@ -1,4 +1,4 @@
-# Specs Document
+# Specification Document for Whack-A-Prof
 
 ## **Table of Contents**
 ### [**1. Introduction**](#introduction)
@@ -47,6 +47,51 @@ This SRS is organized into 4 sections, each with varying subsections. The docume
 The skeleton of the project will be created using the scripting language of Javascript. The goal with Javascript, in correspondence to the project, is to create the bare minimum functions of a “Whack-A-Prof” game. Javascript will be responsible for signifying the space in which the game will take place, animating the pictures that will represent the characters and the cursor, buttons, etc. that the user will be using to interact with the game. Additionally, Javascript will be giving these characters value, allowing the user to feel a form of interaction with said characters by gaining or losing points based on what character they have interacted with. The space and structure that the game will be developed in will be created by HTML. HTML will display the game on a web browser and create containers and borders in which the buttons, characters, and other visual blocks will be placed in. Moreover, while HTML will be able to visually show the user the game, CSS will further assist HTML in giving better visual effects to the web browser. On the other hand, Aseprite and LibreSprite will be used to create the visuals of the characters. Both programs are sprite and pixel art editing tools. Moreover Skia, a 2D graphics library, Ninja, a build system, and CMake, a open source software which generates a system’s build file, will be used by the design team to assist in the designing of the characters. Finally, GitHub and the SVN service provided by GitHub is used by everyone in the team in order to keep programs, pictures, documents, and other forms of files in one organized and accessible setting.
 
 ### **1.5: References** <a name="References"></a>
+All references in this documentation will be referred to the items below.
+
+**Template for documentation**:
+
+* [1] K.E. Wiegers, "Software Requirements Specifications for <Project>", 1999. [Online].
+	 Available: https://web.cs.dal.ca/~hawkey/3130/srs_template-ieee.doc.
+
+* [2] IEEE Standards Association (2011, Lass Accessed October 2022) Systems and software engineering – 
+	Life cycle processes – Requirements engineering, Standard. (IEEE 29148-2011) 
+	Available: http://standards.ieee.org/findstds/standard/29148-2011.html.
+
+**Connecting Github with SVN**:
+
+* [3] "Support for subversion clients," GitHub Docs. [Online]. Available:
+	https://docs.github.com/en/get-started/importing-your-projects-to-github/working-with-subversion-on-github/support-for-subversion-clients. 
+	[Accessed: 29-Oct-2022].
+
+**Graphics**:
+
+* [4] *CMake*. (Version 3.25). Kitware. [Online]. Available:  https://cmake.org/
+
+* [5] *Aseprite: Animated sprite editor & pixel art tool (Windows, macOS, Linux)*.
+	(Version 1.2.40). Igara Studio. [Online]. GitHub. Available: https://github.com/aseprite/aseprite
+
+* [6] D. Capello. *Skia*. (Version Skia-m102). Igara Studio. [Online]. GitHub. 
+	Available: https://github.com/aseprite/skia/
+
+* [7] E. Martin, J. N. Hasse. *Ninja-build*. (Version 1.11.1). J. N. Hasse. [Online]. GitHub. 
+	Available: https://github.com/ninja-build/ninja
+
+* [8] D. Capello. *LibreSprite*. (Version 1.0). Igara Studio. [Online[. GitHub.
+	Available: https://libresprite.github.io/#!/
+
+
+**Backbone**:
+
+* [9] T. Berners-Lee. *HTML*. (Version HTML5). [Programming Language]. World Wide Web Consortium. 
+	Available: https://www.w3schools.com/html/
+
+* [10] H. W. Lium. *CSS*. (Version 2.1). [Programming Language]. World Wide Web Consortium. 
+	Available: https://www.w3schools.com/css/
+
+* [11] B. Eich. *JavaScript*. (Version ES2022). [Programming Language]. Oracle Corporation. 
+	Available: https://developer.oracle.com/languages/javascript.html
+
 
 ## **2. Overall Description** <a name="Overall-Description"></a>
 ---
@@ -89,5 +134,7 @@ The server-side components of the software system can operate on any operating s
 ### **2.6: User Documentation** <a name="User-Documentation"></a>
 
 ### **2.7: Assumptions and Dependencies** <a name="Assumptions-and-Dependencies"></a>
+The game can mainly be played on web browsers such as Firefox, Chrome, and Edge. The user must access on a desktop. If the game is accessed through other devices or browsers, the game may bug or become unplayable. Users who play this game is assumed to have access to a usable web browser and know how to use the internet and input components, such as the mouse. 
+
 
 ---
