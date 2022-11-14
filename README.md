@@ -1,64 +1,62 @@
 # Whack a Professor
 Web browser based school themed whack-a-mole game where the "moles" are 
-the people you would typically find in a school! Build with HTML, CSS, JavaScript.
+the people you would typically find in a school! Built with HTML, CSS, JavaScript.
 Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
 
 ## Graphics
 
-### Task List
-
-**Note**: Checked tasks indicate "in progress" or "completed" <br>
-What needs to be included in a sprite sheet...
-- Default Stage
-- Hit Stage
-- Won Game Stage
-- Lost Game Stage
-
-These 4 stages must be divided into 4 groups within the aseprite format. <br>
-
-<ins>Sprite Sheet (pixel art style)</ins>
-  * [x] Professor
-  * [x] Student
-  * [x] Dean
-  * [x] Admin
-
-<ins>UI</ins>
-  * [ ] Cursor
-  * [ ] Buttons
-  * [ ] Scoreboard
-  * [ ] Menu(s)
-
-<ins>Other</ins>
-  * [x] Sound Effects
-  * [x] Background
-  * [ ] Desk (Hole)
-
 ### Creative Direction
-<img height=350 width=210 src="https://user-images.githubusercontent.com/92228287/201498507-a5f7f2dd-b138-4d5a-a27b-eabfbe225d31.png" alt="">
+<img height=350 width=215 src="https://user-images.githubusercontent.com/92228287/201498507-a5f7f2dd-b138-4d5a-a27b-eabfbe225d31.png" alt="creative direction">
 
 ### Contributors Guide
 
 1. Download LibreSprite or Aseprite (more info under Useful Links section).
 2. Watch the pixel art tutorial (more info under Tutorials section).
 3. Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
-4. Make sure to use the [ Apollo ](apollo.hex) color palette.
+4. Make sure to use the [ Apollo ](apollo.hex) color palette (Found in the graphics folder).
 5. Any graphic must be exported as a Scalable Vector Graphic (SVG).
 6. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
+7. Please try to follow the creative direction as best as possible to fit into a uniform theme. 
 
 **Sprite Sheets**
 * Must be divided into 4 groups, 1 per _stage_.
+   * Default Stage
+   * Hit Stage
+   * Won Game Stage
+   * Lost Game Stage
+
 * Each _group/stage_ must have 4 distinct layers...
    * Head
    * Arms
    * Torso
    * Legs
-* 32x48 pixels (WxH) per group <br>
+* 32x48 pixels maximum (WxH) per group <br>
 
 **Background**
 * Must not syphon attention from the action of the game.
    * No checkered pattern
    * No flashy colors
-* 150x200 pixels (WxH)
+* 160x208  pixels maximum (WxH)
+
+### Task List
+**Note**: Checked tasks indicate "in progress" or "completed" <br>
+
+<ins>Sprite Sheet (pixel art style)</ins>
+   * [x] Professor
+   * [x] Student
+   * [x] Dean
+   * [x] Admin
+
+<ins>UI</ins>
+   * [ ] Cursor
+   * [ ] Buttons
+   * [ ] Scoreboard
+   * [ ] Menu(s)
+
+<ins>Other</ins>
+   * [x] Sound Effects
+   * [x] Background
+   * [ ] Desk (Hole)
 
 ### Useful Links
 1. [Aseprite](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) - sprite editing software built with c++, requires...
