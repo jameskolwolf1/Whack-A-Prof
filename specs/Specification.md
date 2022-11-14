@@ -29,6 +29,15 @@
 
 [2.7: Assumptions and Dependencies](#Assumptions-and-Dependencies)
 
+### [**3. External Interface Requirements](#External-Interface-Requirements)
+
+[3.1: User Interfaces](#User-Interfaces)
+
+[3.2: Hardware Interfaces](#Hardware-Interfaces)
+
+[3.3: Software Interfaces](#Software-Interfaces)
+
+### [**4. System Features**](#System-Features)
 
 ## **1. Introduction** <a name="introduction"></a>
 ---
@@ -137,4 +146,14 @@ The server-side components of the software system can operate on any operating s
 The game can mainly be played on web browsers such as Firefox, Chrome, Safari, and Edge. The user may also be able to download the game on GitHub. The user must access on a desktop. The game will be dependent on those platforms. If the game is accessed through other devices or browsers, the game may bug or become unplayable. Users who play this game is assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing game.
 
 
+## **3. External Interface Requirements** <a name="External-Interface-Requirements"></a>
+---
+### **3.1: User Interfaces** <a name="User-Interfaces"></a>
+
+### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
+
+### **3.3: Software Interfaces** <a name="Software-Interfaces"></a>
+
+
+## **4. System Features** <a name="System-Features"></a>
 ---
