@@ -7,6 +7,7 @@ const startingM = .6;
 let time = startingM * 60;
 const cd = document.getElementById('countdown');
 const gamerest = document.getElementById('start');
+let t = 0;
 
 //Professor images
 ////------------------------------------------------------
@@ -75,13 +76,15 @@ document.getElementById('start').onclick = function(){
 		let timer = null;
 		deanrun(i);
 		//admin(i);  
-		//student(i);
+		student(i, t);
 
 		pro.src = protemp.src;
+		pro.className = 'professor';
 		pro.addEventListener('click', () => {
 			
 			score = score + 15;
-			scoreEl.textContent = score
+			scoreEl.textContent = score;
+			pro.className = 'professor_hit';
 			pro.src = '../graphics/professor/professor_hit.svg'
 			clearTimeout(timer)
 			setTimeout(() => {
@@ -118,11 +121,16 @@ function deanrun(i){
 		}
 
 		const hole2  = holes[t];
+
+		dea.src = tempdea.src;
+		dea.className = 'dean';
+
 		dea.addEventListener('click', () => {
 
 			score  = score + 20;
-			scoreEl.textContent = score
-			dea.src = 'graphics/dean/DeanNotHit.png'
+			scoreEl.textContent = score;
+			dea.className = 'dean_hit';
+			dea.src = '../graphics/dean/DeanNotHit.png'
 
 			setTimeout(() => {
 
@@ -142,22 +150,27 @@ function deanrun(i){
 //--------------------------------------------------------------------------------------
 //
 //student (LOGIC MIGHT NEED CHANGING)
-function student(i){
+function student(i, t){
 
 	if(score % 100 == 0 && score > 100){
 
-		let  = Math.floor(Math.random() * holes.length);
+		let h  = Math.floor(Math.random() * holes.length);
 
-		while(t == i){
+		while(t == i && h == t){
 
-			t = Math.floor(Math.random() * holes.length);
+			h = Math.floor(Math.random() * holes.length);
 		}
 
-		const hole2  = holes[t];
+		const hole2  = holes[h];
+		stu.src = tempstu.src;
+		stu.className = 'student';
+
 		stu.addEventListener('click', () => {
 
 			score  = score - (score * .20);
-			scoreEl.textContent = score
+			scoreEl.textContent = score;
+
+			stu.className = 'student_hit';
 			stu.src = '../graphics/student/student_hit.svg';
 			setTimeout(() => {
 
