@@ -141,6 +141,10 @@ The server-side components of the software system can operate on any operating s
 ### **2.5: Design and Implementation Constraints** <a name="Design-and-Implementation-Constraints"></a>
 
 ### **2.6: User Documentation** <a name="User-Documentation"></a>
+*Draft*
+The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score. 
+
+There are currently no outside sources or tutorials for this game.
 
 ### **2.7: Assumptions and Dependencies** <a name="Assumptions-and-Dependencies"></a>
 The game can mainly be played on web browsers such as Firefox, Chrome, Safari, and Edge. The user may also be able to download the game on GitHub. The user must access on a desktop. The game will be dependent on those platforms. If the game is accessed through other devices or browsers, the game may bug or become unplayable. Users who play this game is assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing game.
