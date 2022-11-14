@@ -1,4 +1,6 @@
 # Specification Document for Whack-A-Prof
+##### <ins>Authors:</ins> Yvonne, Laura, Joanna,  Ali, Quincy, Wael
+---
 
 ## **Table of Contents**
 ### [**1. Introduction**](#introduction)
@@ -63,14 +65,14 @@ All references in this documentation will be referred to the items below.
 * [1] K.E. Wiegers, "Software Requirements Specifications for <Project>", 1999. [Online].
 	 Available: https://web.cs.dal.ca/~hawkey/3130/srs_template-ieee.doc.
 
-* [2] IEEE Standards Association (2011, Lass Accessed October 2022) Systems and software engineering – 
-	Life cycle processes – Requirements engineering, Standard. (IEEE 29148-2011) 
+* [2] IEEE Standards Association (2011, Lass Accessed October 2022) Systems and software engineering –
+	Life cycle processes – Requirements engineering, Standard. (IEEE 29148-2011)
 	Available: http://standards.ieee.org/findstds/standard/29148-2011.html.
 
 **Connecting Github with SVN**:
 
 * [3] "Support for subversion clients," GitHub Docs. [Online]. Available:
-	https://docs.github.com/en/get-started/importing-your-projects-to-github/working-with-subversion-on-github/support-for-subversion-clients. 
+	https://docs.github.com/en/get-started/importing-your-projects-to-github/working-with-subversion-on-github/support-for-subversion-clients.
 	[Accessed: 29-Oct-2022].
 
 **Graphics**:
@@ -80,10 +82,10 @@ All references in this documentation will be referred to the items below.
 * [5] *Aseprite: Animated sprite editor & pixel art tool (Windows, macOS, Linux)*.
 	(Version 1.2.40). Igara Studio. [Online]. GitHub. Available: https://github.com/aseprite/aseprite
 
-* [6] D. Capello. *Skia*. (Version Skia-m102). Igara Studio. [Online]. GitHub. 
+* [6] D. Capello. *Skia*. (Version Skia-m102). Igara Studio. [Online]. GitHub.
 	Available: https://github.com/aseprite/skia/
 
-* [7] E. Martin, J. N. Hasse. *Ninja-build*. (Version 1.11.1). J. N. Hasse. [Online]. GitHub. 
+* [7] E. Martin, J. N. Hasse. *Ninja-build*. (Version 1.11.1). J. N. Hasse. [Online]. GitHub.
 	Available: https://github.com/ninja-build/ninja
 
 * [8] D. Capello. *LibreSprite*. (Version 1.0). Igara Studio. [Online[. GitHub.
@@ -92,13 +94,13 @@ All references in this documentation will be referred to the items below.
 
 **Backbone**:
 
-* [9] T. Berners-Lee. *HTML*. (Version HTML5). [Programming Language]. World Wide Web Consortium. 
+* [9] T. Berners-Lee. *HTML*. (Version HTML5). [Programming Language]. World Wide Web Consortium.
 	Available: https://www.w3schools.com/html/
 
-* [10] H. W. Lium. *CSS*. (Version 2.1). [Programming Language]. World Wide Web Consortium. 
+* [10] H. W. Lium. *CSS*. (Version 2.1). [Programming Language]. World Wide Web Consortium.
 	Available: https://www.w3schools.com/css/
 
-* [11] B. Eich. *JavaScript*. (Version ES2022). [Programming Language]. Oracle Corporation. 
+* [11] B. Eich. *JavaScript*. (Version ES2022). [Programming Language]. Oracle Corporation.
 	Available: https://developer.oracle.com/languages/javascript.html
 
 
@@ -142,7 +144,7 @@ The server-side components of the software system can operate on any operating s
 
 ### **2.6: User Documentation** <a name="User-Documentation"></a>
 * Tutorial Overview:
-	+ The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score. 
+	+ The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score.
 
 * Walkthrough:
 
@@ -164,7 +166,7 @@ The following notes are what Specs came up with in our discussions.
 * 3 screens
 	+ title/start screen (in respective order):
 		- title
-		- start game button 
+		- start game button
 		- tutorial button
 		- SFX mute/unmute button (top corner)
 	+ game screen (in respective order and centered unless specified):
@@ -176,7 +178,7 @@ The following notes are what Specs came up with in our discussions.
 				- “Game is paused” text
 				- quit button
 				- start over button
-		- gameboard 
+		- gameboard
 			- 9 holes/desks in a 3x3 grid
 			- cursor as hammer/mallet
 			- sprites as profs, deans, admins, and students
