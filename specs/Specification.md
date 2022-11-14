@@ -29,7 +29,7 @@
 
 [2.7: Assumptions and Dependencies](#Assumptions-and-Dependencies)
 
-### [**3. External Interface Requirements](#External-Interface-Requirements)
+### [**3. External Interface Requirements**](#External-Interface-Requirements)
 
 [3.1: User Interfaces](#User-Interfaces)
 
