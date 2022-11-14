@@ -108,11 +108,11 @@ All references in this documentation will be referred to the items below.
 
 This product is a new “Whack- A-Mole” inspired game where the functions are the same but the settings are altered. Instead of moles, the user will interact with school faculty and students to accumulate or depress points. The following are features included with the web game:
 
-- Cross Platform Support: The game is supported by most of the popular web browsers that can be downloaded in most operating systems
+* Cross Platform Support: The game is supported by most of the popular web browsers that can be downloaded in most operating systems
 
-- Number of users who can be on the website: While an exact number can not be given a sizeable amount of users can go on the website at the same time to play the game
+* Number of users who can be on the website: While an exact number can not be given a sizeable amount of users can go on the website at the same time to play the game
 
-- Storing Scores of User: The website will be utilizing the user's local storage in order to keep track of their individual scores
+* Storing Scores of User: The website will be utilizing the user's local storage in order to keep track of their individual scores
 
 
 ### **2.2: Product Functions** <a name="Product-Functions"></a>
@@ -130,29 +130,63 @@ Users of the product should have basic knowledge of web technology and operating
 
 The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments. The minimum set of browsers that must be supported is:
 
-- Google Chrome 44+
+* Google Chrome 44+
 
-- Apple Safari 7+
+* Apple Safari 7+
 
-- Microsoft Internet Explorer 10+
+* Microsoft Internet Explorer 10+
 
-- Mozilla Firefox 40+
+* Mozilla Firefox 40+
 
 ### **2.5: Design and Implementation Constraints** <a name="Design-and-Implementation-Constraints"></a>
 
 ### **2.6: User Documentation** <a name="User-Documentation"></a>
-*Draft*
-The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score. 
+* Tutorial Overview:
+	+ The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score. 
 
-There are currently no outside sources or tutorials for this game.
+* Walkthrough:
+
+* Rules:
+
+There are currently no outside sources or tutorials for this game. Once available, they will be updated.
 
 ### **2.7: Assumptions and Dependencies** <a name="Assumptions-and-Dependencies"></a>
-The game can mainly be played on web browsers such as Firefox, Chrome, Safari, and Edge. The user may also be able to download the game on GitHub. The user must access on a desktop. The game will be dependent on those platforms. If the game is accessed through other devices or browsers, the game may bug or become unplayable. Users who play this game is assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing game.
+Users must access the game through a desktop. If the game is accessed through any other devices or browsers that are otherwise not listed in Section 2.4, it may bug or become unplayable. Users who play this game are assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing the game.
 
 
 ## **3. External Interface Requirements** <a name="External-Interface-Requirements"></a>
 ---
 ### **3.1: User Interfaces** <a name="User-Interfaces"></a>
+
+<u>Unorganized Notes</u>:
+The following notes are what Specs came up with in our discussions.
+
+* 3 screens
+	+ title/start screen (in respective order):
+		- title
+		- start game button 
+		- tutorial button
+		- SFX mute/unmute button (top corner)
+	+ game screen (in respective order and centered unless specified):
+		- current score
+		- timer
+		- highest score in a smaller font on the top right
+		- pause button on the top left
+			- brings up container
+				- “Game is paused” text
+				- quit button
+				- start over button
+		- gameboard 
+			- 9 holes/desks in a 3x3 grid
+			- cursor as hammer/mallet
+			- sprites as profs, deans, admins, and students
+	+ game over screen
+		- black screen (it was also suggested to keep the background the same)
+		- components all middle centered in this respective order
+			- “game over” text
+			- score or high score
+			- play again button
+			- home button
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
