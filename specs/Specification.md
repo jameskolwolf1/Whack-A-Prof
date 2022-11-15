@@ -44,6 +44,7 @@
 ## **1. Introduction** <a name="introduction"></a>
 ---
 ### **1.1: Purpose** <a name="Purpose"></a>
+
 This document represents the Software Requirements Specification (SRS) for Whack-A-Prof. It is designed to specify the procedures our teams, backbone, quality assurance, specification documentation, and graphics, have used in the development process and describe the requirements specifications for our application with respect to end users. It will provide a detailed overview of our software product’s goals and parameters.
 
 ### **1.2: Document Conventions** <a name="Document-Conventions"></a>
@@ -55,9 +56,11 @@ When going through the final version of the document, specific typographical con
 This SRS is organized into 4 sections, each with varying subsections. The document is intended for both technical and non-technical audiences, such as developers, users, testers, and documentation writers. All readers should start with the **Introduction** and **Overall Description** to get a sense of the purpose and scope of the product. Users should follow the User Documentation (subsection 2.6) which will give a general tutorial on how to use the product. Section 3: **External Interface Requirements** and Section 4: **System Features** are intended for developers, testers, and documentation writers. These two sections will give specific details on the software features of the product itself.
 
 ### **1.4: Product Scope** <a name="Product-Scope"></a>
+
 The skeleton of the project will be created using the scripting language of Javascript. The goal with Javascript, in correspondence to the project, is to create the bare minimum functions of a “Whack-A-Prof” game. Javascript will be responsible for signifying the space in which the game will take place, animating the pictures that will represent the characters and the cursor, buttons, etc. that the user will be using to interact with the game. Additionally, Javascript will be giving these characters value, allowing the user to feel a form of interaction with said characters by gaining or losing points based on what character they have interacted with. The space and structure that the game will be developed in will be created by HTML. HTML will display the game on a web browser and create containers and borders in which the buttons, characters, and other visual blocks will be placed in. Moreover, while HTML will be able to visually show the user the game, CSS will further assist HTML in giving better visual effects to the web browser. On the other hand, Aseprite and LibreSprite will be used to create the visuals of the characters. Both programs are sprite and pixel art editing tools. Moreover Skia, a 2D graphics library, Ninja, a build system, and CMake, a open source software which generates a system’s build file, will be used by the design team to assist in the designing of the characters. Finally, GitHub and the SVN service provided by GitHub is used by everyone in the team in order to keep programs, pictures, documents, and other forms of files in one organized and accessible setting.
 
 ### **1.5: References** <a name="References"></a>
+
 All references in this documentation will be referred to the items below.
 
 **Template for documentation**:
@@ -122,7 +125,7 @@ This product is a new “Whack- A-Mole” inspired game where the functions are 
 The product must provide, at a minimum, the following functions to the users within this SRS document.
 * Provide a User Interface (UI) to play the game
 * Make data/scores available in local storage
-* Allow users to click the “Start Game” button when first launching the application and also after finishing a game to play another game
+* Allow users to click buttons to start the game, restart the game, mute or unmute sounds effects, return to the home page, and view a tutorial with instructions on how to play the game
 
 ### **2.3: User Classes and Characteristics** <a name="User-Classes-and-Characteristics"></a>
 
@@ -153,6 +156,7 @@ The server-side components of the software system can operate on any operating s
 There are currently no outside sources or tutorials for this game. Once available, they will be updated.
 
 ### **2.7: Assumptions and Dependencies** <a name="Assumptions-and-Dependencies"></a>
+
 Users must access the game through a desktop. If the game is accessed through any other devices or browsers that are otherwise not listed in Section 2.4, it may bug or become unplayable. Users who play this game are assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing the game.
 
 
