@@ -3,11 +3,53 @@ const holes = [...document.querySelectorAll('.hole')]
 const scoreEl = document.querySelector('.score span')
 let score = 0;
 const button= document.getElementById('start');
+
+
+//Timer and start
+//-----------------------------------------------------------
 const startingM = .6;
 let time = startingM * 60;
+//-----------------------------------------------------------
 const cd = document.getElementById('countdown');
 const gamerest = document.getElementById('start');
-let t = 0;
+//-----------------------------------------------------------
+
+
+
+//Popup and Popdown timming for Professor
+//-----------------------------------------------------------
+ var popup = 3500;
+ var popdown = 1500;
+//-----------------------------------------------------------
+
+//Popup and Popdown timming for dean (Testing)
+//------------------------------------------------------------
+var deanPopup = popup //- (popup * .1)
+var deanPopdown = popdown //- (popdown * 1)
+//------------------------------------------------------------
+
+//Popip and Popdown timming for student
+//------------------------------------------------------------
+var studentPopup = popup
+var studentPopdown = popdown - (popdown * .1)
+//------------------------------------------------------------
+
+// indexies for the student, dean and prfoessor
+//-----------------------------------------------------------
+var t = 0;
+var h = 0;
+var i = 0;
+//-----------------------------------------------------------
+
+// Remember that the timiing and position is remmber  that two
+//entitles will not show up in the same square, the problem is
+//that javascript is weird and I can get the time in mililsceond
+//time  or make a ecexption or a break with in the code that get
+//meaning information
+
+//Can play with the time and get the less likly time intervale
+// that is will element will be in the same box
+//-----------------------------------------------------------
 
 //Professor images
 ////------------------------------------------------------
@@ -71,12 +113,9 @@ document.getElementById('start').onclick = function(){
 			return;
 		}
 
-		const i = Math.floor(Math.random() * holes.length)
+		i = Math.floor(Math.random() * holes.length)
 		const hole = holes[i];
 		let timer = null;
-		deanrun(i);
-		//admin(i);  
-		student(i, t);
 
 		pro.src = protemp.src;
 		pro.className = 'professor';
@@ -91,16 +130,24 @@ document.getElementById('start').onclick = function(){
 
 				hole.removeChild(pro)
 				return run();
-			}, 500)
+			}, popdown)
 		}, {once : true})
 
 		hole.appendChild(pro)
+		var currenly = i;
 
 		timer = setTimeout(() => {
 
 			hole.removeChild(pro)
 			return run();
-		}, 1500)
+		}, popup)
+
+		deanrun(currenly)
+
+		setTimeout(() =>{
+
+			student(currently)
+		}, 1000);
 	
 	}
 
@@ -109,13 +156,13 @@ document.getElementById('start').onclick = function(){
 
 // DEAN (LOGIC MIGHT NEED CHANGING)
 // //------------------------------------------------------------------------------
-function deanrun(i){
+function deanrun(currenly){
 
 	if(score % 25 == 0 && score > 100){
 
-		let t = Math.floor(Math.random() * holes.length);
+		t = Math.floor(Math.random() * holes.length);
 
-		while(t == i){
+		while(t == currenly){
 
 			t = Math.floor(Math.random() * holes.length);
 		}
@@ -132,11 +179,7 @@ function deanrun(i){
 			dea.className = 'dean_hit';
 			dea.src = '../graphics/dean/DeanNotHit.png'
 
-			setTimeout(() => {
-
-				hole2.removeChild(dea)
-				return run();
-			}, 500)
+			clearTimeout(timer);
 
 		}, {once : true})
 
@@ -144,17 +187,17 @@ function deanrun(i){
 		timer = setTimeout(() => {
 
 			hole2.removeChild(dea)
-		}, 1500)
+		}, deanPopup)
 	}
 }
 //--------------------------------------------------------------------------------------
 //
 //student (LOGIC MIGHT NEED CHANGING)
-function student(i, t){
+function student(currenly){
 
 	if(score % 100 == 0 && score > 100){
 
-		let h  = Math.floor(Math.random() * holes.length);
+		h  = Math.floor(Math.random() * holes.length);
 
 		while(t == i && h == t){
 
@@ -175,7 +218,7 @@ function student(i, t){
 			setTimeout(() => {
 
 				hole2.removeChild(stu)
-			}, 500)
+			}, studentPopdown)
 		}, {once : true})
 
 		hole2.appendChild(stu)
@@ -184,7 +227,7 @@ function student(i, t){
 
 			hole2.removeChild(stu)
 
-		}, 1500)
+		}, studentPopup)
 	}
 }
 
