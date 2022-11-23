@@ -41,6 +41,25 @@
 
 ### [**4. System Features**](#System-Features)
 
+##### **Note: This Section is under Construction**
+
+[**4.1: Start Game Button**](#Start-Game-Button)
+
+[**4.2: Play Again Button (Game Over Screen)**](#Play-Again-Button)
+
+[**4.3: Home Button (Game Over Screen)**](#Home-Button)
+
+[**4.4: Holes or Sprite Spawn**](#Sprite-Spawn)
+
+[**4.5: Sprites as Targets**](#Sprite-Target)
+
+[**4.6: Cursor/Mallet**](#Cursor-Mallet)
+
+[**4.7: Timer**](#Timer)
+
+[**4.8: Player Score**](#Player-Scores)
+
+
 ## **1. Introduction** <a name="introduction"></a>
 ---
 ### **1.1: Purpose** <a name="Purpose"></a>
@@ -143,7 +162,7 @@ Windows 10 V. 2h22
 Linux
 MacOS
 Fedora WS 36
-Visual Studio Code V. 1.72.2 
+Visual Studio Code V. 1.72.2
 Notepad++ v8.4.6
 
 
@@ -206,3 +225,18 @@ The following notes are what Specs came up with in our discussions.
 
 ## **4. System Features** <a name="System-Features"></a>
 ---
+### **4.1: Start Game Button** <a name="Start-Game-Button"></a>
+
+### **4.2: Play Again Button (Game Over Screen)** <a name="Play-Again-Button"></a>
+
+### **4.3: Home Button (Game Over Screen)** <a name="Home-Button"></a>
+
+### **4.4: Holes or Sprite Spawn** <a name= "Sprite-Spawn"></a>
+
+### **4.5: Sprites as Targets** <a name ="Sprite-Target"></a>
+
+### **4.6: Cursor/Mallet** <a name="Cursor-Mallet"></a>
+
+### **4.7: Timer** <a name="Timer"></a>
+
+### **4.8: Player Score** <a name="Player-Scores"></a>
