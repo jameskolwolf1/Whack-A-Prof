@@ -154,16 +154,25 @@ Users of the product should have basic knowledge of web technology and operating
 
 The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments or Visual Studio Code V. 1.72.2 and above. The minimum set of browsers that must be supported is:
 
-Google Chrome 44+
-Apple Safari 7+
-Microsoft Internet Explorer 10+
-Mozilla Firefox 40+
-Windows 10 V. 2h22
-Linux
-MacOS
-Fedora WS 36
-Visual Studio Code V. 1.72.2
-Notepad++ v8.4.6
+- Google Chrome 44+
+
+- Apple Safari 7+
+
+- Microsoft Internet Explorer 10+
+
+- Mozilla Firefox 40+
+
+- Windows 10 V. 2h22
+
+- Linux
+
+- MacOS
+
+- Fedora WS 36
+
+- Visual Studio Code V. 1.72.2
+
+- Notepad++ v8.4.6
 
 
 
