@@ -208,6 +208,8 @@ The game will have 3 screens that will all use the same classroom background. Th
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
+The client-side components of Whack-A-Prof can be executed on both personal-class computers and workstation-class computers. The game will require browser support and an internet connection to run it.
+
 ### **3.3: Software Interfaces** <a name="Software-Interfaces"></a>
 
 
