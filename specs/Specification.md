@@ -144,7 +144,8 @@ This product is a new “Whack- A-Mole” inspired game where the functions are 
 The product must provide, at a minimum, the following functions to the users within this SRS document.
 * Provide a User Interface (UI) to play the game
 * Make data/scores available in local storage
-* Allow users to click buttons to start the game, restart the game, mute or unmute sounds effects, return to the home page, and view a tutorial with instructions on how to play the game
+* Allow users to click buttons to start the game, restart the game, and return to the home page
+* Display a tutorial on the home page for guidance on how to play the game
 
 ### **2.3: User Classes and Characteristics** <a name="User-Classes-and-Characteristics"></a>
 
@@ -152,21 +153,15 @@ Users of the product should have basic knowledge of web technology and operating
 
 ### **2.4: Operating Environment** <a name="Operating-Environment"></a>
 
-The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments or Visual Studio Code V. 1.72.2 and above. The minimum set of browsers that must be supported is:
+The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments. The minimum set of browsers that must be supported is:
 
-- Google Chrome 44+
+- Google Chrome
 
-- Apple Safari 7+
+- Apple Safari
 
-- Microsoft Internet Explorer 10+
+- Microsoft Internet Explorer
 
 - Mozilla Firefox 40+
-
-- Windows 10 V. 2h22
-
-- Linux
-
-- MacOS
 
 - Fedora WS 36
 
@@ -197,33 +192,7 @@ Users must access the game through a desktop. If the game is accessed through an
 ---
 ### **3.1: User Interfaces** <a name="User-Interfaces"></a>
 
-<u>Unorganized Notes</u>:
-The following notes are what Specs came up with in our discussions.
-
-* 3 Screens:
-
-	+ **Title/Start screen (in respective order) (Figure 1):**
-		- title
-		- start game button 
-		- tutorial instructions
-	
-	+ **Game screen (in respective order and centered unless specified) (Figure 2):**
-		- Current Score
-		- Timer
-		- The highest score is in a smaller font on the top right
-		- Gameboard: 
-			- 9 holes/desks in a 3x3 grid
-			- Cursor as hammer/mallet
-			- Sprites as profs, deans, admins, and students	
-
-	+ **Game over screen (Figure 3)**
-		- Game background
-		- components all middle centered in this respective order
-			- “Game Over” text
-			- Score
-			- High Score
-			- Play Again button
-			- Home button
+The game will have 3 screens that will all use the same classroom background. The start game screen (Figure 1) will show the title of the game, a start game button, and a tutorial with instructions on how to play the game below. The game screen (Figure 2) will show once the start game button is clicked. As the user is playing the game, they will see their current score, a timer counting down, and the gamboard, respectively. The gameboard will have 9 holes in a 3x3 grid and a mallet that represents the cursor. The sprites that will be transitioning out of the holes are either professors, admins, or students. The highest score in the current playing session will be depicted on the top right. Once the timer is at 0 seconds, the game over screen (Figure 3) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. 
 
 **Figure 1**
 
