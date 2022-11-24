@@ -227,15 +227,15 @@ The following notes are what Specs came up with in our discussions.
 
 **Figure 1**
 
-<img src = "Diagrams/Title_Start_Screen.jpg" height = "200"></img>
+<img src = "Diagrams/Title_Start_Screen.jpg" height = "500"></img>
 
 **Figure 2**
 
-<img src = "Diagrams/Gamescreen.jpg" height = "200"></img>
+<img src = "Diagrams/Gamescreen.jpg" height = "500"></img>
 
 **Figure 3**
 
-<img src = "Diagrams/Gameover_screen.jpg" height = "200"></img>
+<img src = "Diagrams/Gameover_screen.jpg" height = "500"></img>
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
