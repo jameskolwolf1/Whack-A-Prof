@@ -202,12 +202,12 @@ The following notes are what Specs came up with in our discussions.
 
 * 3 Screens:
 
-	+ **Title/Start screen (in respective order):**
+	+ **Title/Start screen (in respective order) (Figure 1):**
 		- title
 		- start game button 
 		- tutorial instructions
 	
-	+ **Game screen (in respective order and centered unless specified):**
+	+ **Game screen (in respective order and centered unless specified) (Figure 2):**
 		- Current Score
 		- Timer
 		- The highest score is in a smaller font on the top right
@@ -216,7 +216,7 @@ The following notes are what Specs came up with in our discussions.
 			- Cursor as hammer/mallet
 			- Sprites as profs, deans, admins, and students	
 
-	+ **Game over screen**
+	+ **Game over screen (Figure 3)**
 		- Game background
 		- components all middle centered in this respective order
 			- “Game Over” text
@@ -225,6 +225,17 @@ The following notes are what Specs came up with in our discussions.
 			- Play Again button
 			- Home button
 
+**Figure 1**
+
+<img src = "Diagrams/Title_Start_Screen.jpg"></img>
+
+**Figure 2**
+
+<img src = "Diagrams/Gamescreen.jpg"></img>
+
+**Figure 3**
+
+<img src = "Diagrams/Gameover_screen.jpg"></img>
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
