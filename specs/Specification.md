@@ -200,32 +200,31 @@ Users must access the game through a desktop. If the game is accessed through an
 <u>Unorganized Notes</u>:
 The following notes are what Specs came up with in our discussions.
 
-* 3 screens
-	+ title/start screen (in respective order):
+* 3 Screens:
+
+	+ **Title/Start screen (in respective order):**
 		- title
-		- start game button
-		- tutorial button
-		- SFX mute/unmute button (top corner)
-	+ game screen (in respective order and centered unless specified):
-		- current score
-		- timer
-		- highest score in a smaller font on the top right
-		- pause button on the top left
-			- brings up container
-				- “Game is paused” text
-				- quit button
-				- start over button
-		- gameboard
+		- start game button 
+		- tutorial instructions
+	
+	+ **Game screen (in respective order and centered unless specified):**
+		- Current Score
+		- Timer
+		- The highest score is in a smaller font on the top right
+		- Gameboard: 
 			- 9 holes/desks in a 3x3 grid
-			- cursor as hammer/mallet
-			- sprites as profs, deans, admins, and students
-	+ game over screen
-		- black screen (it was also suggested to keep the background the same)
+			- Cursor as hammer/mallet
+			- Sprites as profs, deans, admins, and students	
+
+	+ **Game over screen**
+		- Game background
 		- components all middle centered in this respective order
-			- “game over” text
-			- score or high score
-			- play again button
-			- home button
+			- “Game Over” text
+			- Score
+			- High Score
+			- Play Again button
+			- Home button
+
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
