@@ -7,7 +7,7 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 
 ### Creative Direction
 <img height=350 width=215 src="https://user-images.githubusercontent.com/92228287/201498507-a5f7f2dd-b138-4d5a-a27b-eabfbe225d31.png" alt="creative direction">
-<img height=350 width=215 src="https://user-images.githubusercontent.com/92228287/204062468-35cf9b41-d81c-4812-81f6-563382f6e9d4.png" alt="creative direction">
+<img height=350 width=300 src="https://user-images.githubusercontent.com/92228287/204062468-35cf9b41-d81c-4812-81f6-563382f6e9d4.png" alt="creative direction">
 
 
 ### Contributors Guide
