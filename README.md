@@ -17,17 +17,25 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 3. Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
 4. Make sure to use the [ Apollo ](apollo.hex) color palette (Found in the graphics folder).
 5. Any graphic must be exported as a Scalable Vector Graphic (SVG).
+6. Download PureRef, to be able to access/save reference files. 
 6. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
 7. Please try to follow the creative direction as best as possible to fit into a uniform theme. 
 
 **Sprite Sheets**
+
 * Must be divided into 4 groups, 1 per _stage_.
    * Default Stage
    * Hit Stage
    * Won Game Stage
    * Lost Game Stage
 
-* Each _group/stage_ must have 4 distinct layers...
+* Must produce the following exported files...
+   * (name of your character).svg
+   * (name of your character)\_hit.svg
+   * (name of your character)\_lose.svg
+   * (name of your character)\_win.svg
+
+* Each _group/stage_ must have at least 4 distinct layers...
    * Head
    * Arms
    * Torso
@@ -35,12 +43,19 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 * 32x48 pixels maximum (WxH) per group <br>
 
 **Background**
+
 * Must not syphon attention from the action of the game.
    * No checkered pattern
    * No flashy colors
+
+* Must provide sufficient space for... 
+   * 9 desks + character sprite
+   * Scoreboard
+
 * 160x208  pixels maximum (WxH)
 
 ### Task List
+
 **Note**: Checked tasks indicate "in progress" or "completed" <br>
 
 <ins>Sprite Sheet (pixel art style)</ins>
@@ -50,17 +65,18 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
    * [x] Admin
 
 <ins>UI</ins>
-   * [ ] Cursor
+   * [ ] Cursor/Hammer/Ruler
    * [ ] Buttons
-   * [ ] Scoreboard
+   * [x] Scoreboard
    * [ ] Menu(s)
 
 <ins>Other</ins>
    * [x] Sound Effects
    * [x] Background
-   * [ ] Desk (Hole)
+   * [x] Hole/Desk
 
 ### Useful Links
+
 1. [Aseprite](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) - sprite editing software built with c++, requires...
    * [CMake](https://cmake.org/download/) build automation tool (v3.16 or greater)
    * [Skia](https://github.com/aseprite/skia/releases)
@@ -68,12 +84,15 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
    * Depending on your OS, you might need to install couple more dependencies. <br>
    More info at <https://github.com/aseprite/aseprite/blob/main/INSTALL.md>
 2. [LibreSprite](https://libresprite.github.io/#!/) - free alternative to the original, forked version of Aseprite, doesn't require compilation.
+3. [PureRef](https://www.pureref.com/) - Image references tool.
 
 ### Tutorials
+
 - [Pixel art tutorial](https://www.youtube.com/watch?v=lfR7Qj04-UA)
 - [Compiling Aseprite from source code](https://www.youtube.com/watch?v=82TIDyKjxuE)
 
 ## Specs
+
    - [Draft of Specs Document](https://docs.google.com/document/d/1DOg1KO-gd_Uh_9F1gvyWudXh33sDPnzyVeeTFYqNzb8/edit?usp=sharing)
    - [Final Specification Document](https://github.com/jameskolwolf1/Whack-A-Prof/blob/master/specs/Specification.md)
    - [Specs Meeting Notes](https://docs.google.com/document/d/1XbE8pGKsK0rzentlyrCWgsmAW3bbj-xNH5FTtusvgMc/edit?usp=sharing)
@@ -108,6 +127,7 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 
 
 ## Quality Assurance
+
 Preliminary testing: (nothing too serious) 11/11/22 
 -  Start button works
 -  Hammer works
