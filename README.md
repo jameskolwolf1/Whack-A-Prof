@@ -4,10 +4,11 @@ the people you would typically find in a school! Built with HTML, CSS, JavaScrip
 Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
 
 ## Graphics
+![image]()
 
 ### Creative Direction
-<img height=365 width=290 src="https://user-images.githubusercontent.com/92228287/204398768-cea90437-77ec-4947-ae51-15826923b70f.png" alt="character sprites">
-<img height=365 width=290 src="https://user-images.githubusercontent.com/92228287/204062468-35cf9b41-d81c-4812-81f6-563382f6e9d4.png" alt="creative direction">
+<img height=370 width=290 src="https://user-images.githubusercontent.com/92228287/204404701-ed0cee55-734d-41f3-85fd-d69c8e2d03fa.png" alt="character sprites">
+<img height=370 width=290 src="https://user-images.githubusercontent.com/92228287/204062468-35cf9b41-d81c-4812-81f6-563382f6e9d4.png" alt="creative direction">
 
 
 ### Contributors Guide
@@ -59,7 +60,7 @@ Naming conventions are neccesary for easier retrieval of files in the terminal. 
    * 9 desks + character sprite
    * Scoreboard
 
-* 160x208  pixels maximum (WxH)
+* 162x208 pixels (WxH)
 
 ### Task List
 
