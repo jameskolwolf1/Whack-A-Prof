@@ -59,7 +59,7 @@
 
 [**4.8: Player Score**](#Player-Scores)
 
-
+[**4.9: Sounds Effects**](#Sound-Effects)
 ## **1. Introduction** <a name="introduction"></a>
 ---
 ### **1.1: Purpose** <a name="Purpose"></a>
@@ -215,8 +215,21 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 
 ## **4. System Features** <a name="System-Features"></a>
 ---
-### **4.1: Start Game Button** <a name="Start-Game-Button"></a>
+### **4.1: Start Game Button (Start Game Screen)** <a name="Start-Game-Button"></a>
 
+* 4.1.1
+	* The start game button will appear on the initial start game screen. This button is a high priority because it is the only method of starting the game. The game and timer will immediately start after it is pressed.
+
+* 4.1.2
+	* This feature is triggered when the user uses their mouse to left-click the button.
+
+* 4.1.3
+	* The button should only be present on the initial screen and not on the game or game over screens.
+	* TBD
+		* Start Game Button does not start the game
+			* Reload the game
+			* Check your internet connection and browser support
+	
 ### **4.2: Play Again Button (Game Over Screen)** <a name="Play-Again-Button"></a>
 
 ### **4.3: Home Button (Game Over Screen)** <a name="Home-Button"></a>
@@ -230,3 +243,5 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 ### **4.7: Timer** <a name="Timer"></a>
 
 ### **4.8: Player Score** <a name="Player-Scores"></a>
+
+### **4.9: Sounds Effects** <a name="Sounds-Effects"></a>
