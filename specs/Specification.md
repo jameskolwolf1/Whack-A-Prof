@@ -236,6 +236,24 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 
 ### **4.4: Holes or Sprite Spawn** <a name= "Sprite-Spawn"></a>
 
+* 4.4.1:
+	* The holes or sprite spawns will appear on the screen once the game screen has been triggered to appear. The sprite spawns are of high priority as they are needed for two indications: that the game is working and about to begin, and that the game is in session. The holes or sprite spawn is where the sprites (i.e Professor, Student. Dean, etc.) will spawn from. 
+
+* 4.4.2:
+	* The visual component of the sprite spawn will be triggered at the beginning of the game screen being triggered after the user clicks the start button in the title screen. The function of the sprite spawn will be triggered after the visual component of the sprite spawn is triggered and once the timer begins to count down when the game starts.
+
+* 4.4.3:
+	* The holes or sprite spawns should only be displayed on the game screen, and not on the title screen or game over screen.
+	* TBD:
+		* When Sprites do not spawn
+			* Restart browser or internet connection
+			* Reload Game
+
+ 		* When the Sprites are not in their own container or when the sprite spawn cause the sprite to appear abnormal
+			* Restart browser or internet connection
+			* Reload Game
+
+
 ### **4.5: Sprites as Targets** <a name ="Sprite-Target"></a>
 
 ### **4.6: Cursor/Mallet** <a name="Cursor-Mallet"></a>
