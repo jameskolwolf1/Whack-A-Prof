@@ -244,6 +244,7 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 
 * 4.4.3:
 	* The holes or sprite spawns should only be displayed on the game screen, and not on the title screen or game over screen.
+	
 	* TBD:
 		* When Sprites do not spawn
 			* Restart browser or internet connection
@@ -255,6 +256,52 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 
 
 ### **4.5: Sprites as Targets** <a name ="Sprite-Target"></a>
+
+* 4.5.1:
+
+	* The sprites or sprite target will appear on the screen once the game begins and when the sprite spawns have both visually and functionally been triggered. The sprite target is high priority because the sprites are used to allow user interaction with the game as the sprites are what change the amount of points the user can accumulate. Users click on the sprite and that will cause the score of the user to either increase or decrease depending on what sprite target was clicked on.
+
+* 4.5.2:
+
+	* The feature is triggered once the user TBD clicks on the sprite target. The user’s score will be affected as follows:
+
+		* Professor:
+			* Increase score by TBD
+
+		* Student:
+			* Decrease score by TBD
+
+		* Dean:
+			* Increase score by TBD
+
+		* Admin:
+			* Increase score by TBD
+
+* 4.5.3:
+
+	* The sprite targets should only appear in the game screen when the game starts.
+
+	* TBD:
+		* When the sprites do not spawn or show
+
+			* Restart browser or internet connection
+			* Reload Game
+
+		* When score doesn’t increase or decrease upon clicking the sprite
+
+			* Restart browser or internet connection
+			* Reload Game
+
+		* If the users score increases or decreases abnormally (i.e: upon clicking student sprite the users score increases instead of decreasing)
+
+	 		* Restart browser or internet connection
+			* Reload Game
+
+		* The Sprites appear anywhere outside of a spawn hole
+
+			* Restart browser or internet connection
+			* Reload Game
+
 
 ### **4.6: Cursor/Mallet** <a name="Cursor-Mallet"></a>
 
