@@ -6,7 +6,7 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 ## Graphics
 
 ### Creative Direction
-<img height=350 width=215 src="https://user-images.githubusercontent.com/92228287/201498507-a5f7f2dd-b138-4d5a-a27b-eabfbe225d31.png" alt="creative direction">
+<img height=360 width=295 src="https://user-images.githubusercontent.com/92228287/204398768-cea90437-77ec-4947-ae51-15826923b70f.png" alt="character sprites">
 <img height=360 width=290 src="https://user-images.githubusercontent.com/92228287/204062468-35cf9b41-d81c-4812-81f6-563382f6e9d4.png" alt="creative direction">
 
 
@@ -18,10 +18,17 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 4. Make sure to use the [ Apollo ](apollo.hex) color palette (Found in the graphics folder).
 5. Any graphic must be exported as a Scalable Vector Graphic (SVG).
 6. Download PureRef, to be able to access/save reference files. 
-6. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
-7. Please try to follow the creative direction as best as possible to fit into a uniform theme. 
+7. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
+8. Please try to follow the creative direction as best as possible to fit into a uniform theme. 
 
-**Sprite Sheets**
+<ins>Naming Conventions</ins> 
+- Any folders/directories must be lowercase
+- Any files that are *not* specification/documentation, should be named with lowercase letters. 
+- Graphics files such as .svg, .aseprite, should use underscore instead of space, any other files could either 
+use underscores or dashes instead of spaces in file names. 
+Naming conventions are neccesary for easier retrieval of files in the terminal. And it makes the project look uniform.  
+
+**Character Sprite Sheets**
 
 * Must be divided into 4 groups, 1 per _stage_.
    * Default Stage
@@ -58,7 +65,7 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 
 **Note**: Checked tasks indicate "in progress" or "completed" <br>
 
-<ins>Sprite Sheet (pixel art style)</ins>
+<ins>Character Sprite Sheet (pixel art style)</ins>
    * [x] Professor
    * [x] Student
    * [x] Dean
@@ -74,6 +81,11 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
    * [x] Sound Effects
    * [x] Background
    * [x] Hole/Desk
+   
+<ins>Decoration</ins>
+   * [ ] Plants(2 different ones)
+   * [ ] Pinboard
+   * [ ] Clock (?)
 
 ### Useful Links
 
@@ -84,12 +96,13 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
    * Depending on your OS, you might need to install couple more dependencies. <br>
    More info at <https://github.com/aseprite/aseprite/blob/main/INSTALL.md>
 2. [LibreSprite](https://libresprite.github.io/#!/) - free alternative to the original, forked version of Aseprite, doesn't require compilation.
-3. [PureRef](https://www.pureref.com/) - Image references tool.
+3. [PureRef](https://www.pureref.com/) - Image referencing tool.
 
 ### Tutorials
 
 - [Pixel art tutorial](https://www.youtube.com/watch?v=lfR7Qj04-UA)
 - [Compiling Aseprite from source code](https://www.youtube.com/watch?v=82TIDyKjxuE)
+- [Perspective in Art](https://youtube.com/watch?v=-5QIiubr10g&feature=share)
 
 ## Specs
 
