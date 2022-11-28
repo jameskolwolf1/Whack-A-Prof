@@ -6,8 +6,8 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 ## Graphics
 
 ### Creative Direction
-<img height=360 width=295 src="https://user-images.githubusercontent.com/92228287/204398768-cea90437-77ec-4947-ae51-15826923b70f.png" alt="character sprites">
-<img height=360 width=290 src="https://user-images.githubusercontent.com/92228287/204062468-35cf9b41-d81c-4812-81f6-563382f6e9d4.png" alt="creative direction">
+<img height=365 width=290 src="https://user-images.githubusercontent.com/92228287/204398768-cea90437-77ec-4947-ae51-15826923b70f.png" alt="character sprites">
+<img height=365 width=290 src="https://user-images.githubusercontent.com/92228287/204062468-35cf9b41-d81c-4812-81f6-563382f6e9d4.png" alt="creative direction">
 
 
 ### Contributors Guide
@@ -25,7 +25,7 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 - Any folders/directories must be lowercase
 - Any files that are *not* specification/documentation, should be named with lowercase letters. 
 - Graphics files such as .svg, .aseprite, should use underscore instead of space, any other files could either 
-use underscores or dashes instead of spaces in file names. 
+use underscores or dashes instead of spaces in file names. <br>
 Naming conventions are neccesary for easier retrieval of files in the terminal. And it makes the project look uniform.  
 
 **Character Sprite Sheets**
