@@ -60,6 +60,7 @@
 [**4.8: Player Score**](#Player-Scores)
 
 [**4.9: Sounds Effects**](#Sound-Effects)
+
 ## **1. Introduction** <a name="introduction"></a>
 ---
 ### **1.1: Purpose** <a name="Purpose"></a>
@@ -161,7 +162,7 @@ The server-side components of the software system can operate on any operating s
 
 - Microsoft Internet Explorer
 
-- Mozilla Firefox 40+
+- Mozilla Firefox
 
 - Fedora WS 36
 
@@ -169,11 +170,12 @@ The server-side components of the software system can operate on any operating s
 
 - Notepad++ v8.4.6
 
-
-
 ### **2.5: Design and Implementation Constraints** <a name="Design-and-Implementation-Constraints"></a>
 
+This program will have complications when used on a tablet or phone as it is designed to be better played on a desktop or laptop. Additionally, the game doesn't have adequate backend security because of how Javascript is structured and there is no user authentication. However, the only data or information that will be vulnerable to the user is their score from the game which will be stored in a text file. Finally, not all errors and bugs with the code will be caught immediately. 
+
 ### **2.6: User Documentation** <a name="User-Documentation"></a>
+
 * Tutorial Overview:
 	+ The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score.
 
