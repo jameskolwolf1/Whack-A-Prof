@@ -309,6 +309,20 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 
 ### **4.7: Timer** <a name="Timer"></a>
 
+* 4.7.1:
+  
+       * The timer would appear right when the user presses start. The timer is high priorly because          the timer is used to give the user competition of how many point they can get. Users have a          set amount of time to complete the level to gain as many points they can possibly get. The 
+         timer would count down starting from 01:00 (1 min).
+
+* 4.7.2:
+
+       * The feature is triggereed as soon as the start begins, or in other words right when 
+         the user presses the play button.
+
+*4.7.3:
+       
+       * The timer should appear below the current score
+  
 ### **4.8: Player Score** <a name="Player-Scores"></a>
 
 ### **4.9: Sounds Effects** <a name="Sounds-Effects"></a>
