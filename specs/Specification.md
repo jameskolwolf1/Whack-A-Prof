@@ -214,6 +214,7 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 
 ### **3.3: Software Interfaces** <a name="Software-Interfaces"></a>
 
+The game requires Javascript support in order to be run on a browser. The game should be supported in all browsers however the game has full support on a firefox browser. There are only compatibility issues when the size of the screen is too big because the proportions of the background and other graphical features can be altered. 
 
 ## **4. System Features** <a name="System-Features"></a>
 ---
