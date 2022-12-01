@@ -167,3 +167,10 @@ Preliminary testing: (nothing too serious) 11/11/22
 - The app does not crash but when resizing the window, the game does not resize with it. [BUG]. Elements where
    the professor appears will disappear when the window becomes too small.
 - Overall nothing game breaking during preliminary testing. Quirks and bugs are expected at this stage.
+
+Testing entry date 11/30/22:
+- aforementioned bugs are still present
+- professor mole does not pop up when the game starts, it did appear during prelim testing [BUG]
+- SVG image files are correctly uploaded into the repo. 
+- Graphics assets are correctly uploaded into the repo, and appear to be nearly complete. Just to be implemented into mechanics.js and html file.
+
