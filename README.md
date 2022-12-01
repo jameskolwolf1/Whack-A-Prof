@@ -1,9 +1,5 @@
 <img height=190 src="./src/graphics/banner/banner.svg" alt="banner">
-Web browser based school themed whack-a-mole game where the "moles" are 
-the people you would typically find in a school! Built with HTML, CSS, JavaScript.
-Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
-
-<br><br>
+<br>
 <div align="center">
 
   <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23cb8175)</a>
@@ -12,6 +8,11 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
   <a href="">![GithubStars](https://img.shields.io/github/stars/jameskolwolf1/Whack-A-Prof?style=social)</a>
 
 </div>
+
+
+Web browser based school themed whack-a-mole game where the "moles" are 
+the people you would typically find in a school! Built with HTML, CSS, JavaScript.
+Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
 
 <ins>Naming Conventions</ins> 
 - Any folders/directories must be lowercase
