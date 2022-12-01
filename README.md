@@ -10,7 +10,7 @@
 </div>
 
 
-Web browser based school themed whack-a-mole game where the "moles" are 
+Web browser based school themed whack-a-mole game where the "moles" are
 the people you would typically find in a school! Built with HTML, CSS, JavaScript.
 Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
 
@@ -164,8 +164,6 @@ Preliminary testing: (nothing too serious) 11/11/22
 -  Game does not restart [BUG]: pressing game over does not restart the game. (Most likely just unfinished
    nothing too serious)
 -  Timer a bit too close to start button, looks a bit jarring. [BUG]
-- The app does not crash but when resizing the window, the game does not resize with it. [BUG]. Elements where 
-   the professor appears will disappear when the window becomes too small. 
+- The app does not crash but when resizing the window, the game does not resize with it. [BUG]. Elements where
+   the professor appears will disappear when the window becomes too small.
 - Overall nothing game breaking during preliminary testing. Quirks and bugs are expected at this stage.
-
-
