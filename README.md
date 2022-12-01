@@ -1,13 +1,17 @@
-<img height=200 src="./src/graphics/banner/banner.svg" alt="banner">
+<img height=190 src="./src/graphics/banner/banner.svg" alt="banner">
 Web browser based school themed whack-a-mole game where the "moles" are 
 the people you would typically find in a school! Built with HTML, CSS, JavaScript.
 Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
+https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23cb8175
+https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23a8c8a6
+https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23f6edcd
+https://img.shields.io/github/stars/jameskolwolf1/Whack-A-Prof?style=social
 
 <ins>Naming Conventions</ins> 
 - Any folders/directories must be lowercase
 - Any files that are *not* specification/documentation, should be named with lowercase letters. 
 - Graphics files such as .svg, .aseprite, should use underscore instead of space, any other files could either 
-use underscores or dashes instead of spaces in file names. <br> 
+use underscores or dashes instead of spaces in file names.
 <br>
 Naming conventions are necessary for easier retrieval of files in the terminal. And it makes the project look uniform.  
 
@@ -22,7 +26,7 @@ Naming conventions are necessary for easier retrieval of files in the terminal. 
 1. Download LibreSprite or Aseprite (more info under Useful Links section).
 2. Watch the pixel art tutorial (more info under Tutorials section).
 3. Do your own research on color theory, and pixel art. (Highly recommended but not enforced)
-4. Make sure to use the [ Apollo ](./src/graphics/apollo.hex) color palette (Found in the graphics folder).
+4. Make sure to use the [ Apollo ](./src/graphics/apollo.hex) color palette.
 5. Any graphic must be exported as a Scalable Vector Graphic (SVG).
 6. Download PureRef, to be able to access/save reference files. 
 7. Use lots of references, check refs folder to see if there is references for your task. (Feel free to add your own references to the refs folder) <br>
