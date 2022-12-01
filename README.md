@@ -2,10 +2,10 @@
 Web browser based school themed whack-a-mole game where the "moles" are 
 the people you would typically find in a school! Built with HTML, CSS, JavaScript.
 Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
-<img src="https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23cb8175">
-<img src="https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23a8c8a6">
-<img src="https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23f6edcd">
-<img src="https://img.shields.io/github/stars/jameskolwolf1/Whack-A-Prof?style=social">
+![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23cb8175)
+![Contributors](https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23a8c8a6)
+![Last Commit](https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23f6edcd)
+![Github Stars](https://img.shields.io/github/stars/jameskolwolf1/Whack-A-Prof?style=social)
 
 
 <ins>Naming Conventions</ins> 
