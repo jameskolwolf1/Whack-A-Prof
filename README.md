@@ -1,4 +1,4 @@
-<img height=250 src="./src/graphics/banner/banner.svg" alt="banner">
+<img height=200 src="./src/graphics/banner/banner.svg" alt="banner">
 Web browser based school themed whack-a-mole game where the "moles" are 
 the people you would typically find in a school! Built with HTML, CSS, JavaScript.
 Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
