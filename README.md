@@ -1,10 +1,10 @@
-<img height=190 src="./src/graphics/banner/banner.svg" alt="banner">
+<img height=180 src="./src/graphics/banner/banner.svg" alt="banner">
 <br>
 <div align="center">
 
-  <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23cb8175)</a>
-  <a href="">![Contributors](https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23a8c8a6)</a>
-  <a href="">![LastCommit](https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23f6edcd)</a>
+  <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23a4dddb)</a>
+  <a href="">![Contributors](https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23d0da91)</a>
+  <a href="">![LastCommit](https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23df84a5)</a>
   <a href="">![GithubStars](https://img.shields.io/github/stars/jameskolwolf1/Whack-A-Prof?style=social)</a>
 
 </div>
@@ -14,13 +14,14 @@ Web browser based school themed whack-a-mole game where the "moles" are
 the people you would typically find in a school! Built with HTML, CSS, JavaScript.
 Class project, for 3140 Design and Implementation of Large Scale Applications at CUNY Brooklyn College.
 
-<ins>Naming Conventions</ins> 
+
+**Naming Conventions** (For Contributors)
 - Any folders/directories must be lowercase
 - Any files that are *not* specification/documentation, should be named with lowercase letters. 
-- Graphics files such as .svg, .aseprite, should use underscore instead of space, any other files could either 
+- Graphics files `*.svg`, `*.aseprite`, should use underscore instead of space, any other files could either 
 use underscores or dashes instead of spaces in file names.
-<br>
-Naming conventions are necessary for easier retrieval of files in the terminal. And it makes the project look uniform.  
+
+Naming conventions are general guidelines for convenience and uniformity of the project.
 
 ## Graphics
 
@@ -76,27 +77,29 @@ Naming conventions are necessary for easier retrieval of files in the terminal. 
 
 **Note**: Checked tasks indicate "in progress" or "completed" <br>
 
-<ins>Character Sprite Sheet (pixel art style)</ins>
+_Character Sprite Sheet (pixel art style)_
    * [x] Professor
    * [x] Student
    * [x] Dean
    * [x] Admin
 
-<ins>UI</ins>
+_UI_
    * [ ] Cursor/Hammer/Ruler
-   * [ ] Buttons
+   * [ ] Buttons (Without text, but with pressed stage)
    * [x] Scoreboard
-   * [ ] Menu(s)
+   * [ ] Key (Mapping Character to Graphic)
+   * [ ] Title Screen Background
+   * [x] Game Screen Background
+   * [ ] Game Over Screen Background
 
-<ins>Other</ins>
+_Other_
    * [x] Sound Effects
-   * [x] Background
    * [x] Hole/Desk
    
-<ins>Decoration</ins>
+_Decoration_ (For Game Screen)
    * [ ] Plants (2 different ones)
    * [ ] Pinboard
-   * [ ] Clock (?)
+   * [ ] Static clock (?)
 
 ### Useful Links
 
