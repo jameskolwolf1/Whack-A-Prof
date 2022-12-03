@@ -308,6 +308,19 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 ### **4.6: Cursor/Mallet** <a name="Cursor-Mallet"></a>
 
+* 4.6.1:
+     * High priority as this is the main/only item that is used to play the game     * The users use this mallet (this is the cursor when the game is being 
+       played) and click on the sprites and professors as well as they come
+        up to be whacked.
+     * Used to click buttons and navigating the UI.
+
+* 4.6.2:
+     * The feature is triggered as soon as the game begins and taken out when 
+       the game comes to an end
+
+* 4.6.3:
+     * The mallet should act as a cursor while the game is actively being played
+
 ### **4.7: Timer** <a name="Timer"></a>
 
 * 4.7.1:
