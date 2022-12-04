@@ -1,5 +1,4 @@
 <img height=180 src="./src/graphics/banner/banner.svg" alt="banner">
-<br>
 <div align="center">
 
   <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23a4dddb)</a>
@@ -66,12 +65,12 @@ Naming conventions are general guidelines for convenience and uniformity of the 
 * Must not syphon attention from the action of the game.
    * No checkered pattern
    * No flashy colors
+   * Must provide sufficient space for... 
+      * 9 desks + character sprite
+      * Scoreboard
 
-* Must provide sufficient space for... 
-   * 9 desks + character sprite
-   * Scoreboard
+* 336x208 pixels (WxH)
 
-* 162x208 pixels (WxH)
 
 ### Task List
 
@@ -85,7 +84,7 @@ _Character Sprite Sheet (pixel art style)_
 
 _UI_
    * [ ] Cursor/Hammer/Ruler
-   * [ ] Buttons (Without text, but with pressed stage)
+   * [ ] Buttons (without text, but with pressed and hover stages)
    * [x] Scoreboard
    * [ ] Key (Mapping Character to Graphic)
    * [ ] Title Screen Background
@@ -105,7 +104,7 @@ _Decoration_ (For Game Screen)
 
 1. [Aseprite](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) - sprite editing software built with c++, requires...
    * [CMake](https://cmake.org/download/) build automation tool (v3.16 or greater)
-   * [Skia](https://github.com/aseprite/skia/releases)
+   * [Skia](https://github.com/aseprite/skia/releases) 2D graphics engine. 
    * [Ninja](https://ninja-build.org/) build system
    * Depending on your OS, you might need to install couple more dependencies. <br>
    More info at <https://github.com/aseprite/aseprite/blob/main/INSTALL.md>
