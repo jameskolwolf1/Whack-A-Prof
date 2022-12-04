@@ -214,7 +214,7 @@ When the game first launches, there will be an animation displaying the name of 
 
 **Figure 5**
 
-<img src = "Diagrams/Gameover_Screen.jpg" height = "500"></img>
+<img src = "Diagrams/Gameover_screen.jpg" height = "500"></img>
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
