@@ -194,7 +194,7 @@ Users must access the game through a desktop. If the game is accessed through an
 ---
 ### **3.1: User Interfaces** <a name="User-Interfaces"></a>
 
-When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). All 4 screens after the animation will be using the same classroom background. The start game screen (Figure 2) will display the title of the game, the current score, timer, a start game button, and a tutorial button in order. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen in order will include the Title, current score, timer, Tutorial Text, and a back home button. Clicking the back home button will trigger the title screen to appear once again. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where, in order, the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively.  
+When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). All 4 screens after the animation will be using the same classroom background. The start game screen (Figure 2) will display the title of the game, current score, timer, start game button, and tutorial button, respectively. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen includes the title, current score, timer, tutorial text, and an “Ok” button that pops down the tutorial text, respectively. Clicking the back home button will trigger the title screen to appear once again. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. 
 
 **Figure 1**
 
@@ -317,33 +317,25 @@ The game requires Javascript support in order to be run on a browser. The game s
 ### **4.6: Cursor/Mallet** <a name="Cursor-Mallet"></a>
 
 * 4.6.1:
-     * High priority as this is the main/only item that is used to play the game     * The users use this mallet (this is the cursor when the game is being 
-       played) and click on the sprites and professors as well as they come
-        up to be whacked.
-     * Used to click buttons and navigating the UI.
+     * The cursor will be displayed as a mallet within the game screen. It is a high-priority item because it is the only way to navigate the user interface and click the buttons.
 
 * 4.6.2:
-     * The feature is triggered as soon as the game begins and taken out when 
-       the game comes to an end
+     * The mallet will automatically display upon clicking the start game button. This feature will be removed once the game is over. 
 
 * 4.6.3:
-     * The mallet should act as a cursor while the game is actively being played
+     * The cursor should allow the user to select objects on the screen, specifically click on the sprites to “hit” them for points.
 
 ### **4.7: Timer** <a name="Timer"></a>
 
 * 4.7.1:
-     * The timer would appear right when the user presses start. The timer is high priorly because          the timer is used to give the user competition of how many point they can get. Users have a          set amount of time to complete the level to gain as many points they can possibly get. The 
-         timer would count down starting from 01:00 (1 min).
+     * The timer appears on the start screen. The timer is a high-priority item because it indicates to the user how much time they have left to play the game. The game will always start by counting down from 2 minutes (120 seconds).
 
 * 4.7.2:
-
-     * The feature is triggereed as soon as the start begins, or in other words right when 
-         the user presses the play button.
+     * The feature is triggered as soon as the start begins, or in other words right when the user presses the start game button.
 
 * 4.7.3:
-       
-     * The timer should appear below the current score
-  
+     * The timer should appear below the current score on all screens. The time left may be changed if the user hits an admin sprite which will add 1 minute (60 seconds) to the timer.
+
 ### **4.8: Player Score** <a name="Player-Scores"></a>
 
 ### **4.9: Sounds Effects** <a name="Sounds-Effects"></a>
