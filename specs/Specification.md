@@ -198,23 +198,23 @@ When the game first launches, there will be an animation displaying the name of 
 
 **Figure 1**
 
-<img src = "Diagrams/animation_before_title.jpg" height = "500"></img>
+<img src = "diagrams/animation_before_title.jpg" height = "500"></img>
 
 **Figure 2**
 
-<img src = "Diagrams/title_start_screen.jpg" height = "500"></img>
+<img src = "diagrams/title_start_screen.jpg" height = "500"></img>
 
 **Figure 3**
 
-<img src = "Diagrams/tutorial_screen.jpg" height = "500"></img>
+<img src = "diagrams/tutorial_screen.jpg" height = "500"></img>
 
 **Figure 4**
 
-<img src = "Diagrams/gamescreen.jpg" height = "500"></img>
+<img src = "diagrams/gamescreen.jpg" height = "500"></img>
 
 **Figure 5**
 
-<img src = "Diagrams/gameover_screen.jpg" height = "500"></img>
+<img src = "diagrams/gameover_screen.jpg" height = "500"></img>
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
