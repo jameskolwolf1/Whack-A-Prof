@@ -17,7 +17,7 @@ Class project, for 3140 Design and Implementation of Large Scale Applications at
 **Naming Conventions** (For Contributors)
 - Any folders/directories must be lowercase
 - Any files that are *not* specification/documentation, should be named with lowercase letters. 
-- Graphics files `*.svg`, `*.aseprite`, should use underscore instead of space, any other files could either 
+- Media files `*.jpeg`, `*.jpg`, `*.png`, `*.mp3`, `*.svg`, `*.aseprite`, should use underscore instead of space, any other files could either 
 use underscores or dashes instead of spaces in file names.
 
 Naming conventions are general guidelines for convenience and uniformity of the project.
