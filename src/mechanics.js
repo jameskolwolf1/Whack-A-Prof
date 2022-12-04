@@ -1,37 +1,53 @@
+//intro
+//------------------------------------------------------------------------
+let intro = document.querySelector('.intro');
+let whackAPro = document.querySelector('.game-header');
+let whackASpan = document.querySelectorAll('.Wack-A-Professor');
+let run = false;
+
+
+//------------------------------------------------------------------------
 const cursor = document.querySelector('.cursor')
-const holes = [...document.querySelectorAll('.hole')]
+const holes = document.querySelectorAll('.hole')
+const truthHole = [];
+//------------------------------------------------------------------------
+
+let popup = document.getElementById("popup");
+
+//------------------------------------------------------------------------
+let hole = null;
+//------------------------------------------------------------------------
+
+//------------------------------------------------------------------------
 const scoreEl = document.querySelector('.score span')
 let score = 0;
-const button= document.getElementById('start');
+var preScore = 0;
+//------------------------------------------------------------------------
 
+//------------------------------------------------------------------------
+const startButton = document.getElementById('start');
+//------------------------------------------------------------------------
 
-//Timer and start
+//Timer
 //-----------------------------------------------------------
-const startingM = .6;
-let time = startingM * 60;
+const startingM = 2;
+var time = startingM * 60;
 //-----------------------------------------------------------
+
 const cd = document.getElementById('countdown');
 const gamerest = document.getElementById('start');
-//-----------------------------------------------------------
-
-
 
 //Popup and Popdown timming for Professor
 //-----------------------------------------------------------
- var popup = 3500;
- var popdown = 1500;
+ let stayup = 3500;
+ let staydown = 1500;
 //-----------------------------------------------------------
 
-//Popup and Popdown timming for dean (Testing)
-//------------------------------------------------------------
-var deanPopup = popup //- (popup * .1)
-var deanPopdown = popdown //- (popdown * 1)
-//------------------------------------------------------------
 
 //Popip and Popdown timming for student
 //------------------------------------------------------------
-var studentPopup = popup
-var studentPopdown = popdown - (popdown * .1)
+let studentPopup = stayup 
+let studentPopdown = staydown - (staydown * .1)
 //------------------------------------------------------------
 
 // indexies for the student, dean and prfoessor
@@ -39,218 +55,403 @@ var studentPopdown = popdown - (popdown * .1)
 var t = 0;
 var h = 0;
 var i = 0;
+var k = 0;
+// var seconds = 0;
+// const min = 0;
 //-----------------------------------------------------------
 
-// Remember that the timiing and position is remmber  that two
-//entitles will not show up in the same square, the problem is
-//that javascript is weird and I can get the time in mililsceond
-//time  or make a ecexption or a break with in the code that get
-//meaning information
 
-//Can play with the time and get the less likly time intervale
-// that is will element will be in the same box
-//-----------------------------------------------------------
+
+
+
+// // start transition
+// ------------------------------------------------------------------------
+window.addEventListener('DOMContentLoaded', () => {
+
+    setTimeout(() => {
+
+       
+        whackASpan.forEach((span, idx) => {
+
+            setTimeout(() => {
+
+                span.classList.add('active');
+                
+
+            }, (idx + 1) * 400)
+       }) 
+
+       setTimeout(() => {
+        
+            whackASpan.forEach((span, idx) => {
+            
+                setTimeout(() => {
+                
+                    span.classList.remove('active');
+                    span.classList.add('fade');
+
+                }, (idx + 1) * 500)
+            })
+        },2000);
+
+        setTimeout(() => {
+
+            intro.style.top = '-500vh'
+            whackAPro.remove();
+
+        },5500);
+    })
+    run = true;
+})
+//------------------------------------------------------------------------
+
+document.getElementById('start').onclick = function () {
+
+    runGame();
+    clockRun();
+}
+
+function clockRun(){
+
+    setInterval(update, 1000)
+
+    function update(){
+
+        const min = Math.floor(time/60);
+        let seconds = time%60;
+        let secondString = seconds < 10 ? '0' + seconds : seconds;
+
+        cd.innerHTML = min + ":" + secondString;
+        if(time > 0){
+
+            time--;
+        }
+    }
+}
+function setLookTruth(num){
+
+    if(truthHole[num] == false){
+            
+        truthHole[num] = true;
+        
+        return num;
+    }
+    else {
+
+        while(truthHole[num] == true){
+
+            num = Math.floor(Math.random() * holes.length)
+        }
+        truthHole[num] = true;
+        return num;
+    }
+}
+
+function runGame(){
 
 //Professor images
-////------------------------------------------------------
-const pro = document.createElement("img");
-const protemp = document.createElement("img");
-protemp.src = '../graphics/professor/professor.svg';
-pro.src = '../graphics/professor/professor.svg';
-pro.id = "professor";
-pro.classList.add('professor');
-//-------------------------------------------------------
+//-----------------------------------------------------------
+    let pro = document.createElement("img");
+    pro.src = 'graphics/professor/professor.svg';
+    pro.id = "professor";
+    pro.classList.add('professor');
+
+//----------------------------------------------------------
+
+    if(time == 0){
+        return;
+    }
+
+    i = Math.floor(Math.random() * holes.length);
+
+    if(truthHole[setLookTruth(i)] == true){
+
+        hole = holes[i];
+        let timer = null;
+
+        pro.addEventListener('click', () => {
+
+            score += 15;
+            scoreEl.textContent = score;
+
+            pro.id = 'professor_hit';
+            pro.src = 'graphics/professor/professor_hit.svg';
+
+            setTimeout(() => {
+
+                // pro.id = 'professor_win';
+                // pro.src = 'graphics/professor/professor_win.svg';
+
+                pro.id = "professor_lose";
+                pro.src = 'graphics/professor/professor_lose.svg';
+
+            }, 500)
+            
+            // setTimeout(() => {
+
+                
+            // }, 100)
+            clearTimeout(timer);
+
+            setTimeout(() => {
+
+                hole.removeChild(pro);
+                return runGame();
+            }, 3000)
+
+        }, {once : true})
+
+        // setTimeout(() => {
+        // }, 500)
+        // pro.id = 'professor_win';
+        // pro.src = 'graphics/professor/professor_win.svg';
+
+        hole.appendChild(pro);
+
+        timer = setTimeout(() => {
+
+
+            // pro.id = 'professor_win';
+            // pro.src = 'graphics/professor/professor_win.svg';
+
+            hole.removeChild(pro);
+            return runGame();
+        }, stayup) 
+
+        truthHole[i] = false;
+        deanrun();
+        student();
+        admin();
+    }
+
+}
+
+function deanrun(){
 
 //Dean images
-//---------------------------------------------------------
-const dea = document.createElement("img");
-const tempdea = document.createElement("img");
-tempdea.src = '../graphics/deen/DeanNotHit.png';
-dea.src = '../graphics/deen/DeanNotHit.png';
-dea.id = '.dean';
-dea.classList.add('dean');
-//---------------------------------------------------------
-//Admin images
-////---------------------------------------------------------
-//// 
-////---------------------------------------------------------
-
-//Student images
-//---------------------------------------------------------
-const stu = document.createElement("img");
-const tempstu = document.createElement("img");
-tempstu.src = '../graphics/student/student.svg';
-stu.src = '../graphics/student/student_hit.svg';
-stu.id = '.student';
-stu.classList.add('student');
+//----------------------------------------------------------
+    const dea = document.createElement("img");
+    dea.src = 'graphics/dean/dean.svg';
+    dea.id = '.dean';
+    dea.classList.add('dean');
 //---------------------------------------------------------
 
+//Popup and Popdown timming for dean (Testing)
+//------------------------------------------------------------
+let deanPopup = stayup //- (popup * .1)
+let deanPopdown = staydown //- (popdown * 1)
+//------------------------------------------------------------
+
+let hole2 = null;
+
+    if(score % 25 == 0 && score > 100){
+
+        t = Math.floor(Math.random() * holes.length);
+        
+
+        if(truthHole[setLookTruth(t)] == true){
+
+            hole2  = holes[t];
+            let timer = null;
 
 
+            dea.addEventListener('click', () => {
 
-document.getElementById('start').onclick = function(){
-	button.disabled = true;
-	setInterval(update, 1000)
+                score  = score + 20;
+                scoreEl.textContent = score
+                
 
+                dea.id = 'dean_hit';
+                dea.src = 'graphics/dean/dean_hit.svg'
 
-	function update(){
-		    const min = Math.floor(time/60);
-		    let seconds = time % 60;
-		    seconds = seconds < 10 ? '0' + seconds : seconds;
-		    cd.innerHTML = min +":"+ seconds ;
-		    if (time>0){
-			            time--;
-			        }
-	}
+                setTimeout(() => {
 
-	function run(){
+                    dea.id = 'dean_lose';
+                    dea.src = 'graphics/dean/dean_lose.svg'
+                },500)
 
-		if(time==0){
+                clearTimeout(timer);
 
-			button.disabled = false;
-			button.innerText = "Game Over";
-			reset();
-			return;
-		}
+                setTimeout(() => {
+                hole2.removeChild(dea)
 
-		i = Math.floor(Math.random() * holes.length)
-		const hole = holes[i];
-		let timer = null;
+                }, 2000)
+            }, {once : true})
+    
+            hole2.appendChild(dea)
 
-		pro.src = protemp.src;
-		pro.className = 'professor';
-		pro.addEventListener('click', () => {
-			
-			score = score + 15;
-			scoreEl.textContent = score;
-			pro.className = 'professor_hit';
-			pro.src = '../graphics/professor/professor_hit.svg'
-			clearTimeout(timer)
-			setTimeout(() => {
+            timer = setTimeout(() => {
+                hole2.removeChild(dea)
+            
+            },2000)
 
-				hole.removeChild(pro)
-				return run();
-			}, popdown)
-		}, {once : true})
+            truthHole[t] = false;
+            
+        }
+        
 
-		hole.appendChild(pro)
-		var currenly = i;
-
-		timer = setTimeout(() => {
-
-			hole.removeChild(pro)
-			return run();
-		}, popup)
-
-		deanrun(currenly)
-
-		setTimeout(() =>{
-
-			student(currently)
-		}, 1000);
-	
-	}
-
-	run()}
-
-
-// DEAN (LOGIC MIGHT NEED CHANGING)
-// //------------------------------------------------------------------------------
-function deanrun(currenly){
-
-	if(score % 25 == 0 && score > 100){
-
-		t = Math.floor(Math.random() * holes.length);
-
-		while(t == currenly){
-
-			t = Math.floor(Math.random() * holes.length);
-		}
-
-		const hole2  = holes[t];
-
-		dea.src = tempdea.src;
-		dea.className = 'dean';
-
-		dea.addEventListener('click', () => {
-
-			score  = score + 20;
-			scoreEl.textContent = score;
-			dea.className = 'dean_hit';
-			dea.src = '../graphics/dean/DeanNotHit.png'
-
-			clearTimeout(timer);
-
-		}, {once : true})
-
-		hole2.appendChild(dea)                                                                                                                                                                                   
-		timer = setTimeout(() => {
-
-			hole2.removeChild(dea)
-		}, deanPopup)
-	}
-}
-//--------------------------------------------------------------------------------------
-//
-//student (LOGIC MIGHT NEED CHANGING)
-function student(currenly){
-
-	if(score % 100 == 0 && score > 100){
-
-		h  = Math.floor(Math.random() * holes.length);
-
-		while(t == i && h == t){
-
-			h = Math.floor(Math.random() * holes.length);
-		}
-
-		const hole2  = holes[h];
-		stu.src = tempstu.src;
-		stu.className = 'student';
-
-		stu.addEventListener('click', () => {
-
-			score  = score - (score * .20);
-			scoreEl.textContent = score;
-
-			stu.className = 'student_hit';
-			stu.src = '../graphics/student/student_hit.svg';
-			setTimeout(() => {
-
-				hole2.removeChild(stu)
-			}, studentPopdown)
-		}, {once : true})
-
-		hole2.appendChild(stu)
-
-		timer = setTimeout(() => {
-
-			hole2.removeChild(stu)
-
-		}, studentPopup)
-	}
+    }
 }
 
-function reset(){
+function student(){
+    
 
-	if(time <=0 ){
+    //Student images
+//---------------------------------------------------------
+    const stu = document.createElement("img");
+    stu.src = 'graphics/student/student.svg';
+    stu.id = '.student';
+    stu.classList.add('student');
+//---------------------------------------------------------
 
-		gamerest.onclick = function(){
+    let hole3 = null;
 
-			startingM = .1;
-			time = startingM * 60;
-			score = 0;
-			run();
-		}
-	}
+    if(score % 100 == 0 && score > 100){
+
+
+        
+        h = Math.floor(Math.random() * holes.length);
+
+        if(truthHole[setLookTruth(h)]){
+
+            hole3 = holes[h]
+            let timer = null;
+
+            stu.addEventListener('click', () => {
+
+                score  = score / 2;
+                scoreEl.textContent = score
+                
+
+                stu.id = 'student_hit';
+                stu.src = 'graphics/student/student_hit.svg'
+
+                setTimeout(() => {
+
+                    stu.id = 'student_lose';
+                    stu.src = 'graphics/student/student_lose.svg';
+                },500)
+
+                clearTimeout(timer);
+
+                setTimeout(() => {
+                hole3.removeChild(stu)
+
+                }, 3000)
+            }, {once : true})
+    
+            hole3.appendChild(stu)
+
+            timer = setTimeout(() => {
+                hole3.removeChild(stu)
+            
+            },3000)
+
+            truthHole[h] = false;
+        }
+
+    }
 }
+
+function admin(){
+
+    //Admin images
+//---------------------------------------------------------
+    const adm = document.createElement("img");
+    adm.src = 'graphics/admin/Admin_Default.svg'
+    adm.id = '.admin';
+    adm.classList.add('admin');
+
+    let hole4 = null;
+
+    if(score % 300 == 0 && score > 700){
+
+        k = Math.floor(Math.random() * holes.length);
+
+        if(truthHole[setLookTruth(k)]){
+
+            hole4 = holes[k];
+            let timer = null;
+
+            adm.addEventListener('click', () => {
+
+                
+                seconds = seconds + 1%60;
+                let secondString = seconds < 10 ? '0' + seconds : seconds;
+                cd.innerHTML = min + ":" + secondString;
+
+                adm.id = 'admin_hit';
+                adm.src = 'graphics/admin/Admin_hit.svg'
+
+                setTimeout(() => {
+
+                    adm.id = 'admin_lose'
+                    adm.src = 'graphics/admin/Admin_lose.svg';
+
+                },500)
+
+                clearInterval(timer);
+
+                setTimeout(() => {
+
+                    hole4.removeChild(adm);
+                }, 4000)
+
+            }, {once : true})
+
+            hole4.appendChild(adm);
+
+            timer = setTimeout(() => {
+
+                hole4.removeChild(adm)
+            },4000)
+
+            truthHole[k] = false;
+        }
+
+    }
+//---------------------------------------------------------
+
+}
+
+function startGame(){
+
+    let startDiv = document.getElementById("start");
+    let gameCanvas = document.getElementById("canvas");
+    let gameOver = document.getElementById("game-over");
+    let tutorialdiv = document.getElementById("tutorial");
+    let board = document.getElementsByClassName('board')[0];
+
+    startDiv.style.display = "none";
+    gameCanvas.style.display = "block";
+    gameOver.style.display = "none";
+    tutorialdiv.style.display = "none";
+    board.style.visibility = "visible";
+
+    for(var d = 0; d<8 ; d++){
+    
+        truthHole.push(false);
+    }
+    
+}
+
+function openPopup() {
+
+    popup.classList.add("open-popup");
+}
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
+
 window.addEventListener('mousemove', e => {
-	    cursor.style.top = e.pageY + 'px'
-	    cursor.style.left = e.pageX + 'px'
+    cursor.style.top = e.pageY + 'px'
+    cursor.style.left = e.pageX + 'px'
 })
 window.addEventListener('mousedown', () => {
-	    cursor.classList.add('active')
+    cursor.classList.add('active')
 })
 window.addEventListener('mouseup', () => {
-	    cursor.classList.remove('active')
+    cursor.classList.remove('active')
 })
+
+

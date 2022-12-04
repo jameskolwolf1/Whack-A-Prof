@@ -1,40 +1,74 @@
-<!--
-This is a Project called "Wack-A-Professor". The is bascially wack-a-mole but college addition. The whole point of the game is to 'wack' (clcik) on the
-professor, dean, student, admin to get point. If the you 'wack'profesor you give 15 point, dean gets 20, student will decrease point depending on how
-much points you have in total and admin, will add more time. The more points you have the faster Whack-A-Professor will go
--->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Wack-A-Professor</title>
-		<link rel="stylesheet" href="visuals.css">
-		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<head>
 
-	</head>
-	<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestBench</title>
+    <link rel="stylesheet" type="text/css" href="visuals.css">
+    <!-- <meta http-equiv="refresh" content="5" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <audio control loop autoplay = "true" src="sounds/intro/8bit-music-for-game-68698.mp3"></audio>
 
-		<!--Time,Score, and start button-->
-<!-------------------------------------------------------------------------------------------------------------------------------------------------------->
-		<h1 class="score">SCORE: <span>00</span></h1>
-		<button id = start>START</button>
-		<p id = "countdown">0:37</p><br>
-<!-------------------------------------------------------------------------------------------------------------------------------------------------------->
-		<div class="board">
-			<div class="hole"></div>
-			<div class="hole"></div>
-			<div class="hole"></div>
-			<div class="hole"></div>
-			<div class="hole"></div>
-			<div class="hole"></div>
-			<div class="hole"></div>
-			<div class="hole"></div>
-			<div class="hole"></div>
-		</div>
-		<div class="cursor"></div>
-		<script src="mechanics.js"></script>
-	</body>
+</head>
+<body>
+
+
+    <div class = "intro">
+        <h1 class = "game-header">
+            <span class = "Wack-A-Professor">Wack-A-Professor</span>
+            <span class = "Wack-A-Professor">By</span>
+            <span class = "Wack-A-Professor">CISC 3140</span>
+            
+        </h1>
+    </div>
+
+    
+    <img class = "screenTT" src = "graphics/banner/banner.svg" alt= "Wack-A-Processor">
+    <h1 class="score">SCORE: <span>00</span></h1>
+    <p id = "countdown">2:00</p>
+
+    
+    
+    <canvas id = "canvas" style="display:block"></canvas> 
+    <div id = "start" style="display:button">
+        <a href="#" onclick="startGame()"> Start Game </a>
+    </div>
+    <div id = "tutorial" style="display: button" onclick = "openPopup()">
+        <a href="#" >Tutorial</a>
+    </div>
+    <div id = "game-over" style="display:none">
+        <h1>Game Over</h1>
+        <a href="#" onclick="startGame()"> Start Game </a>
+    </div>
+
+    <div class = "board">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+    </div>
+
+    <div class = "popup" id="popup">
+        
+        <h2>Tutorial And Instructions<br></h2>
+        <p1><br>Welcome to Wack-A-Processor<br><br></p1>
+        <p2>The rule and Instructions are is to wack(click) on the professor, dean, student, and admin.<br></p2>
+        <p3 class = "leftleft"><br>Professor = 15</p3>
+        <p4 class = "leftleft"><br>Dean = 20</p4>
+        <p5 class = "leftleft"><br>Student = score/2</p5>
+        <p6 class = "leftleft"><br>Admin = adds a minute to the timing</p6>
+        <button type="submit" onclick="closePopup()">OK</button>
+
+    </div>
+
+    <div class="cursor"></div>
+<script src="machanic.js"></script>  
+</body>
 </html>
-
