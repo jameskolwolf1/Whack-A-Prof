@@ -198,7 +198,7 @@ When the game first launches, there will be an animation displaying the name of 
 
 **Figure 1**
 
-<img src = "Diagrams/Animation_Before_Title.jpg" height = "500"></img>
+<img src = "Diagrams/Animation_before_Title.jpg" height = "500"></img>
 
 **Figure 2**
 
