@@ -317,7 +317,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 ### **4.6: Cursor/Mallet** <a name="Cursor-Mallet"></a>
 
 * 4.6.1:
-     * The cursor will be displayed as a mallet within the game screen. It is a high-priority item because it is the only way to navigate the user interface and click the buttons.
+     * The cursor will be displayed as a mallet within the game screen. It is a high-priority item because it is the only way to navigate the user interface and click the buttons.
 
 * 4.6.2:
      * The mallet will automatically display upon clicking the start game button. This feature will be removed once the game is over. 
