@@ -270,23 +270,23 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 * 4.5.1:
 
-	* The sprites or sprite target will appear on the screen once the game begins and when the sprite spawns have both visually and functionally been triggered. The sprite target is high priority because the sprites are used to allow user interaction with the game as the sprites are what change the amount of points the user can accumulate. Users click on the sprite and that will cause the score of the user to either increase or decrease depending on what sprite target was clicked on.
+	* The sprites or sprite target will appear on the screen once the game begins and when the sprite spawns have both visually and functionally been triggered. The sprite target is high priority because the sprites are used to allow user interaction with the game as the sprites are what change the amount of points or time the user can accumulate. Users click on the sprite and that will cause the timer to increase in value and the score of the user to either increase or decrease depending on what sprite target was clicked on.
 
 * 4.5.2:
 
 	* The feature is triggered once the user TBD clicks on the sprite target. The user’s score will be affected as follows:
 
 		* Professor:
-			* Increase score by TBD
+			* Increase score by 15 points
 
 		* Student:
-			* Decrease score by TBD
+			* Decrease score by half (your-score/2)
 
 		* Dean:
-			* Increase score by TBD
+			* Increase score by 20 point
 
 		* Admin:
-			* Increase score by TBD
+			* Increase Time by 1 minute (60 seconds)
 
 * 4.5.3:
 
