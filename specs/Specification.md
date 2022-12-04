@@ -194,19 +194,27 @@ Users must access the game through a desktop. If the game is accessed through an
 ---
 ### **3.1: User Interfaces** <a name="User-Interfaces"></a>
 
-The game will have 3 screens that will all use the same classroom background. The start game screen (Figure 1) will show the title of the game, a start game button, and a tutorial with instructions on how to play the game below. The game screen (Figure 2) will show once the start game button is clicked. As the user is playing the game, they will see their current score, a timer counting down, and the gamboard, respectively. The gameboard will have 9 holes in a 3x3 grid and a mallet that represents the cursor. The sprites that will be transitioning out of the holes are either professors, admins, or students. The highest score in the current playing session will be depicted on the top right. Once the timer is at 0 seconds, the game over screen (Figure 3) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. 
+When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). All 4 screens after the animation will be using the same classroom background. The start game screen (Figure 2) will display the title of the game, the current score, timer, a start game button, and a tutorial button in order. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen in order will include the Title, current score, timer, Tutorial Text, and a back home button. Clicking the back home button will trigger the title screen to appear once again. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where, in order, the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively.  
 
 **Figure 1**
 
-<img src = "Diagrams/Title_Start_Screen.jpg" height = "500"></img>
+<img src = "Diagrams/Animation_Before_Title.jpg" height = "500"></img>
 
 **Figure 2**
 
-<img src = "Diagrams/Gamescreen.jpg" height = "500"></img>
+<img src = "Diagrams/Title_Start_Screen.jpg" height = "500"></img>
 
 **Figure 3**
 
-<img src = "Diagrams/Gameover_screen.jpg" height = "500"></img>
+<img src = "Diagrams/Tutorial_Screen.jpg" height = "500"></img>
+
+**Figure 4**
+
+<img src = "Diagrams/Gamescreen.jpg" height = "500"></img>
+
+**Figure 5**
+
+<img src = "Diagrams/Gameover_Screen.jpg" height = "500"></img>
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
