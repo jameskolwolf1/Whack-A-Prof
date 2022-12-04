@@ -194,27 +194,27 @@ Users must access the game through a desktop. If the game is accessed through an
 ---
 ### **3.1: User Interfaces** <a name="User-Interfaces"></a>
 
-When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). All 4 screens after the animation will be using the same classroom background. The start game screen (Figure 2) will display the title of the game, current score, timer, start game button, and tutorial button, respectively. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen includes the title, current score, timer, tutorial text, and an “Ok” button that pops down the tutorial text, respectively. Clicking the back home button will trigger the title screen to appear once again. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. 
+When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). The start game screen (Figure 2) will display the title of the game, start game button, and tutorial button, respectively. The start game screen will also have its individual background visual. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen includes the title, tutorial text, a visual key showcasing the characters respectively. Clicking the back home button will trigger the title screen to appear once again. Additionally the tutorial-screen will have the same visual background as the title screen. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. The game over screen will also have its own visual background different from the rest.   
 
 **Figure 1**
 
-<img src = "Diagrams/Animation_before_Title.jpg" height = "500"></img>
+<img src = "Diagrams/animation_before_title.jpg" height = "500"></img>
 
 **Figure 2**
 
-<img src = "Diagrams/Title_Start_Screen.jpg" height = "500"></img>
+<img src = "Diagrams/title_start_screen.jpg" height = "500"></img>
 
 **Figure 3**
 
-<img src = "Diagrams/Tutorial_Screen.jpg" height = "500"></img>
+<img src = "Diagrams/tutorial_screen.jpg" height = "500"></img>
 
 **Figure 4**
 
-<img src = "Diagrams/Gamescreen.jpg" height = "500"></img>
+<img src = "Diagrams/gamescreen.jpg" height = "500"></img>
 
 **Figure 5**
 
-<img src = "Diagrams/Gameover_screen.jpg" height = "500"></img>
+<img src = "Diagrams/gameover_screen.jpg" height = "500"></img>
 
 ### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
 
