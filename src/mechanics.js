@@ -5,25 +5,32 @@ let whackAPro = document.querySelector('.game-header');
 let whackASpan = document.querySelectorAll('.Wack-A-Professor');
 let run = false;
 
-
+//cursor and two array one for random getting a hole and the other for 
+//O(L) which is the length of the array, I will explain it later thro the 
+//code
 //------------------------------------------------------------------------
 const cursor = document.querySelector('.cursor')
 const holes = document.querySelectorAll('.hole')
 const truthHole = [];
+
+//This is for popup
 //------------------------------------------------------------------------
 
 let popup = document.getElementById("popup");
 
+// Use for gettig the hole in a index 
 //------------------------------------------------------------------------
 let hole = null;
 //------------------------------------------------------------------------
 
+// Used to get the score are a number and convert as a string and display it 
 //------------------------------------------------------------------------
 const scoreEl = document.querySelector('.score span')
 let score = 0;
 var preScore = 0;
 //------------------------------------------------------------------------
 
+//Start button 
 //------------------------------------------------------------------------
 const startButton = document.getElementById('start');
 //------------------------------------------------------------------------
@@ -34,6 +41,8 @@ const startingM = 2;
 var time = startingM * 60;
 //-----------------------------------------------------------
 
+//timer and gamesrest is not being use at this moment
+//-----------------------------------------------------------
 const cd = document.getElementById('countdown');
 const gamerest = document.getElementById('start');
 
@@ -50,7 +59,7 @@ let studentPopup = stayup
 let studentPopdown = staydown - (staydown * .1)
 //------------------------------------------------------------
 
-// indexies for the student, dean and prfoessor
+// indexies for the student, dean, prfoessor, and admin
 //-----------------------------------------------------------
 var t = 0;
 var h = 0;
@@ -61,10 +70,7 @@ var k = 0;
 //-----------------------------------------------------------
 
 
-
-
-
-// // start transition
+// start transition
 // ------------------------------------------------------------------------
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -105,12 +111,18 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 //------------------------------------------------------------------------
 
+//Game starting button, runGame() is fuction of the game and clockRun() is
+//the clock 
 document.getElementById('start').onclick = function () {
+
 
     runGame();
     clockRun();
 }
 
+//This is to get the time when is a number divide by 60 to get the minintes and then 
+//get second by getting the remainer and then convert it into a string and and then 
+//countdown and it is using recursion
 function clockRun(){
 
     setInterval(update, 1000)
@@ -128,6 +140,21 @@ function clockRun(){
         }
     }
 }
+
+//This is going to going to take an index and that look in the truthhole to see if its is false or true
+//if its false then it will convert to true and return the index. If it is false then it will get a 
+//another random index from 0 - 7 to find a place in the array to see if it is true or not. 
+//This is O(L) and not O(n) because if I did O(n) its still going linear at random but when it come to
+//other code itself, when there 4 element in play, I have to comapre a index with another index, with 
+//anther index with final another index. I;m compaaring 4 index (its like im (n) 4 times in a sense is 
+//not really n^4 its more like O(4n))which can take more 
+//time and can be buggy but if I make a array with boolean with the same size of the array and then 
+// compare weather the index is being use in true and false, I can take ONE index and that array and see
+// if that place in the index is true or false, This is basic on length because we are dealing with 4 
+// objects and that better the array for this problem the better so if one object is true then the 
+// chance of getting a true is 1/9 = .11.., of two object is 2/9 = .22.. , 3/9 = .333, 4/9 = .4444, 
+// this is great. because if the array was long then the percent of the worst case (depend on how it 
+// is being used) is great and fast. 
 function setLookTruth(num){
 
     if(truthHole[num] == false){
@@ -147,6 +174,10 @@ function setLookTruth(num){
     }
 }
 
+//This is fuction that is running the game, its has other fuction but it is basically copy and paste so 
+//what is when the element is click it will there give, take, add time to the player, there is some "animation"
+//when you click on the element when when the element disaper (when the timer/pause count down to zero) it will 
+//turn the index that is have in turth hole into false
 function runGame(){
 
 //Professor images
@@ -414,6 +445,8 @@ function admin(){
 
 }
 
+// this going to make some of the display in the begining game remove when you press the start button 
+// and then full the truthhole array will all false boolean
 function startGame(){
 
     let startDiv = document.getElementById("start");
@@ -435,6 +468,7 @@ function startGame(){
     
 }
 
+//This is used to open the instruction when pressing the tutorial button and click ok to take it off 
 function openPopup() {
 
     popup.classList.add("open-popup");
