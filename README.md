@@ -130,7 +130,7 @@ _Decoration_ (For Game Screen)
  
  Whack-A-Prof is a game that should be easily accessible to all users. The game should be 60 seconds long, its akin to Whack-A-Mole with the exception being that the "moles" are students, professors, deans, and admins. The entire setting takes place within a classroom with the "holes" being desks and the moles popping out from behind the desks. When whack a professor the user should be provided with a mallet that isn't a mallet but a ruler, or any kind of classroom item. When hitting a professor, dean or admin the score should be added,double or triple given which mole you hit but if a student is hit then points will be deducted  
  
-***Current Updates***
+**Current Updates**
 * Holes have been added as a placeholer for the desk
 * When pressing the start button the game begins 
 * The scoreboard has been added
@@ -138,6 +138,10 @@ _Decoration_ (For Game Screen)
 * The moles have been updated
 * The timer counts down to 37 seconds (This is for testing purposes)
 * Moles have a reaction when hit with cursor
+***12/06/22***
+* Background has been added
+* Timer is now 2 minutes 
+* Instructions have been added and spellchecked
 
 
 ### Task List
