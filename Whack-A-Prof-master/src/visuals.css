@@ -1,0 +1,405 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Press Start 2P", cursive;
+}
+#countdown
+{
+    font-size: larger;
+}
+body
+{
+
+    background-image: url('graphics/background/background.svg');
+    background-repeat: no-repeat;
+    /* background-position-x: 50% ; */
+    background-size:cover;
+    background-position-y: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+    overflow: hidden;
+    
+}
+html,body
+{
+ font-family: "Press Start 2P";
+ height:100%;
+ background-color: cadetblue;
+}
+@keyframes spinning {
+    from { transform: rotate(0deg)}
+    to {transform: rotate(10000deg)}
+}
+.screenTT
+{
+    position: center;
+    width: 50%;
+    height: 85px;
+    top: auto;
+    animation-name: spinning;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+
+}
+audio
+{
+
+    display:none ;
+}
+
+header
+{
+    position: relative;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 80px;
+
+}
+/* canvas
+{
+    background-color: blue;
+    position: center;
+    padding-right: -50%;
+    padding-left: 40%;
+    border-radius: 40%;
+    border:10px inset black;
+} */
+
+.intro
+{
+    
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 1s;
+}
+.game-header
+{
+    position:fixed;
+
+    top: 50%;
+    right: -10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+
+}
+.Wack-A-Professor
+{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    
+}
+.Wack-A-Professor.active
+{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 1s;
+    
+}
+.Wack-A-Professor.fade
+{
+    bottom: 0px;
+    opacity: 0;
+    transition: ease-in-out 2s;
+}
+#start, #game-over
+{
+    font-family: "Press Start 2P", cursive;
+    position:fixed;
+    text-align: center;
+    background-color: #7a4841;
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 250px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#tutorial{
+
+    font-family: "Press Start 2P", cursive;
+    position: fixed;
+    text-align: center;
+    top:28%;
+    background-color:#7a4841;
+    padding-left: 493px;
+    padding-right: 493px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 250px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+#start a, #game-over a
+{
+    border: 4px solid #c09473;
+    color: black;
+    text-decoration:none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    display:block;
+    text-align: center;
+    font-size: 2em;
+    display:block;
+    width: 368px;
+    background-color: #d7b594;
+}
+#tutorial a
+{
+    border: 3px solid #c09473;
+    color: black;
+    text-decoration:none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    display:inline-block;
+    background-color: #d7b594;
+}
+#start a:hover, #game-over a:hover,#tutorial a:hover
+{
+    background: #c09473;
+    border-color: #d7b594;
+    
+}
+.popup
+{
+
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4, top 0.4s;
+}
+.open-popup
+{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+/* .popup h2
+{
+
+} */
+.popup button
+{
+    width:  100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #333;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(0,0,0,0.2);
+}
+.score{
+    font-size: 2.5em;
+    margin-bottom: .5em;
+    position: center;
+    margin-top: .5em;
+}
+.board{
+
+    position:absolute;
+    margin-top: 14%;
+    margin-bottom: 12%;
+    height: 522px;
+    top: -1%;
+    width: 859px;
+    display: grid;
+    bottom: 10%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:34px;
+
+    visibility: hidden;
+}
+
+.hole
+{   
+background-color: black;
+border-radius:50px;
+position:relative;
+overflow:hidden;
+display:block;
+}
+@keyframes rise {
+    0%{
+      transform: translateX(-50%) translateY(100%);
+  }
+  100%{
+      transform: translateX(-50%) translateY(0);
+  }
+}
+.cursor{
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top:100px;
+    left: 100px;
+    background-image: url('hammer.png');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+
+}
+
+.cursor.active{
+    transform: translate(-20%, -20%) rotate(-45deg);
+}
+
+.professor
+{
+
+
+	width: 400px;
+    margin-left: 25%;
+    height: 100%;
+	top:20px;
+	transform: translateX(0%);
+	animation: rise .10s ease-out;
+	object-fit:cover; 
+}
+@keyframes rise{
+	
+	0%{
+		transform: translateX(0%) translateY(100%);
+	}
+	100%{
+		transform: translateX(0%) translateY(0);
+	}
+}
+#professor_hit
+{
+
+    width: 400px;
+    margin-left: -6%;
+    height: 100%;
+	top:20px;
+	object-fit:cover; 
+}
+#professor_win
+{
+    width: 400px;
+    margin-left: -37%;
+    height: 100%;
+	top:20px;
+	object-fit:cover; 
+}
+#professor_lose
+{
+    width: 400px;
+    margin-left: -70%;
+    height: 100%;
+	top:20px;
+	object-fit:cover; 
+}
+.dean
+{
+    width: 400px;
+    margin-left: 32%;
+    height: 100%;
+	top:20px;
+	transform: translateX(0%);
+	animation: rise .10s ease-out;
+	object-fit:cover;
+}
+#dean_hit
+{
+    width: 400px;
+    margin-left: -7%;
+    height: 100%;
+	object-fit:cover;
+}
+#dean_lose
+{
+    width: 400px;
+    margin-left: -80%;
+    height: 100%;
+	object-fit:cover;
+
+}
+.student
+{
+    width: 400px;
+    margin-left: 30%;
+    margin-top: -40%;
+	transform: translateX(0%);
+	animation: rise .10s ease-out;
+	object-fit:cover;
+}
+#student_hit
+{
+    width: 400px;
+    margin-left: -7%;
+	margin-top: -40%;
+	object-fit:cover;
+
+}
+#student_lose
+{
+    width: 400px;
+    margin-left: -80%;
+	top:20px;
+	object-fit:cover;
+
+}
+.admin
+{
+
+    width: 400px;
+    margin-left: 30%;
+    margin-top: -40%;
+	transform: translateX(0%);
+	animation: rise .10s ease-out;
+	object-fit:cover;
+
+}
+#admin_hit
+{
+    width: 400px;
+    margin-left: 3%;
+    margin-top: -40%;
+	object-fit:cover;
+}
+#admin_lose
+{
+    width: 400px;
+    margin-left: -80%;
+	object-fit:cover;
+}
+
