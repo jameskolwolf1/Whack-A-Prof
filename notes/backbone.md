@@ -12,8 +12,22 @@ cd src
 There are your file, if you want to update your repo do: (svn update)
 Then you can vim anyfile and then press esc key and I to edit the file, if u was to down
 writing just do (esc key then press :wq) then type svn commit -m "Write ur message with your
-name" and u make the changes.
---------------------------------------------------------------------------------------------
+Name in it,  Also if you want to host the website with files.
+
+----------------------------------------------------------------------------------------------
+
+
+How To host the website on brooklyn college 
+----------------------------------------------------------------------------------------------
+
+You need login into the brooklyn college network using terminal/cmd/putty
+Then make a folder named "public_html" then u want to copy the Whack-A-Pro.git into the
+"public_html" folder. You can use cp -r whack-A-Pro.git /public_html then once you have done
+you can go to use browser and type "acc6.its.brooklyn.cuny.edu/~username" then press enter 
+and you will see the dir of whack-a-pro.git and you know what to do from there and then click 
+on the html file and *BOOM*
+
+----------------------------------------------------------------------------------------------
 
 
 Problems
