@@ -191,3 +191,16 @@ Testing entry date 11/30/22:
 - SVG image files are correctly uploaded into the repo. 
 - Graphics assets are correctly uploaded into the repo, and appear to be nearly complete. Just to be implemented into mechanics.js and html file.
 
+Testing entry date 12/5/22:
+- The game is now fully playable, and most bugs have been fixed. 
+- Professor mole now appears when the game starts. As with student and dean.
+- A good QOL change would be to have the timer somewhere while the game is running.
+- Overall, game nearly complete, just need to add a few more graphics and implement them into the game.
+[x] Professor, student, dean sprites
+[x] background
+[x] title screen
+[x] music
+[x] scoreboard
+[] hammer
+[] static clock
+
