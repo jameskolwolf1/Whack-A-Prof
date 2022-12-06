@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestBench</title>
+    <link rel="stylesheet" type="text/css" href="visuals.css">
+    <!-- <meta http-equiv="refresh" content="5" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- This is where and is the music that is playing  -------------------------------------------------->
+    <audio control loop autoplay = "true" src="sounds/intro/8bit-music-for-game-68698.mp3"></audio>
+    <!-- ------------------------------------------------------------------------------------------------  -->
+
+</head>
+<body>
+
+
+<!----------------------------------------------------------Intro Screen-------------------------------------->
+    <div class = "intro">
+        <h1 class = "game-header">
+            <span class = "Wack-A-Professor">Whack-A-Professor</span>
+            <span class = "Wack-A-Professor">By</span>
+            <span class = "Wack-A-Professor">CISC 3140</span>
+            
+        </h1>
+    </div>
+<!---------------------------------------------------------------------------------------------------------------->
+    
+
+<!------------------------------------------Banner/Score/and timer------------------------------------------------------------------>
+    <img class = "screenTT" src = "graphics/banner/banner.svg" alt= "Whack-A-Professor">
+    <h1 class="score">SCORE: <span>00</span></h1>
+    <p id = "countdown">2:00</p>
+<!---------------------------------------------------------------------------------------------------------------->
+    
+<!----------------------------------Start and tutorial button and ------------------------------------------------------>
+    <canvas id = "canvas" style="display:block"></canvas> 
+    <div id = "start" style="display:button">
+        <a href="#" onclick="startGame()"> Start Game </a>
+    </div>
+    <div id = "tutorial" style="display: button" onclick = "openPopup()">
+        <a href="#" >Tutorial</a>
+    </div>
+    <div id = "game-over" style="display:none">
+        <h1>Game Over</h1>
+        <a href="#" onclick="startGame()"> Start Game </a>
+    </div>
+<!-------------------------------The Gamming Broad-------------------------------------------------------------------------------------->
+
+    <div class = "board">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+    </div>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!----------------------------------Popup when clicking on the tutorial ------------------------------------------------------>
+    <div class = "popup" id="popup">
+        
+        <h2>Tutorial And Instructions<br></h2>
+        <p1><br>Welcome to Whack-A-Processor<br><br></p1>
+        <p2>Whack the professor, dean or administrator to add points to your scoreboard!<br></p2>
+        <p3>BUT be careful if you whack a student your score will be cut by half!</p3>
+        <p4 class = "leftleft"><br>Professor = 15</p4>
+        <p5 class = "leftleft"><br>Dean = 20</p5>
+        <p6 class = "leftleft"><br>Student = score/2</p6>
+        <p7 class = "leftleft"><br>Admin = adds a minute to the timer</p7>
+        <button type="submit" onclick="closePopup()">OK</button>
+
+    </div>
+<!--------------------------------------cursor------------------------------------------------------------------------------>
+    <div class="cursor"></div>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+<script src="mechanics.js"></script>  
+</body>
+</html>
