@@ -1,0 +1,13 @@
+.divider {
+    background-color: rgb(223, 219, 219);
+    height: 2px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color:brown;
+}

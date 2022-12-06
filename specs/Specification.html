@@ -5,12 +5,64 @@
 <html>
 	<!-- The head will contain the Table of Contents -->
 	<head>
+		<link rel="stylesheet" href="style.css">
+		<div>
+			<h1>Specification Document for Whack-A-Prof</h1>
+			<h5><u>Authors</u>: Yvonne, Laura, Joanna, Ali, Quincy, Wael</h5>
+<div class="divider"></div>
+			<h2>Table of Contents</h2>
+				<a href="#Introduction"><h3>1. Introduction</h3></a>
+				<a href="#Purpose">1.1: Purpose</a><br/>
+				<a href="Document-Conventions">1.2: Document Conventions</a><br/>
+				<a href="Intended-Audience">1.3: Intended Audience</a><br/>
+				<a href="Product-Scope">1.4: Product Scope</a><br/>
+				<a href="References">1.5: References</a><br/>
 
+				<a href="#Overall-Description"><h3>2. Overall Description</h3></a>
+				<a href="#Product-Perspective">2.1: Product Perspective</a><br/>
+				<a href="#Product-Functions">2.2: Product Functions</a><br/>
+				<a href="#User-Classes-And-Characteristics">2.3: User Classes and Characteristics</a><br/>
+				<a href="#Operating-Environment">2.4: Operating Environment</a><br/>
+				<a href="#Design-And-Implementation-Constraints">2.5: Design and Implementation Constraints</a><br/>
+
+				<a href="#External-Interface-Requirements"><h3>3. External Inferface Requirements</h3></a>
+				<a href="#User-Interfaces">3.1: User Interfaces</a><br/>
+				<a href="#Hardware-Interfaces">3.2: Hardware Interfaces</a><br/>
+				<a href="#Software-Interfaces">3.3: Software Interfaces</a><br/>
+
+				<a href="#System-Features"><h3>4. System Features</h3></a>
+				<a href="#Start-Game-Button">4.1: Start Game Button</a><br/>
+				<a href="#Play-Again-Button">4.2: Play Again Button (Game Over Screen)</a><br/>
+				<a href="#Home-Button">4.3: Home Button (Game Over Screen)</a><br/>
+				<a href="Holes-Or-Sprite-Spawn">4.4: Holes or Sprite Spawn</a><br/>
+				<a href="Sprites-As-Targets">4.5: Sprites as Targets</a><br/>
+				<a href="Cursor-Mallet">4.6: Cursor/Mallet</a><br/>
+				<a href="#Timer">4.7: Timer</a><br/>
+				<a href="#Player-Score">4.8: Player Score</a><br/>
+				<a href="#Sound-Effects">4.9: Sound Effects</a><br/>
+		</div>
 	</head>
-
 
 	<!-- body will be partitioned into different divs for the different sections -->
 	<body>
+			<h2 id="Introduction">1. Introduction</h2>
+			<div class="divider"></div>
+		<div>
+			<h4 id="Purpose">1.1: Purpose</h4>
+			<p>This document represents the Software Requirements Specification (SRS) for Whack-A-Prof. It is designed to specify the procedures our teams, backbone, quality assurance, specification documentation, and graphics, have used in the development process and describe the requirements specifications for our application with respect to end users. It will provide a detailed overview of our software product’s goals and parameters.</p>
+			<h4 id="Document-Conventions">1.2: Document Conventions</h4>
+			<p>When going through the final version of the document, specific typographical conventions are implemented to make the consumption of this document’s information easier for you. When sentences or phrases are bolded or underlined, it usually means that there is a change in topic. In other instances bolded words or phrases are used to emphasize something important that the reader must keep in mind. Headers are used to indicate the topic that will be discussed in each section. When a sentence or word is surrounded by “quotations” the sentence or word is from a source or an idea that is not originally ours. Bullet points, or lists, are used to easily list information in order to avoid confusing paragraphs. Lines and dividers in the document are used to have further organization of information for the reader to easily see when a section starts and ends. Finally, any links provided in the document are there to show what it is that we are referencing and where the outside sources we use come from. The only other time you will see a link that does not do this is in the table of contents. The table of contents is there to show the different sections in the specification document, and the links in each section allow the user to quickly go to the section with a click.</p>
+			<h4 id="Intended-Audience">1.3: Intended Audience</h4>
+			<p>
+			This SRS is organized into 4 sections, each with varying subsections. The document is intended for both technical and non-technical audiences, 
+			such as developers, users, testers, and documentation writers. All readers should start with the <strong>Introduction</strong> and <strong>Overall Description</strong>to get a 
+			sense of the purpose and scope of the product. Users should follow the User Documentation (subsection 2.6) which will give a general tutorial 
+			on how to use the product. Section 3: <strong>External Interface Requirements</strong> and Section 4: <strong>System Features</strong> are intended for developers, testers, 
+			and documentation writers. These two sections will give specific details on the software features of the product itself.
+			</p>
+			<h4 id="Product Scope">1.4: Product Scope</h4>
+			<p>The skeleton of the project will be created using the scripting language of Javascript. The goal with Javascript is to create the bare minimum functions of a “Whack-A-Prof” game. Javascript will be responsible for signifying the space in which the game will take place, animating the pictures that will represent the characters and the cursor, buttons, etc. that the user will be using to interact with the game. Additionally, Javascript will be giving these characters value, allowing the user to feel a form of interaction with said characters by gaining or losing points based on what character they have interacted with. The space and structure that the game will be developed in will be created by HTML. HTML will display the game on a web browser and create containers and borders in which the buttons, characters, and other visual blocks will be placed in. Moreover, while HTML will be able to visually show the user the game, CSS will further assist HTML in giving better visual effects to the web browser. On the other hand, Aseprite and LibreSprite will be used to create the visuals of the characters. Both programs are sprite and pixel art editing tools. Moreover, Skia, a 2D graphics library, Ninja, a build system, CMake, an open source software that generates a system’s build file, and PureRef, an image referencing tool, will be used by the design team to assist in the designing of the characters. Finally, GitHub and the SVN service provided by GitHub are used by everyone in the team in order to keep programs, pictures, documents, and other forms of files in one organized and accessible setting.</p>	
+		</div>
 
 	</body>
 
