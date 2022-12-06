@@ -138,7 +138,9 @@ _Decoration_ (For Game Screen)
 * The moles have been updated
 * The timer counts down to 37 seconds (This is for testing purposes)
 * Moles have a reaction when hit with cursor
+
 ***12/06/22***
+
 * Background has been added
 * Timer is now 2 minutes 
 * Instructions have been added and spellchecked
