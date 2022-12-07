@@ -344,10 +344,14 @@ The game requires Javascript support in order to be run on a browser. The game s
 	The score will automatically update itself when the player left-clicks on the sprite.
 * 4.8.3
 	Through HTML and JavaScript, there is a listener function that looks out for clicks on certain characters. If that character is clicked then there will be an event that happens.
-	The score of the player should only be affected when clicking on their appropriate sprite. 
+	The score of the player should only be affected when clicking on their appropriate sprite.
+ 
 		-When sprites don’t increase or decrease the score to their respective value
+
 		-When admin affects the score instead of the time
+
 		-When sprites don’t work at all when clicked
+
 		-Any other forms of abnormal effects upon clicking
 
 ### **4.9: Sounds Effects** <a name="Sounds-Effects"></a>
