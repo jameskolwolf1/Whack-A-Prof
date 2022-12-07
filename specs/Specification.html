@@ -25,8 +25,8 @@
 				<a href="#User-Classes-And-Characteristics">2.3: User Classes and Characteristics</a><br/>
 				<a href="#Operating-Environment">2.4: Operating Environment</a><br/>
 				<a href="#Design-And-Implementation-Constraints">2.5: Design and Implementation Constraints</a><br/>
-				<a href = "#User-Documentation">2.6: User Documentation</a><br/>
-				<a href = "#Assumptions-and-Dependencies">2.7: Assumptions and Dependcies</a><br/>
+				<a href="#User-Documentation">2.6: User Documentation</a><br/>
+				<a href="#Assumptions-and-Dependencies">2.7: Assumptions and Dependcies</a><br/>
 
 				<a href="#External-Interface-Requirements"><h3>3. External Inferface Requirements</h3></a>
 				<a href="#User-Interfaces">3.1: User Interfaces</a><br/>
@@ -37,9 +37,9 @@
 				<a href="#Start-Game-Button">4.1: Start Game Button</a><br/>
 				<a href="#Play-Again-Button">4.2: Play Again Button (Game Over Screen)</a><br/>
 				<a href="#Home-Button">4.3: Home Button (Game Over Screen)</a><br/>
-				<a href="Holes-Or-Sprite-Spawn">4.4: Holes or Sprite Spawn</a><br/>
-				<a href="Sprites-As-Targets">4.5: Sprites as Targets</a><br/>
-				<a href="Cursor-Mallet">4.6: Cursor/Mallet</a><br/>
+				<a href="#Holes-Or-Sprite-Spawn">4.4: Holes or Sprite Spawn</a><br/>
+				<a href="#Sprite-Target">4.5: Sprite Target</a><br/>
+				<a href="#Cursor-Mallet">4.6: Cursor/Mallet</a><br/>
 				<a href="#Timer">4.7: Timer</a><br/>
 				<a href="#Player-Score">4.8: Player Score</a><br/>
 				<a href="#Sound-Effects">4.9: Sound Effects</a><br/>
@@ -331,14 +331,296 @@
 						</li>
 					</ul>
 				</li>
-
 			</ul>
-
-
 		</div>
-
-
-
+		<div>
+			<h4 id="Play-Again-Button">Play Again Button (Game Over Screen)</h4>
+			<ul>
+				<li>4.2.1:
+					<br>
+					<br>
+					<ul>
+						<li>The play again game button will appear on the game over screen once a game is completed. This button is a high priority because it is the only method of restarting the game. The game and timer will immediately start after it is pressed.
+				</li>
+				<br>
+				<li>4.2.2:
+					<br>
+					<br>
+					<ul>
+						<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					4.2.3:
+					<br>
+					<br>
+					<ul>
+						<li>The button should only be present on the game over screen and not on the start game screen or game screen.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h4 id="Home-Button">4.3: Home Button (Game Over and Instruction Screen)</h4>
+			<ul>
+				<li>4.3.1:
+					<br>
+					<br>
+					<ul>
+						<li>The home button will appear on the instruction screen and on the game over screen once a game is completed. This button is a medium priority because you can still start and restart the game without using this button. The user will be taken back to the title screen once this button is clicked.</li>
+					</ul>
+				</li>
+				<br>
+				<li>4.3.2:
+					<br>
+					<br>
+					<ul>
+						<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
+					</ul>	
+				</li>
+				<br>
+				<li>4.3.3:
+					<br>
+					<br>
+					<ul>
+						<li>The button should be present on the instruction screen and on the game over screen only.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h4 id="Holes-Or-Sprite-Spawn">4.4: Holes or Sprite Spawn (Game Screen)</h4>
+			<ul>
+				<li>4.4.1: 
+					<br>
+					<br>
+					<ul>
+						<li>The holes or sprite spawns will appear on the screen once the game screen has been triggered to appear. The sprite spawns are of high priority as they are needed for two indications: that the game is working and about to begin, and that the game is in session. The holes or sprite spawn is where the sprites (i.e Professor, Student. Dean, etc.) will spawn from. </li>
+					</ul>
+				</li>
+				<li>4.4.2:
+					<br>
+					<br>
+					<ul>
+						<li>The visual component of the sprite spawn will be triggered at the beginning of the game screen being triggered after the user clicks the start button in the title screen. The function of the sprite spawn will be triggered after the visual component of the sprite spawn is triggered and once the timer begins to count down when the game starts.</li>
+					</ul>
+				</li>
+				<li>4.4.3:
+					<br>
+					<br>
+					<ul>
+						<li>The holes or sprite spawns should only be displayed on the game screen, and not on the title screen or game over screen.</li>
+						<br>
+						<li>TBD:
+							<ul>
+								<br>
+								<li>When Sprites do not spawn
+									<br>
+									<ul>
+										<br>
+										<li>Restart browser or internet connection</li>
+										<br>
+										<li>Reload Game</li>
+									</ul>
+								</li>
+								<br>
+								<li> When the Sprites are not in their own container or when the sprite spawn cause the sprite to appear abnormal
+									<br>
+									<ul>
+										<br>
+										<li>Restart browser or internet connection</li>
+										<br>
+										<li>Reload Game</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					 </ul>
+				</li>
+			</ul>	
+		</div>
+		<div>
+			<h4 id="#Sprites-As-Targets">4.5: Sprite Target (Game Screen)</h4>
+			<ul>
+				<li>4.5.1:
+					<br>
+					<br>
+					<ul>
+						<li>The sprites or sprite target will appear on the screen once the game begins and when the sprite spawns have both visually and functionally been triggered. The sprite target is high priority because the sprites are used to allow user interaction with the game as the sprites are what change the amount of points or time the user can accumulate. Users click on the sprite and that will cause the timer to increase in value and the score of the user to either increase or decrease depending on what sprite target was clicked on.</li>
+					</ul>
+				</li>
+				<li>4.5.2:
+					<br>
+					<br>
+					<ul>
+						<li>When the sprites are initially spawned, their default animation are immediately triggered</li>
+						<br>
+						<li>The following features are triggered once the user TBD clicks on the sprite target. The sprite’s visuals and the user’s score will be affected as follows:
+							<br>
+							<ul>
+								<br>
+								<li>Professor:
+									<br>
+									<br>
+									<ul>
+										<li>When hit:
+											<br>
+											<ul>
+												<br>
+												<li>Play hit animation</li>
+												<br>
+												<li>Increase score by 15 points</li>
+												<br>
+												<li>Play losing animation as they go back down the hole</li>
+											</ul>
+										</li>
+										<br>
+										<li>When not hit:
+											<br>
+											<br>
+											<ul>
+												<li>Play winning animation as they go down the hole</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<br>
+								<li>Student:
+									<br>
+									<br>
+									<ul>
+										<li>When hit:
+											<br>
+											<ul>
+												<br>
+												<li>Play hit animation</li>
+												<br>
+												<li>Decrease score by half of the current score</li>
+												<br>
+												<li>Play losing animation as they go back down the hole</li>
+											</ul>
+										</li>
+										<br>
+										<li>When not hit:
+											<br>
+											<br>
+											<ul>
+												<li>Play winning animation as they go down the hole</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<br>
+								<li>Dean:
+									<br>
+									<br>
+									<ul>
+										<li>When hit:
+											<br>
+											<ul>
+												<br>
+												<li>Play hit animation</li>
+												<br>
+												<li>Increase score by 20 points</li>
+												<br>
+												<li>Play losing animation as they go back down the hole</li>
+											</ul>
+										</li>
+										<br>
+										<li>When not hit:
+											<br>
+											<br>
+											<ul>
+												<li>Play winning animation as they go down the hole</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<br>
+								<li>Admin:
+									<br>
+									<br>
+									<ul>
+										<li>When hit:
+											<br>
+											<ul>
+												<br>
+												<li>Play hit animation</li>
+												<br>
+												<li>Increase time by 1 minute</li>
+												<br>
+												<li>Play losing animation as they go back down the hole</li>
+											</ul>
+										</li>
+										<br>
+										<li>When not hit:
+											<br>
+											<br>
+											<ul>
+												<li>Play winning animation as they go down the hole</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>4.5.3:
+					<br>
+					<br>
+					<ul>
+						<li>The sprite targets should only appear in the game screen when the game starts. </li>
+						<br>
+						<li>TBD:
+							<br>
+							<br>
+							<ul>
+								<li>When the sprites do not spawn or show
+									<br>
+									<br>
+									<ul>
+										<li>Restart browser or internet connection</li>
+										<br>
+										<li>Reload Game</li>
+									</ul>
+								</li>
+								<br>
+								<li>When score doesn’t increase or decrease upon clicking the sprite
+									<br>
+									<br>
+									<ul>
+										<li>Restart browser or internet connection</li>
+										<br>
+										<li>Reload Game</li>
+									</ul>
+								</li>
+								<br>
+								<li>If the users score increases or decreases abnormally (i.e: upon clicking student sprite the users score increases instead of decreasing)
+									<br>
+									<br>
+									<ul>
+										<li>Restart browser or internet connection</li>
+										<br>
+										<li>Reload Game</li>
+									</ul>
+								</li>
+								<br>
+								<li>The Sprites appear anywhere outside of a spawn hole
+									<br>
+									<br>
+									<ul>
+										<li>Restart browser or internet connection</li>
+										<br>
+										<li>Reload Game</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</body>
-
 <html>
