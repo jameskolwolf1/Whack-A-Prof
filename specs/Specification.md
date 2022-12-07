@@ -352,6 +352,8 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 	* The score of the player should only be affected when clicking on their appropriate sprite.
  
+ 	* **TBD:**
+
 		* When sprites don’t increase or decrease the score to their respective value
 
 		* When admin affects the score instead of the time
