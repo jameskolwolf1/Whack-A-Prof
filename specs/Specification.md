@@ -337,21 +337,27 @@ The game requires Javascript support in order to be run on a browser. The game s
      * The timer should appear below the current score on all screens. The time left may be changed if the user hits an admin sprite which will add 1 minute (60 seconds) to the timer.
 
 ### **4.8: Player Score** <a name="Player-Scores"></a>
-* 4.8.1
-	The player’s scores are dependent on clicking on sprites. Hitting the professor or dean will increase the player’s points by 15 or 20 points, respectively, while hitting admin will have no effect on the score but will add 60 seconds of time to the timer, and hitting the student will half the current amount of points. This is a high-priority feature because the player either wins or loses the game based on their score. The score will appear on only the game screen.
 
-* 4.8.2
-	The score will automatically update itself when the player left-clicks on the sprite.
-* 4.8.3
-	Through HTML and JavaScript, there is a listener function that looks out for clicks on certain characters. If that character is clicked then there will be an event that happens.
-	The score of the player should only be affected when clicking on their appropriate sprite.
+* 4.8.1: 
+
+	* The player’s scores are dependent on clicking on sprites. Hitting the professor or dean will increase the player’s points by 15 or 20 points, respectively, while hitting admin will have no effect on the score but will add 60 seconds of time to the timer, and hitting the student will half the current amount of points. This is a high-priority feature because the player either wins or loses the game based on their score. The score will appear on only the game screen.
+
+* 4.8.2: 
+
+	* The score will automatically update itself when the player left-clicks on the sprite.
+
+* 4.8.3:
+
+	* Through HTML and JavaScript, there is a listener function that looks out for clicks on certain characters. If that character is clicked then there will be an event that happens.
+
+	* The score of the player should only be affected when clicking on their appropriate sprite.
  
-		-When sprites don’t increase or decrease the score to their respective value
+		* When sprites don’t increase or decrease the score to their respective value
 
-		-When admin affects the score instead of the time
+		* When admin affects the score instead of the time
 
-		-When sprites don’t work at all when clicked
+		* When sprites don’t work at all when clicked
 
-		-Any other forms of abnormal effects upon clicking
+		* Any other forms of abnormal effects upon clicking
 
 ### **4.9: Sounds Effects** <a name="Sounds-Effects"></a>
