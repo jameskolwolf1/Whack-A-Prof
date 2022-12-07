@@ -287,9 +287,9 @@
 		</div>
 
 		<!--- System Features --->
-		<h2 id = "System-Features">4. System Features</h2>
-		<div class="divider"></div>
 		<div>
+			<h2 id = "System-Features">4. System Features</h2>
+			<div class="divider"></div>
 			<h4 id = "Start-Game-Button">4.1: Start Game Button</h4>
 			<ul>
 				<li>4.1.1:
@@ -317,6 +317,7 @@
 						<br>
 						<li>TBD:
 							<br>
+							<br>
 							<ul>
 								<li>
 									Start Game Button does not start the game
@@ -333,6 +334,8 @@
 				</li>
 			</ul>
 		</div>
+
+		<!--- Play Again Button --->
 		<div>
 			<h4 id="Play-Again-Button">Play Again Button (Game Over Screen)</h4>
 			<ul>
@@ -361,6 +364,8 @@
 				</li>
 			</ul>
 		</div>
+
+		<!--- Home Button --->
 		<div>
 			<h4 id="Home-Button">4.3: Home Button (Game Over and Instruction Screen)</h4>
 			<ul>
@@ -389,6 +394,8 @@
 				</li>
 			</ul>
 		</div>
+
+		<!--- Holes-or-Sprite-Spawn --->
 		<div>
 			<h4 id="Holes-Or-Sprite-Spawn">4.4: Holes or Sprite Spawn (Game Screen)</h4>
 			<ul>
@@ -440,6 +447,8 @@
 				</li>
 			</ul>	
 		</div>
+
+		<!--- Sprites-As-Target --->
 		<div>
 			<h4 id="#Sprites-As-Targets">4.5: Sprite Target (Game Screen)</h4>
 			<ul>
@@ -616,6 +625,123 @@
 										<li>Reload Game</li>
 									</ul>
 								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!--- Cursor-Mallet --->
+		<div>
+			<h4 id = "Cursor-Mallet"> 4.6: Cursor-Mallet</h4>
+				<ul>
+					<li>
+						4.6.1:
+						<br>
+						<br>
+						<ul>
+							<li>The cursor will be displayed as a mallet within the game screen. It is a high-priority item because it is the only way to navigate the user interface and click the buttons.</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.6.2:
+						<br>
+						<br>
+						<ul>
+							<li>The mallet will automatically display upon clicking the start game button. This feature will be removed once the game is over.</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.6.3:
+						<br>
+						<br>
+						<ul>
+							<li>The cursor should allow the user to select objects on the screen, specifically click on the sprites to “hit” them for points.</li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+		
+		<!--- Timer --->
+		<div>
+			<h4 id = "Timer">4.7: Timer</h4>
+			<ul>
+				<li>
+					4.7.1:
+					<br>
+					<br>
+					<ul>
+						<li>The timer appears on the start screen. The timer is a high-priority item because it indicates to the user how much time they have left to play the game. The game will always start by counting down from 2 minutes (120 seconds).</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					4.7.2:
+					<br>
+					<br>
+					<ul>
+						<li>The feature is triggered as soon as the start begins, or in other words right when the user presses the start game button.</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					4.7.3:
+					<br>
+					<br>
+					<ul>
+						<li>The timer should appear below the current score on all screens. The time left may be changed if the user hits an admin sprite which will add 1 minute (60 seconds) to the timer.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!--- Player Score --->
+		<div>
+			<h4 id = "Player-Score">4.8: Player Score</h4>
+			<ul>
+				<li>
+					4.8.1:
+					<br>
+					<br>
+					<ul>
+						<li>The player’s scores are dependent on clicking on sprites. Hitting the professor or dean will increase the player’s points by 15 or 20 points, respectively, while hitting admin will have no effect on the score but will add 60 seconds of time to the timer, and hitting the student will half the current amount of points. This is a high-priority feature because the player either wins or loses the game based on their score. The score will appear on only the game screen.</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					4.8.2:
+					<br>
+					<br>
+					<ul>
+						<li>
+							The score will automatically update itself when the player left-clicks on the sprite.
+						</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					4.8.3:
+					<br>
+					<br>
+					<ul>
+						<li>Through HTML and JavaScript, there is a listener function that looks out for clicks on certain characters. If that character is clicked then there will be an event that happens.</li>
+						<br>
+						<li>The score of the player should only be affected when clicking on their appropriate sprite.</li>
+						<br>
+						<li>
+							<b>TBD: </b>
+							<ul>
+								<br>
+								<li>When sprites don’t increase or decrease the score to their respective value</li>
+								<br>
+								<li>When admin affects the score instead of the time</li>
+								<br>
+								<li>When sprites don’t work at all when clicked</li>
+								<br>
+								<li>Any other forms of abnormal effects upon clicking</li>
 							</ul>
 						</li>
 					</ul>
