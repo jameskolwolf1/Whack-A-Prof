@@ -243,7 +243,21 @@ The game requires Javascript support in order to be run on a browser. The game s
 	
 ### **4.2: Play Again Button (Game Over Screen)** <a name="Play-Again-Button"></a>
 
+* 4.2.1
+	* The play again game button will appear on the game over screen once a game is completed. This button is a high priority because it is the only method of restarting the game. The game and timer will immediately start after it is pressed.
+* 4.2.2
+	* This feature is triggered when the user uses their mouse to left-click the button.
+* 4.2.3
+	* The button should only be present on the game over screen and not on the start game screen or game screen.
+
 ### **4.3: Home Button (Game Over Screen)** <a name="Home-Button"></a>
+
+* 4.3.1
+	* The home button will appear on the instruction screen and on the game over screen once a game is completed. This button is a medium priority because you can still start and restart the game without using this button. The user will be taken back to the title screen once this button is clicked.
+* 4.3.2
+	* This feature is triggered when the user uses their mouse to left-click the button.
+* 4.3.3
+	* The button should be present on the instruction screen and on the game over screen only.
 
 ### **4.4: Holes or Sprite Spawn** <a name= "Sprite-Spawn"></a>
 
