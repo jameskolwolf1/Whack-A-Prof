@@ -49,105 +49,128 @@
 
 	<!-- body will be partitioned into different divs for the different sections -->
 	<body>
-			<br>
-			<!-- Intro -->
+
+		<br>
+		<!-- Intro -->
 		<div>
+
 			<h2 id="Introduction">1. Introduction</h2>
 			<div class="divider"></div>
 
-			<h4 id="Purpose">1.1: Purpose</h4>
-			<p>This document represents the Software Requirements Specification (SRS) for Whack-A-Prof. It is designed to specify the procedures our teams, backbone, quality assurance, specification documentation, and graphics, have used in the development process and describe the requirements specifications for our application with respect to end users. It will provide a detailed overview of our software product’s goals and parameters.</p>
-			<h4 id="Document-Conventions">1.2: Document Conventions</h4>
-			<p>When going through the final version of the document, specific typographical conventions are implemented to make the consumption of this document’s information easier for you. When sentences or phrases are <b>bolded</b> or <ins>underlined</ins>, it usually means that there is a change in topic. In other instances <b>bolded</b> words or phrases are used to emphasize something important that the reader must keep in mind. Headers are used to indicate the topic that will be discussed in each section. When a sentence or word is surrounded by “quotations” the sentence or word is from a source or an idea that is not originally ours. Bullet points, or lists, are used to easily list information in order to avoid confusing paragraphs. Lines and dividers in the document are used to have further organization of information for the reader to easily see when a section starts and ends. Finally, any links provided in the document are there to show what it is that we are referencing and where the outside sources we use come from. The only other time you will see a link that does not do this is in the table of contents. The table of contents is there to show the different sections in the specification document, and the links in each section allow the user to quickly go to the section with a click.</p>
-			<h4 id="Intended-Audience">1.3: Intended Audience</h4>
-			<p>
-			This SRS is organized into 4 sections, each with varying subsections. The document is intended for both technical and non-technical audiences, 
-			such as developers, users, testers, and documentation writers. All readers should start with the <strong>Introduction</strong> and <strong>Overall Description</strong>to get a 
-			sense of the purpose and scope of the product. Users should follow the User Documentation (subsection 2.6) which will give a general tutorial 
-			on how to use the product. Section 3: <strong>External Interface Requirements</strong> and Section 4: <strong>System Features</strong> are intended for developers, testers, 
-			and documentation writers. These two sections will give specific details on the software features of the product itself.
-			</p>
-			<h4 id="Product-Scope">1.4: Product Scope</h4>
-			<p>The skeleton of the project will be created using the scripting language of Javascript. The goal with Javascript is to create the bare minimum functions of a “Whack-A-Prof” game. Javascript will be responsible for signifying the space in which the game will take place, animating the pictures that will represent the characters and the cursor, buttons, etc. that the user will be using to interact with the game. Additionally, Javascript will be giving these characters value, allowing the user to feel a form of interaction with said characters by gaining or losing points based on what character they have interacted with. The space and structure that the game will be developed in will be created by HTML. HTML will display the game on a web browser and create containers and borders in which the buttons, characters, and other visual blocks will be placed in. Moreover, while HTML will be able to visually show the user the game, CSS will further assist HTML in giving better visual effects to the web browser. On the other hand, Aseprite and LibreSprite will be used to create the visuals of the characters. Both programs are sprite and pixel art editing tools. Moreover, Skia, a 2D graphics library, Ninja, a build system, CMake, an open source software that generates a system’s build file, and PureRef, an image referencing tool, will be used by the design team to assist in the designing of the characters. Finally, GitHub and the SVN service provided by GitHub are used by everyone in the team in order to keep programs, pictures, documents, and other forms of files in one organized and accessible setting.</p>
+			<!--- Purpose --->
+			<div>
+				<h4 id="Purpose">1.1: Purpose</h4>
 
-			<b><h4 id = "References">1.5: References</h4></b> 
-			<body>
-			All References in this document will be referred to the items below
+				<p>This document represents the Software Requirements Specification (SRS) for Whack-A-Prof. It is designed to specify the procedures our teams, backbone, quality assurance, specification documentation, and graphics, have used in the development process and describe the requirements specifications for our application with respect to end users. It will provide a detailed overview of our software product’s goals and parameters.</p>
+			</div>
 
-			<!-- br = break. Helps create space in between lines -->
-			<br>
-			<br>
-			<b>Template for documentation</b>
+			<!--- Document Conventions --->
+			<div>
+				<h4 id="Document-Conventions">1.2: Document Conventions</h4>
 
-			<!-- Unordered lists -->
-			<ul>
-				<!-- because HTML uses <> as code, we have to use entities like '&lt' in order to show symbols '<>' as text -->
-				<!-- &lt = < | &gt = > -->
+				<p>When going through the final version of the document, specific typographical conventions are implemented to make the consumption of this document’s information easier for you. When sentences or phrases are <b>bolded</b> or <ins>underlined</ins>, it usually means that there is a change in topic. In other instances <b>bolded</b> words or phrases are used to emphasize something important that the reader must keep in mind. Headers are used to indicate the topic that will be discussed in each section. When a sentence or word is surrounded by “quotations” the sentence or word is from a source or an idea that is not originally ours. Bullet points, or lists, are used to easily list information in order to avoid confusing paragraphs. Lines and dividers in the document are used to have further organization of information for the reader to easily see when a section starts and ends. Finally, any links provided in the document are there to show what it is that we are referencing and where the outside sources we use come from. The only other time you will see a link that does not do this is in the table of contents. The table of contents is there to show the different sections in the specification document, and the links in each section allow the user to quickly go to the section with a click.</p>
+			</div>
 
-				<li>[1] K.E. Wiegers, "Software Requirements Specifications for &lt;Project &gt;", 1999. [Online].
-	 			Available: https://web.cs.dal.ca/~hawkey/3130/srs_template-ieee.doc.</li>
-	 			<br>
-	 			<li>[2] IEEE Standards Association (2011, Lass Accessed October 2022) Systems and software engineering –
-				Life cycle processes – Requirements engineering, Standard. (IEEE 29148-2011)
-				Available: http://standards.ieee.org/findstds/standard/29148-2011.html.</li>
-				<br>
-			</ul>
-			<b>Connecting Github With SVN</b>
+			<!--- Intended Audience --->
+			<div>
+				<h4 id="Intended-Audience">1.3: Intended Audience</h4>
 
-			<br>
-			<ul>
-				<li>
-					[3] "Support for subversion clients," GitHub Docs. [Online]. Available:
-						https://docs.github.com/en/get-started/importing-your-projects-to-github/working-with-subversion-on-github/support-for-subversion-clients.
-						[Accessed: 29-Oct-2022].
-				</li>
+				<p>This SRS is organized into 4 sections, each with varying subsections. The document is intended for both technical and non-technical audiences, 
+				such as developers, users, testers, and documentation writers. All readers should start with the <strong>Introduction</strong> and <strong>Overall Description</strong>to get a 
+				sense of the purpose and scope of the product. Users should follow the User Documentation (subsection 2.6) which will give a general tutorial 
+				on how to use the product. Section 3: <strong>External Interface Requirements</strong> and Section 4: <strong>System Features</strong> are intended for developers, testers, 
+				and documentation writers. These two sections will give specific details on the software features of the product itself.</p>
+			</div>
+
+			<!--- Product Scope --->
+			<div>
+				<h4 id="Product-Scope">1.4: Product Scope</h4>
+
+				<p>The skeleton of the project will be created using the scripting language of Javascript. The goal with Javascript is to create the bare minimum functions of a “Whack-A-Prof” game. Javascript will be responsible for signifying the space in which the game will take place, animating the pictures that will represent the characters and the cursor, buttons, etc. that the user will be using to interact with the game. Additionally, Javascript will be giving these characters value, allowing the user to feel a form of interaction with said characters by gaining or losing points based on what character they have interacted with. The space and structure that the game will be developed in will be created by HTML. HTML will display the game on a web browser and create containers and borders in which the buttons, characters, and other visual blocks will be placed in. Moreover, while HTML will be able to visually show the user the game, CSS will further assist HTML in giving better visual effects to the web browser. On the other hand, Aseprite and LibreSprite will be used to create the visuals of the characters. Both programs are sprite and pixel art editing tools. Moreover, Skia, a 2D graphics library, Ninja, a build system, CMake, an open source software that generates a system’s build file, and PureRef, an image referencing tool, will be used by the design team to assist in the designing of the characters. Finally, GitHub and the SVN service provided by GitHub are used by everyone in the team in order to keep programs, pictures, documents, and other forms of files in one organized and accessible setting.</p>
+			</div>
+
+			<!--- References --->
+			<div>
+				<h4 id = "References">1.5: References</h4>
+
+				<body>
+				All References in this document will be referred to the items below
+
+				<!-- br = break. Helps create space in between lines -->
 				<br>
-			</ul>
-			<b>Graphics</b>
-			<ul>
-				<li>
-					[4] <b>CMake</b>. (Version 3.25). Kitware. [Online]. Available:  https://cmake.org/
-				</li>
 				<br>
-				<li>
-					[5] <b>Aseprite: Animated sprite editor & pixel art tool (Windows, macOS, Linux)</b>.
-						(Version 1.2.40). Igara Studio. [Online]. GitHub. Available: https://github.com/aseprite/aseprite
-				</li>
+				<b>Template for documentation</b>
+
+				<!-- Unordered lists -->
+				<ul>
+					<!-- because HTML uses <> as code, we have to use entities like '&lt' in order to show symbols '<>' as text -->
+					<!-- &lt = < | &gt = > -->
+
+					<li>[1] K.E. Wiegers, "Software Requirements Specifications for &lt;Project &gt;", 1999. [Online].
+		 			Available: https://web.cs.dal.ca/~hawkey/3130/srs_template-ieee.doc.</li>
+		 			<br>
+		 			<li>[2] IEEE Standards Association (2011, Lass Accessed October 2022) Systems and software engineering –
+					Life cycle processes – Requirements engineering, Standard. (IEEE 29148-2011)
+					Available: http://standards.ieee.org/findstds/standard/29148-2011.html.</li>
+					<br>
+				</ul>
+				<b>Connecting Github With SVN</b>
+
 				<br>
-				<li>
-					[6] D. Capello. <b>Skia</b>. (Version Skia-m102). Igara Studio. [Online]. GitHub.
-						Available: https://github.com/aseprite/skia/
-				</li>
-				<br>
-				<li>
-					[7] E. Martin, J. N. Hasse. <b>Ninja-build</b>. (Version 1.11.1). J. N. Hasse. [Online]. GitHub.
-						Available: https://github.com/ninja-build/ninja
-				</li>
-				<br>
-				<li>
-					[8] D. Capello. <b>LibreSprite</b>. (Version 1.0). Igara Studio. [Online[. GitHub.
-						Available: https://libresprite.github.io/#!/
-				</li>
-				<br>
-			</ul>
-			<b>Backbone</b>
-			<ul>
-				<li>
-					[9] T. Berners-Lee. <b>HTML</b>. (Version HTML5). [Programming Language]. World Wide Web Consortium.
-						Available: https://www.w3schools.com/html/
-				</li>
-				<br>
-				<li>
-					[10] H. W. Lium. <b>CSS</b>. (Version 2.1). [Programming Language]. World Wide Web Consortium.
-						Available: https://www.w3schools.com/css/
-				</li>
-				<br>
-				<li>
-					[11] B. Eich. <b>JavaScript</b>. (Version ES2022). [Programming Language]. Oracle Corporation.
-						Available: https://developer.oracle.com/languages/javascript.html
-				</li>
-			</ul>
-			</body>
+				<ul>
+					<li>
+						[3] "Support for subversion clients," GitHub Docs. [Online]. Available:
+							https://docs.github.com/en/get-started/importing-your-projects-to-github/working-with-subversion-on-github/support-for-subversion-clients.
+							[Accessed: 29-Oct-2022].
+					</li>
+					<br>
+				</ul>
+				<b>Graphics</b>
+				<ul>
+					<li>
+						[4] <b>CMake</b>. (Version 3.25). Kitware. [Online]. Available:  https://cmake.org/
+					</li>
+					<br>
+					<li>
+						[5] <b>Aseprite: Animated sprite editor & pixel art tool (Windows, macOS, Linux)</b>.
+							(Version 1.2.40). Igara Studio. [Online]. GitHub. Available: https://github.com/aseprite/aseprite
+					</li>
+					<br>
+					<li>
+						[6] D. Capello. <b>Skia</b>. (Version Skia-m102). Igara Studio. [Online]. GitHub.
+							Available: https://github.com/aseprite/skia/
+					</li>
+					<br>
+					<li>
+						[7] E. Martin, J. N. Hasse. <b>Ninja-build</b>. (Version 1.11.1). J. N. Hasse. [Online]. GitHub.
+							Available: https://github.com/ninja-build/ninja
+					</li>
+					<br>
+					<li>
+						[8] D. Capello. <b>LibreSprite</b>. (Version 1.0). Igara Studio. [Online[. GitHub.
+							Available: https://libresprite.github.io/#!/
+					</li>
+					<br>
+				</ul>
+				<b>Backbone</b>
+				<ul>
+					<li>
+						[9] T. Berners-Lee. <b>HTML</b>. (Version HTML5). [Programming Language]. World Wide Web Consortium.
+							Available: https://www.w3schools.com/html/
+					</li>
+					<br>
+					<li>
+						[10] H. W. Lium. <b>CSS</b>. (Version 2.1). [Programming Language]. World Wide Web Consortium.
+							Available: https://www.w3schools.com/css/
+					</li>
+					<br>
+					<li>
+						[11] B. Eich. <b>JavaScript</b>. (Version ES2022). [Programming Language]. Oracle Corporation.
+							Available: https://developer.oracle.com/languages/javascript.html
+					</li>
+				</ul>
+				</body>
+			</div>
 		</div>
 
 		<br>
@@ -157,85 +180,114 @@
 			<h2 id = "Overall-Description">2. Overall Description</h2>
 			<div class="divider"></div>
 
-			<h4 id = "Product-Perspective">2.1: Product Perspective</h4>
-			<p>
-				This product is a new “Whack- A-Mole” inspired game where the functions are the same but the settings are altered. Instead of moles, the user will interact with school faculty and students to accumulate or depress points. The following are features included with the web game:
+			<!--- Product Perspective --->
+			<div>
+				<h4 id = "Product-Perspective">2.1: Product Perspective</h4>
+
+				<p>
+					This product is a new “Whack- A-Mole” inspired game where the functions are the same but the settings are altered. Instead of moles, the user will interact with school faculty and students to accumulate or depress points. The following are features included with the web game:
+
+					<ul>
+						<li>Cross Platform Support: The game is supported by most of the popular web browsers that can be downloaded in most operating systems.</li>
+						<br>
+						<li>Number of users who can be on the website: While an exact number can not be given a sizeable amount of users can go on the website at the same time to play the game.</li>
+						<br>
+						<li>Storing Scores of User: The website will be utilizing the user's local storage in order to keep track of their individual scores.</li>
+
+					</ul>
+				</p>
+			</div>
+
+			<!-- Product Functions -->
+			<div>
+				<h4 id = "Product-Functions">2.2: Product Functions</h4>
+
+				<p>
+					The product must provide, at a minimum, the following functions to the users within this SRS document:
+
+					<ul>
+						<li>Provide a User Interface (UI) to play the game</li>
+						<br>
+						<li>Make data/scores available in local storage</li>
+						<br>
+						<li>Allow users to click buttons to start the game, restart the game, and return to the home page</li>
+						<br>
+						<li>Display a tutorial on the home page for guidance on how to play the game</li>
+					</ul>
+				</p>
+			</div>
+
+			<!-- User Classes and Characteristics -->
+			<div>
+				<h4 id = "User-Classes-And-Characteristics">2.3: User Classes and Characteristics</h4>
+
+				<p>
+					Users of the product should have basic knowledge of web technology and operating the internet. The user interface will be friendly enough to guide the user and help with starting the Whack-A-Prof game.
+				</p>
+			</div>
+
+			<!-- Operating Enviroment -->
+			<div>
+				<h4 id = "Operating-Environment">2.4: Operating Enviroment</h4>
+
+				<p>
+					The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments. The minimum set of browsers that must be supported is:
+
+					<ul>
+						<li>Google Chrome</li>
+						<br>
+						<li>Apple Safari</li>
+						<br>
+						<li>Microsoft Internet Explorer</li>
+						<br>
+						<li>Mozilla Firefox</li>
+						<br>
+						<li>Fedora WS 36</li>
+						<br>
+						<li>Visual Studio Code V. 1.72.2</li>
+						<br>
+						<li>Notepad++ v8.4.6</li>
+					</ul>
+				</p>
+			</div>
+
+			<!-- Design and Implementation Constraints -->
+			<div>
+				<h4 id = "Design-And-Implementation-Constraints">2.5: Design and Implementation Constraints</h4>
+
+				<p>
+					This program will have complications when used on a tablet or phone as it is designed to be better played on a desktop or laptop. Additionally, the game doesn't have adequate backend security because of how Javascript is structured and there is no user authentication. However, the only data or information that will be vulnerable to the user is their score from the game which will be stored in a text file. Finally, not all errors and bugs with the code will be caught immediately. 
+				</p>
+			</div>
+
+			<!-- User Documentation -->
+			<div>
+				<h4 id = "User-Documentation">2.6: User Documentation</h4>
 
 				<ul>
-					<li>Cross Platform Support: The game is supported by most of the popular web browsers that can be downloaded in most operating systems.</li>
+					<li>Tutorial Overview:</li>
 					<br>
-					<li>Number of users who can be on the website: While an exact number can not be given a sizeable amount of users can go on the website at the same time to play the game.</li>
+					<ul>
+						<li>The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score.</li>
+					</ul>
 					<br>
-					<li>Storing Scores of User: The website will be utilizing the user's local storage in order to keep track of their individual scores.</li>
-
+					<li>Walkthrough:</li>
+					<br>
+					<li>Rules:</li>
+					<br>
 				</ul>
-			</p>
+			</div>
 
-			<h4 id = "Product-Functions">2.2: Product Functions</h4>
-			<p>
-				The product must provide, at a minimum, the following functions to the users within this SRS document:
+			<!-- Assumptions and Dependencies -->
+			<div>
+				<h4 id = "Assumptions-and-Dependencies">2.7: Assumptions and Dependencies</h4>
 
-				<ul>
-					<li>Provide a User Interface (UI) to play the game</li>
-					<br>
-					<li>Make data/scores available in local storage</li>
-					<br>
-					<li>Allow users to click buttons to start the game, restart the game, and return to the home page</li>
-					<br>
-					<li>Display a tutorial on the home page for guidance on how to play the game</li>
-				</ul>
-			</p>
-
-			<h4 id = "User-Classes-And-Characteristics">2.3: User Classes and Characteristics</h4>
-			<p>
-				Users of the product should have basic knowledge of web technology and operating the internet. The user interface will be friendly enough to guide the user and help with starting the Whack-A-Prof game.
-			</p>
-
-			<h4 id = "Operating-Environment">2.4: Operating Enviroment</h4>
-			<p>
-				The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments. The minimum set of browsers that must be supported is:
-
-				<ul>
-					<li>Google Chrome</li>
-					<br>
-					<li>Apple Safari</li>
-					<br>
-					<li>Microsoft Internet Explorer</li>
-					<br>
-					<li>Mozilla Firefox</li>
-					<br>
-					<li>Fedora WS 36</li>
-					<br>
-					<li>Visual Studio Code V. 1.72.2</li>
-					<br>
-					<li>Notepad++ v8.4.6</li>
-				</ul>
-			</p>
-
-			<h4 id = "Design-And-Implementation-Constraints">2.5: Design and Implementation Constraints</h4>
-			<p>
-				This program will have complications when used on a tablet or phone as it is designed to be better played on a desktop or laptop. Additionally, the game doesn't have adequate backend security because of how Javascript is structured and there is no user authentication. However, the only data or information that will be vulnerable to the user is their score from the game which will be stored in a text file. Finally, not all errors and bugs with the code will be caught immediately. 
-			</p>
-
-			<h4 id = "User-Documentation">2.6: User Documentation</h4>
-			<ul>
-				<li>Tutorial Overview:</li>
-				<br>
-				<ul>
-					<li>The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score.</li>
-				</ul>
-				<br>
-				<li>Walkthrough:</li>
-				<br>
-				<li>Rules:</li>
-				<br>
-			</ul>
-
-			<h4 id = "Assumptions-and-Dependencies">2.7: Assumptions and Dependencies</h4>
-			<p>
-				Users must access the game through a desktop. If the game is accessed through any other devices or browsers that are otherwise not listed in Section 2.4, it may bug or become unplayable. Users who play this game are assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing the game.
-			</p>
+				<p>
+					Users must access the game through a desktop. If the game is accessed through any other devices or browsers that are otherwise not listed in Section 2.4, it may bug or become unplayable. Users who play this game are assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing the game.
+				</p>
+			</div>
 		</div>
+
 		<br>
 
 		<!-- External Interface Requirements -->
@@ -243,617 +295,650 @@
 			<h2 id = "External-Interface-Requirements">3. External Interface Requirements</h2>
 			<div class="divider"></div>
 
-			<h4 id = "User-Interfaces">3.1: User Interfaces</h4>
-			<p>
-				When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). The start game screen (Figure 2) will display the title of the game, start game button, and tutorial button, respectively. The start game screen will also have its individual background visual. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen includes the title, tutorial text, a visual key showcasing the characters respectively. Clicking the back home button will trigger the title screen to appear once again. Additionally the tutorial-screen will have the same visual background as the title screen. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. The game over screen will also have its own visual background different from the rest. 
-				<br>
-				<br>
-				<b>Figure 1: </b>
-				<br>
-				<br>
-				<img src = "diagrams/animation_before_title.jpg" height = "400"></img>
-				<br>
-				<br>
-				<b>Figure 2: </b>
-				<br>
-				<br>
-				<img src = "diagrams/title_start_screen.jpg" height = "400"></img>
-				<br>
-				<br>
-				<b>Figure 3: </b>
-				<br>
-				<br>
-				<img src = "diagrams/tutorial_screen.jpg" height = "400"></img>
-				<br>
-				<br>
-				<b>Figure 4: </b>
-				<br>
-				<br>
-				<img src = "diagrams/gamescreen.jpg" height = "400"></img>
-				<br>
-				<br>
-				<b>Figure 5: </b>
-				<br>
-				<br>
-				<img src = "diagrams/gameover_screen.jpg" height = "400"></img>
-			</p>
+			<!-- User Interfaces -->
+			<div>
+				<h4 id = "User-Interfaces">3.1: User Interfaces</h4>
 
-			<h4 id = "Hardware-Interfaces">3.2: Hardware Interfaces</h4>
-			<p>
-				The client-side components of Whack-A-Prof can be executed on both personal-class computers and workstation-class computers. The game will require browser support and an internet connection to run it.
-			</p>
+				<p>
+					When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). The start game screen (Figure 2) will display the title of the game, start game button, and tutorial button, respectively. The start game screen will also have its individual background visual. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen includes the title, tutorial text, a visual key showcasing the characters respectively. Clicking the back home button will trigger the title screen to appear once again. Additionally the tutorial-screen will have the same visual background as the title screen. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. The game over screen will also have its own visual background different from the rest. 
+					<br>
+					<br>
+					<b>Figure 1: </b>
+					<br>
+					<br>
+					<img src = "diagrams/animation_before_title.jpg" height = "400"></img>
+					<br>
+					<br>
+					<b>Figure 2: </b>
+					<br>
+					<br>
+					<img src = "diagrams/title_start_screen.jpg" height = "400"></img>
+					<br>
+					<br>
+					<b>Figure 3: </b>
+					<br>
+					<br>
+					<img src = "diagrams/tutorial_screen.jpg" height = "400"></img>
+					<br>
+					<br>
+					<b>Figure 4: </b>
+					<br>
+					<br>
+					<img src = "diagrams/gamescreen.jpg" height = "400"></img>
+					<br>
+					<br>
+					<b>Figure 5: </b>
+					<br>
+					<br>
+					<img src = "diagrams/gameover_screen.jpg" height = "400"></img>
+				</p>
+			</div>
 
-			<h4 id = "Software-Interfaces"> 3.3: Software Interfaces</h4>
-			<p>
-				The game requires Javascript support in order to be run on a browser. The game should be supported in all browsers however the game has full support on a firefox browser. There are only compatibility issues when the size of the screen is too big because the proportions of the background and other graphical features can be altered. 
-			</p>
+			<!-- Hardware Interfaces -->
+			<div>
+				<h4 id = "Hardware-Interfaces">3.2: Hardware Interfaces</h4>
+
+				<p>
+					The client-side components of Whack-A-Prof can be executed on both personal-class computers and workstation-class computers. The game will require browser support and an internet connection to run it.
+				</p>
+			</div>
+
+			<!-- Software Interfaces -->
+			<div>
+				<h4 id = "Software-Interfaces"> 3.3: Software Interfaces</h4>
+
+				<p>
+					The game requires Javascript support in order to be run on a browser. The game should be supported in all browsers however the game has full support on a firefox browser. There are only compatibility issues when the size of the screen is too big because the proportions of the background and other graphical features can be altered. 
+				</p>
+			</div>
+
 		</div>
 
+		<br>
+		
 		<!--- System Features --->
 		<div>
 			<h2 id = "System-Features">4. System Features</h2>
 			<div class="divider"></div>
 			
-			<h4 id = "Start-Game-Button">4.1: Start Game Button</h4>
-			<ul>
-				<li>4.1.1:
-					<br>
-					<br>
-					<ul>
-						<li>The start game button will appear on the initial start game screen. This button is a high priority because it is the only method of starting the game. The game and timer will immediately start after it is pressed.</li>
-					</ul>
-				</li>
-				<br>
-				<li>4.1.2:
-					<br>
-					<br>
-					<ul>
-						<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
-					</ul>
-				</li>
-				<br>
-				<li>
-					4.1.3:
-					<br>
-					<br>
-					<ul>
-						<li>The button should only be present on the initial screen and not on the game or game over screens.</li>
-						<br>
-						<li>TBD:
-							<br>
-							<br>
-							<ul>
-								<li>
-									Start Game Button does not start the game
-									<ul>
-										<br>
-										<li>Reload the game</li>
-										<br>
-										<li>Check your internet connection and browser support</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+			<!-- Start Game Button -->
+			<div>
+				<h4 id = "Start-Game-Button">4.1: Start Game Button</h4>
 
-		<!--- Play Again Button --->
-		<div>
-			<h4 id="Play-Again-Button">Play Again Button (Game Over Screen)</h4>
-			<ul>
-				<li>4.2.1:
-					<br>
-					<br>
-					<ul>
-						<li>The play again game button will appear on the game over screen once a game is completed. This button is a high priority because it is the only method of restarting the game. The game and timer will immediately start after it is pressed.
-				</li>
-				<br>
-				<li>4.2.2:
-					<br>
-					<br>
-					<ul>
-						<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
-					</ul>
-				</li>
-				<br>
-				<li>
-					4.2.3:
-					<br>
-					<br>
-					<ul>
-						<li>The button should only be present on the game over screen and not on the start game screen or game screen.</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<!--- Home Button --->
-		<div>
-			<h4 id="Home-Button">4.3: Home Button (Game Over and Instruction Screen)</h4>
-			<ul>
-				<li>4.3.1:
-					<br>
-					<br>
-					<ul>
-						<li>The home button will appear on the instruction screen and on the game over screen once a game is completed. This button is a medium priority because you can still start and restart the game without using this button. The user will be taken back to the title screen once this button is clicked.</li>
-					</ul>
-				</li>
-				<br>
-				<li>4.3.2:
-					<br>
-					<br>
-					<ul>
-						<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
-					</ul>	
-				</li>
-				<br>
-				<li>4.3.3:
-					<br>
-					<br>
-					<ul>
-						<li>The button should be present on the instruction screen and on the game over screen only.</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<!--- Holes-or-Sprite-Spawn --->
-		<div>
-			<h4 id="Holes-Or-Sprite-Spawn">4.4: Holes or Sprite Spawn (Game Screen)</h4>
-			<ul>
-				<li>4.4.1: 
-					<br>
-					<br>
-					<ul>
-						<li>The holes or sprite spawns will appear on the screen once the game screen has been triggered to appear. The sprite spawns are of high priority as they are needed for two indications: that the game is working and about to begin, and that the game is in session. The holes or sprite spawn is where the sprites (i.e Professor, Student. Dean, etc.) will spawn from. </li>
-					</ul>
-				</li>
-				<li>4.4.2:
-					<br>
-					<br>
-					<ul>
-						<li>The visual component of the sprite spawn will be triggered at the beginning of the game screen being triggered after the user clicks the start button in the title screen. The function of the sprite spawn will be triggered after the visual component of the sprite spawn is triggered and once the timer begins to count down when the game starts.</li>
-					</ul>
-				</li>
-				<li>4.4.3:
-					<br>
-					<br>
-					<ul>
-						<li>The holes or sprite spawns should only be displayed on the game screen, and not on the title screen or game over screen.</li>
-						<br>
-						<li>TBD:
-							<ul>
-								<br>
-								<li>When Sprites do not spawn
-									<br>
-									<ul>
-										<br>
-										<li>Restart browser or internet connection</li>
-										<br>
-										<li>Reload Game</li>
-									</ul>
-								</li>
-								<br>
-								<li> When the Sprites are not in their own container or when the sprite spawn cause the sprite to appear abnormal
-									<br>
-									<ul>
-										<br>
-										<li>Restart browser or internet connection</li>
-										<br>
-										<li>Reload Game</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					 </ul>
-				</li>
-			</ul>	
-		</div>
-
-		<!--- Sprites-As-Target --->
-		<div>
-			<h4 id="#Sprites-As-Targets">4.5: Sprite Target (Game Screen)</h4>
-			<ul>
-				<li>4.5.1:
-					<br>
-					<br>
-					<ul>
-						<li>The sprites or sprite target will appear on the screen once the game begins and when the sprite spawns have both visually and functionally been triggered. The sprite target is high priority because the sprites are used to allow user interaction with the game as the sprites are what change the amount of points or time the user can accumulate. Users click on the sprite and that will cause the timer to increase in value and the score of the user to either increase or decrease depending on what sprite target was clicked on.</li>
-					</ul>
-				</li>
-				<li>4.5.2:
-					<br>
-					<br>
-					<ul>
-						<li>When the sprites are initially spawned, their default animation are immediately triggered</li>
-						<br>
-						<li>The following features are triggered once the user TBD clicks on the sprite target. The sprite’s visuals and the user’s score will be affected as follows:
-							<br>
-							<ul>
-								<br>
-								<li>Professor:
-									<br>
-									<br>
-									<ul>
-										<li>When hit:
-											<br>
-											<ul>
-												<br>
-												<li>Play hit animation</li>
-												<br>
-												<li>Increase score by 15 points</li>
-												<br>
-												<li>Play losing animation as they go back down the hole</li>
-											</ul>
-										</li>
-										<br>
-										<li>When not hit:
-											<br>
-											<br>
-											<ul>
-												<li>Play winning animation as they go down the hole</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<br>
-								<li>Student:
-									<br>
-									<br>
-									<ul>
-										<li>When hit:
-											<br>
-											<ul>
-												<br>
-												<li>Play hit animation</li>
-												<br>
-												<li>Decrease score by half of the current score</li>
-												<br>
-												<li>Play losing animation as they go back down the hole</li>
-											</ul>
-										</li>
-										<br>
-										<li>When not hit:
-											<br>
-											<br>
-											<ul>
-												<li>Play winning animation as they go down the hole</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<br>
-								<li>Dean:
-									<br>
-									<br>
-									<ul>
-										<li>When hit:
-											<br>
-											<ul>
-												<br>
-												<li>Play hit animation</li>
-												<br>
-												<li>Increase score by 20 points</li>
-												<br>
-												<li>Play losing animation as they go back down the hole</li>
-											</ul>
-										</li>
-										<br>
-										<li>When not hit:
-											<br>
-											<br>
-											<ul>
-												<li>Play winning animation as they go down the hole</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<br>
-								<li>Admin:
-									<br>
-									<br>
-									<ul>
-										<li>When hit:
-											<br>
-											<ul>
-												<br>
-												<li>Play hit animation</li>
-												<br>
-												<li>Increase time by 1 minute</li>
-												<br>
-												<li>Play losing animation as they go back down the hole</li>
-											</ul>
-										</li>
-										<br>
-										<li>When not hit:
-											<br>
-											<br>
-											<ul>
-												<li>Play winning animation as they go down the hole</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>4.5.3:
-					<br>
-					<br>
-					<ul>
-						<li>The sprite targets should only appear in the game screen when the game starts. </li>
-						<br>
-						<li>TBD:
-							<br>
-							<br>
-							<ul>
-								<li>When the sprites do not spawn or show
-									<br>
-									<br>
-									<ul>
-										<li>Restart browser or internet connection</li>
-										<br>
-										<li>Reload Game</li>
-									</ul>
-								</li>
-								<br>
-								<li>When score doesn’t increase or decrease upon clicking the sprite
-									<br>
-									<br>
-									<ul>
-										<li>Restart browser or internet connection</li>
-										<br>
-										<li>Reload Game</li>
-									</ul>
-								</li>
-								<br>
-								<li>If the users score increases or decreases abnormally (i.e: upon clicking student sprite the users score increases instead of decreasing)
-									<br>
-									<br>
-									<ul>
-										<li>Restart browser or internet connection</li>
-										<br>
-										<li>Reload Game</li>
-									</ul>
-								</li>
-								<br>
-								<li>The Sprites appear anywhere outside of a spawn hole
-									<br>
-									<br>
-									<ul>
-										<li>Restart browser or internet connection</li>
-										<br>
-										<li>Reload Game</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<!--- Cursor-Mallet --->
-		<div>
-			<h4 id = "Cursor-Mallet"> 4.6: Cursor-Mallet</h4>
 				<ul>
-					<li>
-						4.6.1:
+					<li>4.1.1:
 						<br>
 						<br>
 						<ul>
-							<li>The cursor will be displayed as a mallet within the game screen. It is a high-priority item because it is the only way to navigate the user interface and click the buttons.</li>
+							<li>The start game button will appear on the initial start game screen. This button is a high priority because it is the only method of starting the game. The game and timer will immediately start after it is pressed.</li>
+						</ul>
+					</li>
+					<br>
+					<li>4.1.2:
+						<br>
+						<br>
+						<ul>
+							<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
 						</ul>
 					</li>
 					<br>
 					<li>
-						4.6.2:
+						4.1.3:
 						<br>
 						<br>
 						<ul>
-							<li>The mallet will automatically display upon clicking the start game button. This feature will be removed once the game is over.</li>
-						</ul>
-					</li>
-					<br>
-					<li>
-						4.6.3:
-						<br>
-						<br>
-						<ul>
-							<li>The cursor should allow the user to select objects on the screen, specifically click on the sprites to “hit” them for points.</li>
-						</ul>
-					</li>
-				</ul>
-		</div>
-		
-		<!--- Timer --->
-		<div>
-			<h4 id = "Timer">4.7: Timer</h4>
-			<ul>
-				<li>
-					4.7.1:
-					<br>
-					<br>
-					<ul>
-						<li>The timer appears on the start screen. The timer is a high-priority item because it indicates to the user how much time they have left to play the game. The game will always start by counting down from 2 minutes (120 seconds).</li>
-					</ul>
-				</li>
-				<br>
-				<li>
-					4.7.2:
-					<br>
-					<br>
-					<ul>
-						<li>The feature is triggered as soon as the start begins, or in other words right when the user presses the start game button.</li>
-					</ul>
-				</li>
-				<br>
-				<li>
-					4.7.3:
-					<br>
-					<br>
-					<ul>
-						<li>The timer should appear below the current score on all screens. The time left may be changed if the user hits an admin sprite which will add 1 minute (60 seconds) to the timer.</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<!--- Player Score --->
-		<div>
-			<h4 id = "Player-Score">4.8: Player Score</h4>
-			<ul>
-				<li>
-					4.8.1:
-					<br>
-					<br>
-					<ul>
-						<li>The player’s scores are dependent on clicking on sprites. Hitting the professor or dean will increase the player’s points by 15 or 20 points, respectively, while hitting admin will have no effect on the score but will add 60 seconds of time to the timer, and hitting the student will half the current amount of points. This is a high-priority feature because the player either wins or loses the game based on their score. The score will appear on only the game screen.</li>
-					</ul>
-				</li>
-				<br>
-				<li>
-					4.8.2:
-					<br>
-					<br>
-					<ul>
-						<li>
-							The score will automatically update itself when the player left-clicks on the sprite.
-						</li>
-					</ul>
-				</li>
-				<br>
-				<li>
-					4.8.3:
-					<br>
-					<br>
-					<ul>
-						<li>Through HTML and JavaScript, there is a listener function that looks out for clicks on certain characters. If that character is clicked then there will be an event that happens.</li>
-						<br>
-						<li>The score of the player should only be affected when clicking on their appropriate sprite.</li>
-						<br>
-						<li>
-							<b>TBD: </b>
-							<ul>
-								<br>
-								<li>When sprites don’t increase or decrease the score to their respective value</li>
-								<br>
-								<li>When admin affects the score instead of the time</li>
-								<br>
-								<li>When sprites don’t work at all when clicked</li>
-								<br>
-								<li>Any other forms of abnormal effects upon clicking</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<h4 id = "Sound-Effects">4.9: Sound Effects</h4>
-
-		<ul>
-			<li>
-				4.9.1:
-				<br>
-				<br>
-				<ul>
-					<li>Sound effects will happen in 3 different circumstances. When the user clicks something on the screen, when the game ends, and at the launch of the game. Sound effects are a low priority as they are not needed to run or understand how to play the game. </li>
-				</ul>
-			</li>
-			<br>
-			<li>
-				4.9.2:
-				<br>
-				<br>
-				<ul>
-					<li>The 3 circumstances that will cause the sound effects to trigger go as follows:</li>
-					<ul>
-						<br>
-						<li>At the launch of the game, there will be background music that plays</li>
-						<br>
-						<li>
-							When the user clicks something on the screen:
-							<ul>
-								<br>
-								<li>Sprite: Depending on the sprite’s interpreted gender, there will be separate female and male pain sound effects that will be triggered when the user successfully clicks on a sprite.</li>
-								<br>
-								<li>Desk: When the user clicks on a desk there will be a “desk impact” sound effect that will be triggered</li>
-								<br>
-								<li>Anywhere else: When the user clicks on anything other than the desk or sprite on the screen, there will be a “swing” sound effect that will be triggered</li>
-							</ul>
-						</li>
-						<br>
-						<li>When the timer ends signifying the end of the game, the “Bell” sound effect will be triggered</li>
-					</ul>
-				</ul>
-			</li>
-			<br>
-			<li>
-				4.9.3
-				<br>
-				<br>
-				<ul>
-					<li>Sound effects triggered via a click should not happen any other time throughout the game. Only when a click happens.</li>
-					<br>
-					<li>Sound effect triggered once the timer ends for game over should not happen any other time. Only when the game ends.</li>
-					<br>
-					<li> <b>TBD:</b>
-						<br>
-						<br>
-						<ul>
-							<li>When sound effects don’t work</li>
+							<li>The button should only be present on the initial screen and not on the game or game over screens.</li>
 							<br>
-							<li>Make sure your computer isn’t muted</li>
-							<br>
-							<li>Refresh the browser</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-		</ul>
-
-		<h4 id = "Tutorial-Button">4.10: Tutorial Button</h4>
-		<ul>
-			<li>4.10.1:
-				<ul>
-					<br>
-					<li>The button will appear in the Title Screen only. It will trigger the tutorial screen to appear. This button is a medium priority as it is not needed to play the game, however it is important for understanding how to play the game.</li>
-				</ul>
-			</li>
-			<br>
-			<li>4.10.2:
-				<br>
-				<br>
-				<ul>
-					<li>The feature is triggered when left-clicked on by the user.</li>
-				</ul>
-			</li>
-			<br>
-			<li>4.10.3:
-				<br>
-				<br>
-				<ul>
-					<li>The button should only appear in the Title screen.</li>
-					<br>
-					<li><b>TBD:</b>
-						<br>
-						<br>
-						<ul>
-							<li>Tutorial Button Doesn't work
+							<li>TBD:
 								<br>
 								<br>
 								<ul>
-									<li>Refresh browser</li>
+									<li>
+										Start Game Button does not start the game
+										<ul>
+											<br>
+											<li>Reload the game</li>
+											<br>
+											<li>Check your internet connection and browser support</li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 						</ul>
 					</li>
 				</ul>
-			</li>
-		</ul>
+			</div>
+
+			<!--- Play Again Button --->
+			<div>
+				<h4 id="Play-Again-Button">Play Again Button (Game Over Screen)</h4>
+
+				<ul>
+					<li>4.2.1:
+						<br>
+						<br>
+						<ul>
+							<li>The play again game button will appear on the game over screen once a game is completed. This button is a high priority because it is the only method of restarting the game. The game and timer will immediately start after it is pressed.
+					</li>
+					<br>
+					<li>4.2.2:
+						<br>
+						<br>
+						<ul>
+							<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.2.3:
+						<br>
+						<br>
+						<ul>
+							<li>The button should only be present on the game over screen and not on the start game screen or game screen.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!--- Home Button --->
+			<div>
+				<h4 id="Home-Button">4.3: Home Button (Game Over and Instruction Screen)</h4>
+
+				<ul>
+					<li>4.3.1:
+						<br>
+						<br>
+						<ul>
+							<li>The home button will appear on the instruction screen and on the game over screen once a game is completed. This button is a medium priority because you can still start and restart the game without using this button. The user will be taken back to the title screen once this button is clicked.</li>
+						</ul>
+					</li>
+					<br>
+					<li>4.3.2:
+						<br>
+						<br>
+						<ul>
+							<li>This feature is triggered when the user uses their mouse to left-click the button.</li>
+						</ul>	
+					</li>
+					<br>
+					<li>4.3.3:
+						<br>
+						<br>
+						<ul>
+							<li>The button should be present on the instruction screen and on the game over screen only.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!--- Holes-or-Sprite-Spawn --->
+			<div>
+				<h4 id="Holes-Or-Sprite-Spawn">4.4: Holes or Sprite Spawn (Game Screen)</h4>
+
+				<ul>
+					<li>4.4.1: 
+						<br>
+						<br>
+						<ul>
+							<li>The holes or sprite spawns will appear on the screen once the game screen has been triggered to appear. The sprite spawns are of high priority as they are needed for two indications: that the game is working and about to begin, and that the game is in session. The holes or sprite spawn is where the sprites (i.e Professor, Student. Dean, etc.) will spawn from. </li>
+						</ul>
+					</li>
+					<li>4.4.2:
+						<br>
+						<br>
+						<ul>
+							<li>The visual component of the sprite spawn will be triggered at the beginning of the game screen being triggered after the user clicks the start button in the title screen. The function of the sprite spawn will be triggered after the visual component of the sprite spawn is triggered and once the timer begins to count down when the game starts.</li>
+						</ul>
+					</li>
+					<li>4.4.3:
+						<br>
+						<br>
+						<ul>
+							<li>The holes or sprite spawns should only be displayed on the game screen, and not on the title screen or game over screen.</li>
+							<br>
+							<li>TBD:
+								<ul>
+									<br>
+									<li>When Sprites do not spawn
+										<br>
+										<ul>
+											<br>
+											<li>Restart browser or internet connection</li>
+											<br>
+											<li>Reload Game</li>
+										</ul>
+									</li>
+									<br>
+									<li> When the Sprites are not in their own container or when the sprite spawn cause the sprite to appear abnormal
+										<br>
+										<ul>
+											<br>
+											<li>Restart browser or internet connection</li>
+											<br>
+											<li>Reload Game</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						 </ul>
+					</li>
+				</ul>	
+			</div>
+
+			<!--- Sprites-As-Target --->
+			<div>
+				<h4 id="#Sprites-As-Targets">4.5: Sprite Target (Game Screen)</h4>
+
+				<ul>
+					<li>4.5.1:
+						<br>
+						<br>
+						<ul>
+							<li>The sprites or sprite target will appear on the screen once the game begins and when the sprite spawns have both visually and functionally been triggered. The sprite target is high priority because the sprites are used to allow user interaction with the game as the sprites are what change the amount of points or time the user can accumulate. Users click on the sprite and that will cause the timer to increase in value and the score of the user to either increase or decrease depending on what sprite target was clicked on.</li>
+						</ul>
+					</li>
+					<li>4.5.2:
+						<br>
+						<br>
+						<ul>
+							<li>When the sprites are initially spawned, their default animation are immediately triggered</li>
+							<br>
+							<li>The following features are triggered once the user TBD clicks on the sprite target. The sprite’s visuals and the user’s score will be affected as follows:
+								<br>
+								<ul>
+									<br>
+									<li>Professor:
+										<br>
+										<br>
+										<ul>
+											<li>When hit:
+												<br>
+												<ul>
+													<br>
+													<li>Play hit animation</li>
+													<br>
+													<li>Increase score by 15 points</li>
+													<br>
+													<li>Play losing animation as they go back down the hole</li>
+												</ul>
+											</li>
+											<br>
+											<li>When not hit:
+												<br>
+												<br>
+												<ul>
+													<li>Play winning animation as they go down the hole</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<br>
+									<li>Student:
+										<br>
+										<br>
+										<ul>
+											<li>When hit:
+												<br>
+												<ul>
+													<br>
+													<li>Play hit animation</li>
+													<br>
+													<li>Decrease score by half of the current score</li>
+													<br>
+													<li>Play losing animation as they go back down the hole</li>
+												</ul>
+											</li>
+											<br>
+											<li>When not hit:
+												<br>
+												<br>
+												<ul>
+													<li>Play winning animation as they go down the hole</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<br>
+									<li>Dean:
+										<br>
+										<br>
+										<ul>
+											<li>When hit:
+												<br>
+												<ul>
+													<br>
+													<li>Play hit animation</li>
+													<br>
+													<li>Increase score by 20 points</li>
+													<br>
+													<li>Play losing animation as they go back down the hole</li>
+												</ul>
+											</li>
+											<br>
+											<li>When not hit:
+												<br>
+												<br>
+												<ul>
+													<li>Play winning animation as they go down the hole</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<br>
+									<li>Admin:
+										<br>
+										<br>
+										<ul>
+											<li>When hit:
+												<br>
+												<ul>
+													<br>
+													<li>Play hit animation</li>
+													<br>
+													<li>Increase time by 1 minute</li>
+													<br>
+													<li>Play losing animation as they go back down the hole</li>
+												</ul>
+											</li>
+											<br>
+											<li>When not hit:
+												<br>
+												<br>
+												<ul>
+													<li>Play winning animation as they go down the hole</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>4.5.3:
+						<br>
+						<br>
+						<ul>
+							<li>The sprite targets should only appear in the game screen when the game starts. </li>
+							<br>
+							<li>TBD:
+								<br>
+								<br>
+								<ul>
+									<li>When the sprites do not spawn or show
+										<br>
+										<br>
+										<ul>
+											<li>Restart browser or internet connection</li>
+											<br>
+											<li>Reload Game</li>
+										</ul>
+									</li>
+									<br>
+									<li>When score doesn’t increase or decrease upon clicking the sprite
+										<br>
+										<br>
+										<ul>
+											<li>Restart browser or internet connection</li>
+											<br>
+											<li>Reload Game</li>
+										</ul>
+									</li>
+									<br>
+									<li>If the users score increases or decreases abnormally (i.e: upon clicking student sprite the users score increases instead of decreasing)
+										<br>
+										<br>
+										<ul>
+											<li>Restart browser or internet connection</li>
+											<br>
+											<li>Reload Game</li>
+										</ul>
+									</li>
+									<br>
+									<li>The Sprites appear anywhere outside of a spawn hole
+										<br>
+										<br>
+										<ul>
+											<li>Restart browser or internet connection</li>
+											<br>
+											<li>Reload Game</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!--- Cursor-Mallet --->
+			<div>
+				<h4 id = "Cursor-Mallet"> 4.6: Cursor-Mallet</h4>
+
+					<ul>
+						<li>
+							4.6.1:
+							<br>
+							<br>
+							<ul>
+								<li>The cursor will be displayed as a mallet within the game screen. It is a high-priority item because it is the only way to navigate the user interface and click the buttons.</li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							4.6.2:
+							<br>
+							<br>
+							<ul>
+								<li>The mallet will automatically display upon clicking the start game button. This feature will be removed once the game is over.</li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							4.6.3:
+							<br>
+							<br>
+							<ul>
+								<li>The cursor should allow the user to select objects on the screen, specifically click on the sprites to “hit” them for points.</li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+		
+			<!--- Timer --->
+			<div>
+				<h4 id = "Timer">4.7: Timer</h4>
+
+				<ul>
+					<li>
+						4.7.1:
+						<br>
+						<br>
+						<ul>
+							<li>The timer appears on the start screen. The timer is a high-priority item because it indicates to the user how much time they have left to play the game. The game will always start by counting down from 2 minutes (120 seconds).</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.7.2:
+						<br>
+						<br>
+						<ul>
+							<li>The feature is triggered as soon as the start begins, or in other words right when the user presses the start game button.</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.7.3:
+						<br>
+						<br>
+						<ul>
+							<li>The timer should appear below the current score on all screens. The time left may be changed if the user hits an admin sprite which will add 1 minute (60 seconds) to the timer.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!--- Player Score --->
+			<div>
+				<h4 id = "Player-Score">4.8: Player Score</h4>
+
+				<ul>
+					<li>
+						4.8.1:
+						<br>
+						<br>
+						<ul>
+							<li>The player’s scores are dependent on clicking on sprites. Hitting the professor or dean will increase the player’s points by 15 or 20 points, respectively, while hitting admin will have no effect on the score but will add 60 seconds of time to the timer, and hitting the student will half the current amount of points. This is a high-priority feature because the player either wins or loses the game based on their score. The score will appear on only the game screen.</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.8.2:
+						<br>
+						<br>
+						<ul>
+							<li>
+								The score will automatically update itself when the player left-clicks on the sprite.
+							</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.8.3:
+						<br>
+						<br>
+						<ul>
+							<li>Through HTML and JavaScript, there is a listener function that looks out for clicks on certain characters. If that character is clicked then there will be an event that happens.</li>
+							<br>
+							<li>The score of the player should only be affected when clicking on their appropriate sprite.</li>
+							<br>
+							<li>
+								<b>TBD: </b>
+								<ul>
+									<br>
+									<li>When sprites don’t increase or decrease the score to their respective value</li>
+									<br>
+									<li>When admin affects the score instead of the time</li>
+									<br>
+									<li>When sprites don’t work at all when clicked</li>
+									<br>
+									<li>Any other forms of abnormal effects upon clicking</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Sound Effects -->
+			<div>
+				<h4 id = "Sound-Effects">4.9: Sound Effects</h4>
+
+				<ul>
+					<li>
+						4.9.1:
+						<br>
+						<br>
+						<ul>
+							<li>Sound effects will happen in 3 different circumstances. When the user clicks something on the screen, when the game ends, and at the launch of the game. Sound effects are a low priority as they are not needed to run or understand how to play the game. </li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.9.2:
+						<br>
+						<br>
+						<ul>
+							<li>The 3 circumstances that will cause the sound effects to trigger go as follows:</li>
+							<ul>
+								<br>
+								<li>At the launch of the game, there will be background music that plays</li>
+								<br>
+								<li>
+									When the user clicks something on the screen:
+									<ul>
+										<br>
+										<li>Sprite: Depending on the sprite’s interpreted gender, there will be separate female and male pain sound effects that will be triggered when the user successfully clicks on a sprite.</li>
+										<br>
+										<li>Desk: When the user clicks on a desk there will be a “desk impact” sound effect that will be triggered</li>
+										<br>
+										<li>Anywhere else: When the user clicks on anything other than the desk or sprite on the screen, there will be a “swing” sound effect that will be triggered</li>
+									</ul>
+								</li>
+								<br>
+								<li>When the timer ends signifying the end of the game, the “Bell” sound effect will be triggered</li>
+							</ul>
+						</ul>
+					</li>
+					<br>
+					<li>
+						4.9.3
+						<br>
+						<br>
+						<ul>
+							<li>Sound effects triggered via a click should not happen any other time throughout the game. Only when a click happens.</li>
+							<br>
+							<li>Sound effect triggered once the timer ends for game over should not happen any other time. Only when the game ends.</li>
+							<br>
+							<li> <b>TBD:</b>
+								<br>
+								<br>
+								<ul>
+									<li>When sound effects don’t work</li>
+									<br>
+									<li>Make sure your computer isn’t muted</li>
+									<br>
+									<li>Refresh the browser</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Tutorial Button -->
+			<div>
+				<h4 id = "Tutorial-Button">4.10: Tutorial Button</h4>
+
+				<ul>
+					<li>4.10.1:
+						<ul>
+							<br>
+							<li>The button will appear in the Title Screen only. It will trigger the tutorial screen to appear. This button is a medium priority as it is not needed to play the game, however it is important for understanding how to play the game.</li>
+						</ul>
+					</li>
+					<br>
+					<li>4.10.2:
+						<br>
+						<br>
+						<ul>
+							<li>The feature is triggered when left-clicked on by the user.</li>
+						</ul>
+					</li>
+					<br>
+					<li>4.10.3:
+						<br>
+						<br>
+						<ul>
+							<li>The button should only appear in the Title screen.</li>
+							<br>
+							<li><b>TBD:</b>
+								<br>
+								<br>
+								<ul>
+									<li>Tutorial Button Doesn't work
+										<br>
+										<br>
+										<ul>
+											<li>Refresh browser</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</body>
 <html>
