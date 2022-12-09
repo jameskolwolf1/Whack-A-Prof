@@ -440,7 +440,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 		* Any other forms of abnormal effects upon clicking
 
 
-### **4.9: Sounds Effects** <a name="Sounds-Effects"></a>
+### **4.9: Sounds Effects** <a name= "Sound-Effects"></a>
 
 * 4.9.1:
 
@@ -478,7 +478,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 
 
-### **4.10: Tutorial Button** <a name = "Tutorial-Button"></a>
+### **4.10: Tutorial Button** <a name= "Tutorial-Button"></a>
 
 * 4.10.1: 
 
