@@ -468,7 +468,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 	* Sound effect triggered once the timer ends for game over should not happen any other time. Only when the game ends.
 
-	* TBD:
+	* **TBD:**
 
 		* When sound effects don’t work
 
@@ -492,7 +492,9 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 	* The button should only appear in the Title screen. 
 
-	* TBD
+	* **TBD:**
 
-	* Tutorial button doesn’t work
+		* Tutorial button doesn’t work
+
+			* Refresh Browser
 
