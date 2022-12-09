@@ -5,7 +5,7 @@
 ## **Table of Contents**
 ### [**1. Introduction**](#introduction)
 
-[1.1: Purpose](#Purpose)
+[1.1: Purpose](#purpose)
 
 [1.2: Document Conventions](#Document-Conventions)
 
@@ -67,7 +67,7 @@
 ## **1. Introduction** <a name="introduction"></a>
 ---
 
-### **1.1: Purpose** <a name="Purpose"></a>
+### **1.1: Purpose** <a name="purpose"></a>
 
 This document represents the Software Requirements Specification (SRS) for Whack-A-Prof. It is designed to specify the procedures our teams, backbone, quality assurance, specification documentation, and graphics, have used in the development process and describe the requirements specifications for our application with respect to end users. It will provide a detailed overview of our software product’s goals and parameters.
 
