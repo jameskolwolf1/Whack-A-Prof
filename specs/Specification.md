@@ -119,7 +119,7 @@ All references in this documentation will be referred to the items below.
 * [7] E. Martin, J. N. Hasse. *Ninja-build*. (Version 1.11.1). J. N. Hasse. [Online]. GitHub.
 	Available: https://github.com/ninja-build/ninja
 
-* [8] D. Capello. *LibreSprite*. (Version 1.0). Igara Studio. [Online[. GitHub.
+* [8] D. Capello. *LibreSprite*. (Version 1.0). Igara Studio. [Online]. GitHub.
 	Available: https://libresprite.github.io/#!/
 
 
