@@ -84,9 +84,9 @@ _Character Sprite Sheet (pixel art style)_
 
 _UI_
    * [ ] Cursor/Hammer/Ruler
-   * [ ] Buttons (without text, but with pressed and hover stages)
+   * [x] Buttons (without text, but with pressed and hover stages)
    * [x] Scoreboard
-   * [ ] Key (Mapping Character to Graphic)
+   * [x] Key (Mapping Character to Graphic)
    * [ ] Title Screen Background
    * [x] Game Screen Background
    * [ ] Game Over Screen Background
