@@ -1,9 +1,9 @@
 <img height=180 src="./src/graphics/banner/banner.svg" alt="banner">
 <div align="center">
 
-  <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23ad7757)</a>
-  <a href="">![Contributors](https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23c09473)</a>
-  <a href="">![LastCommit](https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23d7b594)</a>
+  <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23884b2b)</a>
+  <a href="">![Contributors](https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23be772b)</a>
+  <a href="">![LastCommit](https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23de9e41)</a>
   <a href="">![GithubStars](https://img.shields.io/github/stars/jameskolwolf1/Whack-A-Prof?style=social)</a>
 
 </div>
@@ -207,6 +207,6 @@ Testing entry date 12/5/22:
 [x] title screen
 [x] music
 [x] scoreboard
-[] hammer
-[] static clock
+[ ] hammer
+[ ] static clock
 
