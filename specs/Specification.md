@@ -13,55 +13,55 @@
 
 [1.4: Product Scope](#product-scope)
 
-[1.5: References](#References)
+[1.5: References](#references)
 
-### [**2. Overall Description**](#Overall-Description)
+### [**2. Overall Description**](#overall-description)
 
-[2.1: Product Perspective](#Product-Perspective)
+[2.1: Product Perspective](#product-perspective)
 
-[2.2: Product Functions](#Product-Functions)
+[2.2: Product Functions](#product-functions)
 
-[2.3: User Classes and Characteristics](#User-Classes-and-Characteristics)
+[2.3: User Classes and Characteristics](#user-classes-and-characteristics)
 
-[2.4: Operating Environment](#Operating-Environment)
+[2.4: Operating Environment](#operating-environment)
 
-[2.5: Design and Implementation Constraints](#Design-and-Implementation-Constraints)
+[2.5: Design and Implementation Constraints](#design-and-implementation-constraints)
 
-[2.6: User Documentation](#User-Documentation)
+[2.6: User Documentation](#user-documentation)
 
-[2.7: Assumptions and Dependencies](#Assumptions-and-Dependencies)
+[2.7: Assumptions and Dependencies](#assumptions-and-dependencies)
 
-### [**3. External Interface Requirements**](#External-Interface-Requirements)
+### [**3. External Interface Requirements**](#external-interface-requirements)
 
-[3.1: User Interfaces](#User-Interfaces)
+[3.1: User Interfaces](#user-interfaces)
 
-[3.2: Hardware Interfaces](#Hardware-Interfaces)
+[3.2: Hardware Interfaces](#hardware-interfaces)
 
-[3.3: Software Interfaces](#Software-Interfaces)
+[3.3: Software Interfaces](#software-interfaces)
 
-### [**4. System Features**](#System-Features)
+### [**4. System Features**](#system-features)
 
 ##### **Note: This Section is under Construction**
 
-[**4.1: Start Game Button**](#Start-Game-Button)
+[**4.1: Start Game Button**](#start-game-button)
 
-[**4.2: Play Again Button (Game Over Screen)**](#Play-Again-Button)
+[**4.2: Play Again Button (Game Over Screen)**](#play-again-button)
 
-[**4.3: Home Button (Game Over Screen)**](#Home-Button)
+[**4.3: Home Button (Game Over Screen)**](#home-button)
 
-[**4.4: Holes or Sprite Spawn**](#Sprite-Spawn)
+[**4.4: Holes or Sprite Spawn**](#sprite-spawn)
 
-[**4.5: Sprites as Targets**](#Sprite-Target)
+[**4.5: Sprites as Targets**](#sprite-target)
 
-[**4.6: Cursor/Mallet**](#Cursor-Mallet)
+[**4.6: Cursor/Mallet**](#cursor-mallet)
 
-[**4.7: Timer**](#Timer)
+[**4.7: Timer**](#timer)
 
-[**4.8: Player Score**](#Player-Scores)
+[**4.8: Player Score**](#player-scores)
 
-[**4.9: Sounds Effects**](#Sound-Effects)
+[**4.9: Sounds Effects**](#sound-effects)
 
-[**4.10: Tutorial Button**](#Tutorial-Button)
+[**4.10: Tutorial Button**](#tutorial-button)
 
 
 ## **1. Introduction** <a name="introduction"></a>
@@ -87,7 +87,7 @@ This SRS is organized into 4 sections, each with varying subsections. The docume
 The skeleton of the project will be created using the scripting language of Javascript. The goal with Javascript is to create the bare minimum functions of a “Whack-A-Prof” game. Javascript will be responsible for signifying the space in which the game will take place, animating the pictures that will represent the characters and the cursor, buttons, etc. that the user will be using to interact with the game. Additionally, Javascript will be giving these characters value, allowing the user to feel a form of interaction with said characters by gaining or losing points based on what character they have interacted with. The space and structure that the game will be developed in will be created by HTML. HTML will display the game on a web browser and create containers and borders in which the buttons, characters, and other visual blocks will be placed in. Moreover, while HTML will be able to visually show the user the game, CSS will further assist HTML in giving better visual effects to the web browser. On the other hand, Aseprite and LibreSprite will be used to create the visuals of the characters. Both programs are sprite and pixel art editing tools. Moreover Skia, a 2D graphics library, Ninja, a build system, CMake, an open source software which generates a system’s build file, and PureRef, a image referencing tool, will be used by the design team to assist in the designing of the characters. Finally, GitHub and the SVN service provided by GitHub is used by everyone in the team in order to keep programs, pictures, documents, and other forms of files in one organized and accessible setting.
 
 
-### **1.5: References** <a name="References"></a>
+### **1.5: References** <a name="references"></a>
 
 All references in this documentation will be referred to the items below.
 
@@ -135,10 +135,10 @@ All references in this documentation will be referred to the items below.
 	Available: https://developer.oracle.com/languages/javascript.html
 
 
-## **2. Overall Description** <a name="Overall-Description"></a>
+## **2. Overall Description** <a name="overall-description"></a>
 ---
 
-### **2.1: Product Perspective** <a name="Product-Perspective"></a>
+### **2.1: Product Perspective** <a name="product-perspective"></a>
 
 This product is a new “Whack- A-Mole” inspired game where the functions are the same but the settings are altered. Instead of moles, the user will interact with school faculty and students to accumulate or depress points. The following are features included with the web game:
 
@@ -149,7 +149,7 @@ This product is a new “Whack- A-Mole” inspired game where the functions are 
 * Storing Scores of User: The website will be utilizing the user's local storage in order to keep track of their individual scores
 
 
-### **2.2: Product Functions** <a name="Product-Functions"></a>
+### **2.2: Product Functions** <a name="product-functions"></a>
 
 The product must provide, at a minimum, the following functions to the users within this SRS document.
 * Provide a User Interface (UI) to play the game
@@ -158,12 +158,12 @@ The product must provide, at a minimum, the following functions to the users wit
 * Display a tutorial on the home page for guidance on how to play the game
 
 
-### **2.3: User Classes and Characteristics** <a name="User-Classes-and-Characteristics"></a>
+### **2.3: User Classes and Characteristics** <a name="user-classes-and-characteristics"></a>
 
 Users of the product should have basic knowledge of web technology and operating the internet. The user interface will be friendly enough to guide the user and help with starting the Whack-A-Prof game.
 
 
-### **2.4: Operating Environment** <a name="Operating-Environment"></a>
+### **2.4: Operating Environment** <a name="operating-environment"></a>
 
 The server-side components of the software system can operate on any operating system, including but not limited to Linux, Windows, and macOS. The client-side components of the software system must operate within common web browser environments. The minimum set of browsers that must be supported is:
 
@@ -182,12 +182,12 @@ The server-side components of the software system can operate on any operating s
 - Notepad++ v8.4.6
 
 
-### **2.5: Design and Implementation Constraints** <a name="Design-and-Implementation-Constraints"></a>
+### **2.5: Design and Implementation Constraints** <a name="design-and-implementation-constraints"></a>
 
 This program will have complications when used on a tablet or phone as it is designed to be better played on a desktop or laptop. Additionally, the game doesn't have adequate backend security because of how Javascript is structured and there is no user authentication. However, the only data or information that will be vulnerable to the user is their score from the game which will be stored in a text file. Finally, not all errors and bugs with the code will be caught immediately. 
 
 
-### **2.6: User Documentation** <a name="User-Documentation"></a>
+### **2.6: User Documentation** <a name="user-documentation"></a>
 
 * Tutorial Overview:
 
@@ -200,15 +200,15 @@ This program will have complications when used on a tablet or phone as it is des
 There are currently no outside sources or tutorials for this game. Once available, they will be updated.
 
 
-### **2.7: Assumptions and Dependencies** <a name="Assumptions-and-Dependencies"></a>
+### **2.7: Assumptions and Dependencies** <a name="assumptions-and-dependencies"></a>
 
 Users must access the game through a desktop. If the game is accessed through any other devices or browsers that are otherwise not listed in Section 2.4, it may bug or become unplayable. Users who play this game are assumed to have access to a usable web browser and know how to use the internet and input devices, such as the mouse, which is a key feature in playing the game.
 
 
-## **3. External Interface Requirements** <a name="External-Interface-Requirements"></a>
+## **3. External Interface Requirements** <a name="external-interface-requirements"></a>
 ---
 
-### **3.1: User Interfaces** <a name="User-Interfaces"></a>
+### **3.1: User Interfaces** <a name="user-interfaces"></a>
 
 When the game first launches, there will be an animation displaying the name of the game, Whack-A-Prof, and the class that worked on this project, CISC 3140 (Figure 1). The start game screen (Figure 2) will display the title of the game, start game button, and tutorial button, respectively. The start game screen will also have its individual background visual. Clicking the tutorial button will trigger the tutorial screen (Figure 3). This screen includes the title, tutorial text, a visual key showcasing the characters respectively. Clicking the back home button will trigger the title screen to appear once again. Additionally the tutorial-screen will have the same visual background as the title screen. When clicking the Start Game button, the Game Screen will be triggered (Figure 4) where the title, current score, timer, and the gameboard will be shown respectively. The gameboard will consist of 9 holes laid out in a 3x3 grid. The sprites that will be transitioning out of the holes are either professors, admins, or students. Once the timer is at 0 seconds, the game over screen (Figure 5) will be initiated. There will be a game over text, score, high score, play again button, and home button, respectively. The game over screen will also have its own visual background different from the rest.   
 
@@ -233,20 +233,20 @@ When the game first launches, there will be an animation displaying the name of 
 <img src = "diagrams/gameover_screen.jpg" height = "500"></img>
 
 
-### **3.2: Hardware Interfaces** <a name="Hardware-Interfaces"></a>
+### **3.2: Hardware Interfaces** <a name="hardware-interfaces"></a>
 
 The client-side components of Whack-A-Prof can be executed on both personal-class computers and workstation-class computers. The game will require browser support and an internet connection to run it.
 
 
-### **3.3: Software Interfaces** <a name="Software-Interfaces"></a>
+### **3.3: Software Interfaces** <a name="software-interfaces"></a>
 
 The game requires Javascript support in order to be run on a browser. The game should be supported in all browsers however the game has full support on a firefox browser. There are only compatibility issues when the size of the screen is too big because the proportions of the background and other graphical features can be altered. 
 
 
-## **4. System Features** <a name="System-Features"></a>
+## **4. System Features** <a name="system-features"></a>
 ---
 
-### **4.1: Start Game Button (Start Game Screen)** <a name="Start-Game-Button"></a>
+### **4.1: Start Game Button (Start Game Screen)** <a name="start-game-button"></a>
 
 * 4.1.1:
 
@@ -268,7 +268,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 			* Check your internet connection and browser support
 	
 
-### **4.2: Play Again Button (Game Over Screen)** <a name="Play-Again-Button"></a>
+### **4.2: Play Again Button (Game Over Screen)** <a name="play-again-button"></a>
 
 * 4.2.1
 
@@ -282,7 +282,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 	* The button should only be present on the game over screen and not on the start game screen or game screen.
 
 
-### **4.3: Home Button (Game Over Screen)** <a name="Home-Button"></a>
+### **4.3: Home Button (Game Over Screen)** <a name="home-button"></a>
 
 * 4.3.1
 
@@ -296,7 +296,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 	* The button should be present on the instruction screen and on the game over screen only.
 
 
-### **4.4: Holes or Sprite Spawn** <a name= "Sprite-Spawn"></a>
+### **4.4: Holes or Sprite Spawn** <a name= "sprite-spawn"></a>
 
 * 4.4.1:
 
@@ -325,7 +325,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 			* Reload Game
 
 
-### **4.5: Sprites as Targets** <a name ="Sprite-Target"></a>
+### **4.5: Sprites as Targets** <a name ="sprite-target"></a>
 
 * 4.5.1:
 
@@ -383,7 +383,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 			* Reload Game
 
 
-### **4.6: Cursor/Mallet** <a name="Cursor-Mallet"></a>
+### **4.6: Cursor/Mallet** <a name="cursor-mallet"></a>
 
 * 4.6.1:
 
@@ -398,7 +398,7 @@ The game requires Javascript support in order to be run on a browser. The game s
      * The cursor should allow the user to select objects on the screen, specifically click on the sprites to “hit” them for points.
 
 
-### **4.7: Timer** <a name="Timer"></a>
+### **4.7: Timer** <a name="timer"></a>
 
 * 4.7.1:
 
@@ -413,7 +413,7 @@ The game requires Javascript support in order to be run on a browser. The game s
      * The timer should appear below the current score on all screens. The time left may be changed if the user hits an admin sprite which will add 1 minute (60 seconds) to the timer.
 
 
-### **4.8: Player Score** <a name="Player-Scores"></a>
+### **4.8: Player Score** <a name="player-scores"></a>
 
 * 4.8.1: 
 
@@ -440,7 +440,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 		* Any other forms of abnormal effects upon clicking
 
 
-### **4.9: Sounds Effects** <a name= "Sound-Effects"></a>
+### **4.9: Sounds Effects** <a name= "sound-effects"></a>
 
 * 4.9.1:
 
@@ -478,7 +478,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 
 
-### **4.10: Tutorial Button** <a name= "Tutorial-Button"></a>
+### **4.10: Tutorial Button** <a name= "tutorial-button"></a>
 
 * 4.10.1: 
 
