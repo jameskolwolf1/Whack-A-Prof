@@ -61,6 +61,8 @@
 
 [**4.9: Sounds Effects**](#Sound-Effects)
 
+[**4.10: Tutorial Button**](#Tutorial-Button)
+
 ## **1. Introduction** <a name="introduction"></a>
 ---
 ### **1.1: Purpose** <a name="Purpose"></a>
@@ -226,6 +228,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 ## **4. System Features** <a name="System-Features"></a>
 ---
+
 ### **4.1: Start Game Button (Start Game Screen)** <a name="Start-Game-Button"></a>
 
 * 4.1.1
@@ -241,6 +244,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 			* Reload the game
 			* Check your internet connection and browser support
 	
+
 ### **4.2: Play Again Button (Game Over Screen)** <a name="Play-Again-Button"></a>
 
 * 4.2.1
@@ -250,6 +254,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 * 4.2.3
 	* The button should only be present on the game over screen and not on the start game screen or game screen.
 
+
 ### **4.3: Home Button (Game Over Screen)** <a name="Home-Button"></a>
 
 * 4.3.1
@@ -258,6 +263,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 	* This feature is triggered when the user uses their mouse to left-click the button.
 * 4.3.3
 	* The button should be present on the instruction screen and on the game over screen only.
+
 
 ### **4.4: Holes or Sprite Spawn** <a name= "Sprite-Spawn"></a>
 
@@ -302,6 +308,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 		* Admin:
 			* Increase Time by 1 minute (60 seconds)
 
+
 * 4.5.3:
 
 	* The sprite targets should only appear in the game screen when the game starts.
@@ -339,6 +346,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 * 4.6.3:
      * The cursor should allow the user to select objects on the screen, specifically click on the sprites to “hit” them for points.
 
+
 ### **4.7: Timer** <a name="Timer"></a>
 
 * 4.7.1:
@@ -349,6 +357,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 * 4.7.3:
      * The timer should appear below the current score on all screens. The time left may be changed if the user hits an admin sprite which will add 1 minute (60 seconds) to the timer.
+
 
 ### **4.8: Player Score** <a name="Player-Scores"></a>
 
@@ -376,4 +385,60 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 		* Any other forms of abnormal effects upon clicking
 
+
 ### **4.9: Sounds Effects** <a name="Sounds-Effects"></a>
+
+* 4.9.1:
+
+	* Sound effects will happen in 3 different circumstances. When the user clicks something on the screen, when the game ends, and at the launch of the game. Sound effects are a low priority as they are not needed to run or understand how to play the game. 
+
+* 4.9.2:
+
+	* The 3 circumstances that will cause the sound effects to trigger go as follows:
+
+		* At the launch of the game, there will be background music that plays
+
+		* When the user clicks something on the screen:
+
+			* Sprite: Depending on the sprite’s interpreted gender, there will be separate female and male pain sound effects that will be triggered when the user successfully clicks on a sprite.
+
+			* Desk: When the user clicks on a desk there will be a “desk impact” sound effect that will be triggered
+ 
+			* Anywhere else: When the user clicks on anything other than the desk or sprite on the screen, there will be a “swing” sound effect that will be triggered
+
+		* When the timer ends signifying the end of the game, the “Bell” sound effect will be triggered
+
+* 4.9.3:
+
+	* Sound effects triggered via a click should not happen any other time throughout the game. Only when a click happens.
+
+	* Sound effect triggered once the timer ends for game over should not happen any other time. Only when the game ends.
+
+	* TBD:
+
+		* When sound effects don’t work
+
+		* Make sure your computer isn’t muted
+
+		* Refresh the browser
+
+
+
+### **4.10: Tutorial Button** <a name = "Tutorial-Button"></a>
+
+* 4.10.1: 
+
+	* The button will appear in the Title Screen only. It will trigger the tutorial screen to appear. This button is a medium priority as it is not needed to play the game, however it is important for understanding how to play the game.
+
+* 4.10.2:
+
+	* The feature is triggered when left-clicked on by the user.
+
+* 4.10.3:
+
+	* The button should only appear in the Title screen. 
+
+	* TBD
+
+	* Tutorial button doesn’t work
+
