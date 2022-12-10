@@ -1,9 +1,9 @@
 <img height=180 src="./src/graphics/banner/banner.svg" alt="banner">
 <div align="center">
 
-  <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23884b2b)</a>
+  <a href="">![Size](https://img.shields.io/github/repo-size/jameskolwolf1/Whack-A-Prof?color=%23be772b)</a>
   <a href="">![Contributors](https://img.shields.io/github/contributors/jameskolwolf1/Whack-A-Prof?color=%23be772b)</a>
-  <a href="">![LastCommit](https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23de9e41)</a>
+  <a href="">![LastCommit](https://img.shields.io/github/last-commit/jameskolwolf1/Whack-A-Prof?color=%23be772b)</a>
   <a href="">![GithubStars](https://img.shields.io/github/stars/jameskolwolf1/Whack-A-Prof?style=social)</a>
 
 </div>
@@ -58,7 +58,7 @@ Naming conventions are general guidelines for convenience and uniformity of the 
    * Arms
    * Torso
    * Legs
-* 32x48 pixels maximum (WxH) per group <br>
+* 32x48 pixels (WxH) per group <br>
 
 **Background**
 
@@ -83,11 +83,11 @@ _Character Sprite Sheet (pixel art style)_
    * [x] Admin
 
 _UI_
-   * [ ] Cursor/Hammer/Ruler
+   * [x] Cursor/Hammer/Ruler
    * [x] Buttons (without text, but with pressed and hover stages)
    * [x] Scoreboard
    * [x] Key (Mapping Character to Graphic)
-   * [ ] Title Screen Background
+   * [x] Title Screen Background
    * [x] Game Screen Background
    * [ ] Game Over Screen Background
 
@@ -96,9 +96,9 @@ _Other_
    * [x] Hole/Desk
    
 _Decoration_ (For Game Screen)
-   * [ ] Plants (2 different ones)
+   * [x] Plants (2 different ones)
    * [ ] Pinboard
-   * [ ] Static clock (?)
+   * [x] Static clock (?)
 
 ### Useful Links
 
