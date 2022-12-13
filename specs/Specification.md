@@ -145,14 +145,14 @@ This product is a new “Whack- A-Mole” inspired game where the functions are 
 
 * Cross Platform Support: The game is supported by most of the popular web browsers that can be downloaded in most operating systems
 
-* Number of users who can be on the website: While an exact number can not be given a sizeable amount of users can go on the website at the same time to play the game
+* Number of Users Who Can Be On The Website: While an exact number can not be given a sizeable amount of users can go on the website at the same time to play the game
 
 * Storing Scores of User: The website will be utilizing the user's local storage in order to keep track of their individual scores
 
 
 ### **2.2: Product Functions** <a name="product-functions"></a>
 
-The product must provide, at a minimum, the following functions to the users within this SRS document.
+The product must provide, at a minimum, the following functions to the users within this SRS document:
 * Provide a User Interface (UI) to play the game
 * Make data/scores available in local storage
 * Allow users to click buttons to start the game, restart the game, and return to the home page
@@ -185,7 +185,7 @@ The server-side components of the software system can operate on any operating s
 
 ### **2.5: Design and Implementation Constraints** <a name="design-and-implementation-constraints"></a>
 
-This program will have complications when used on a tablet or phone as it is designed to be better played on a desktop or laptop. Additionally, the game doesn't have adequate backend security because of how Javascript is structured and there is no user authentication. However, the only data or information that will be vulnerable to the user is their score from the game which will be stored in a text file. Finally, not all errors and bugs with the code will be caught immediately. 
+This program will have complications when used on a tablet or phone as it is designed to be better played on a desktop or laptop. Additionally, the game doesn't have adequate backend security because of how JavaScript is structured and there is no user authentication. However, the only data or information that will be vulnerable to the user is their score from the game which will be stored in a text file. Finally, not all errors and bugs with the code will be caught immediately. 
 
 
 ### **2.6: User Documentation** <a name="user-documentation"></a>
@@ -236,7 +236,7 @@ The client-side components of Whack-A-Prof can be executed on both personal-clas
 
 ### **3.3: Software Interfaces** <a name="software-interfaces"></a>
 
-The game requires Javascript support in order to be run on a browser. The game should be supported in all browsers however the game has full support on a firefox browser. There are only compatibility issues when the size of the screen is too big because the proportions of the background and other graphical features can be altered. 
+The game requires JavaScript support in order to be run on a browser. The game should be supported in all browsers however the game has full support on a firefox browser. There are only compatibility issues when the size of the screen is too big because the proportions of the background and other graphical features can be altered. 
 
 
 ## **4. System Features** <a name="system-features"></a>
@@ -256,7 +256,7 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 	* The button should only be present on the initial screen and not on the game or game over screens.
 	
-	* TBD
+	* TBD:
 		* Start Game Button does not start the game
 
 			* Reload the game
@@ -266,29 +266,29 @@ The game requires Javascript support in order to be run on a browser. The game s
 
 ### **4.2: Play Again Button (Game Over Screen)** <a name="play-again-button"></a>
 
-* 4.2.1
+* 4.2.1:
 
 	* The play again game button will appear on the game over screen once a game is completed. This button is a high priority because it is the only method of restarting the game. The game and timer will immediately start after it is pressed.
 
-* 4.2.2
+* 4.2.2:
 
 	* This feature is triggered when the user uses their mouse to left-click the button.
 
-* 4.2.3
+* 4.2.3:
 	* The button should only be present on the game over screen and not on the start game screen or game screen.
 
 
 ### **4.3: Home Button (Game Over Screen)** <a name="home-button"></a>
 
-* 4.3.1
+* 4.3.1:
 
 	* The home button will appear on the instruction screen and on the game over screen once a game is completed. This button is a medium priority because you can still start and restart the game without using this button. The user will be taken back to the title screen once this button is clicked.
 
-* 4.3.2
+* 4.3.2:
 
 	* This feature is triggered when the user uses their mouse to left-click the button.
 
-* 4.3.3
+* 4.3.3:
 	* The button should be present on the instruction screen and on the game over screen only.
 
 
