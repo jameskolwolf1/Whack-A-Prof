@@ -122,16 +122,17 @@ All references in this documentation will be referred to the items below.
 * [8] D. Capello. *LibreSprite*. (Version 1.0). Igara Studio. [Online]. GitHub.
 	Available: https://libresprite.github.io/#!/
 
+* [9] PureRef. (Version 1.11.1). Idyllic Pixel. [Online]. Available: https://www.pureref.com/
 
 **Backbone**:
 
-* [9] T. Berners-Lee. *HTML*. (Version HTML5). [Programming Language]. World Wide Web Consortium.
+* [10] T. Berners-Lee. *HTML*. (Version HTML5). [Programming Language]. World Wide Web Consortium.
 	Available: https://www.w3schools.com/html/
 
-* [10] H. W. Lium. *CSS*. (Version 2.1). [Programming Language]. World Wide Web Consortium.
+* [11] H. W. Lium. *CSS*. (Version 2.1). [Programming Language]. World Wide Web Consortium.
 	Available: https://www.w3schools.com/css/
 
-* [11] B. Eich. *JavaScript*. (Version ES2022). [Programming Language]. Oracle Corporation.
+* [12] B. Eich. *JavaScript*. (Version ES2022). [Programming Language]. Oracle Corporation.
 	Available: https://developer.oracle.com/languages/javascript.html
 
 
@@ -191,14 +192,9 @@ This program will have complications when used on a tablet or phone as it is des
 
 * Tutorial Overview:
 
-	+ The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors, deans, and admins are hit, the user will gain points. If the user hits a student, they lose points. The game ends when the timer reaches 0 seconds and the player can compete with themselves for higher score.
+	+ The game assumes basic knowledge of the original "Whack-A-Mole" arcade game. Users start by pressing on the start button on the title screen that will take them to the game screen. At the game screen, they will utilize their mouse and cursor to interact with the sprites on the screen. The user may use the cursor, which will assume a hammer, to hit the sprites. If professors and deans are hit, the user will gain points. If admins are hit, the player will gain more time. If the user hits a student, they lose half of their points. The game ends when the timer reaches 0 seconds.
 
-* Walkthrough:
-
-* Rules:
-
-There are currently no outside sources or tutorials for this game. Once available, they will be updated.
-
+There are currently no outside sources or walkthroughs for the gameplay.
 
 ### **2.7: Assumptions and Dependencies** <a name="assumptions-and-dependencies"></a>
 
